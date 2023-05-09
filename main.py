@@ -417,13 +417,13 @@ def main():
     nlp = NLP()
     analyzer = SentimentAnalyzer(nlp, use_openai_emb_api=False)
 
-    # texts, labels = analyzer.read_data('D:/Homework/SEIII/files/se-appreview.txt')
-    # analyzer.train('SGD', texts, labels)
-    #
-    # texts, labels = analyzer.read_data('D:/Homework/SEIII/files/se-sof4423.txt')
-    # analyzer.test('SGD', texts, labels)
+    texts, labels = analyzer.read_data('dataset/se-appreview.txt')
+    analyzer.train('SGD', texts, labels)
 
-    analyzer.run('SGD', 'fuck you.')
+    texts, labels = analyzer.read_data('dataset/se-sof4423.txt')
+    analyzer.test('SGD', texts, labels)
+
+    analyzer.run('SGD', 'i hate bugs.')
 
     analyzer.reset()
 
