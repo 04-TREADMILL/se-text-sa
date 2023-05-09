@@ -12,6 +12,8 @@ import openai
 
 from nltk.stem.snowball import SnowballStemmer
 
+from sklearn.model_selection import train_test_split
+
 from openai.embeddings_utils import get_embeddings, get_embedding
 from sklearn.feature_extraction.text import TfidfVectorizer
 # from gensim.models import Word2Vec
@@ -316,6 +318,26 @@ class SentimentAnalyzer:
             file.close()
         return texts, labels
 
+    @staticmethod
+    def gen_dataset(texts_list: List[List[str]], labels_list: List[List[str]]) \
+            -> Tuple[List[str], List[str]]:
+        texts = []
+        labels = []
+        for sub_texts in texts_list:
+            texts.extend(sub_texts)
+        for sub_labels in labels_list:
+            labels.extend(sub_labels)
+        return texts, labels
+
+    @staticmethod
+    def split_dataset(texts: List[str], labels: List[str], test_size=0.4, seed=42) \
+            -> Tuple[List[str], List[str], List[str], List[str]]:
+        texts = np.array(texts)
+        labels = np.array(labels)
+        texts_train, texts_test, labels_train, labels_test \
+            = train_test_split(texts, labels, test_size=test_size, random_state=seed)
+        return texts_train.tolist(), texts_test.tolist(), labels_train.tolist(), labels_test.tolist()
+
     def __get_embedding(self, text, embedder):
         """
         Generate the embedding for a given text using a specified embedder.
@@ -417,13 +439,13 @@ def main():
     nlp = NLP()
     analyzer = SentimentAnalyzer(nlp, use_openai_emb_api=False)
 
-    texts, labels = analyzer.read_data('dataset/se-appreview.txt')
-    analyzer.train('SGD', texts, labels)
+    texts_1, labels_1 = analyzer.read_data('dataset/se-appreview.txt')
+    texts_2, labels_2 = analyzer.read_data('dataset/se-sof4423.txt')
+    texts, labels = analyzer.gen_dataset([texts_1, texts_2], [labels_1, labels_2])
+    texts_train, texts_test, labels_train, labels_test = analyzer.split_dataset(texts, labels)
 
-    texts, labels = analyzer.read_data('dataset/se-sof4423.txt')
-    analyzer.test('SGD', texts, labels)
-
-    analyzer.run('SGD', 'i hate bugs.')
+    analyzer.train('SGD', texts_train, labels_train)
+    analyzer.test('SGD', texts_test, labels_test)
 
     analyzer.reset()
 
