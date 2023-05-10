@@ -246,6 +246,7 @@ class SentimentAnalyzer:
                 print(f'- {api}')
             return
         model = self.algos[algo]
+        x_train = [self.nlp.preprocess_text(text) for text in x_train]
         x_train = self.__get_embeddings(x_train, embedder, mode='train')
         x_train = np.array(x_train)
         y_train = np.array(y_train)
@@ -455,15 +456,15 @@ class SentimentAnalyzer:
 
 def main():
     nlp = NLP()
-    analyzer = SentimentAnalyzer(nlp, use_openai_emb_api=False)
+    analyzer = SentimentAnalyzer(nlp, use_openai_emb_api=True)
 
     texts_1, labels_1 = analyzer.read_data('dataset/se-appreview.txt')
     texts_2, labels_2 = analyzer.read_data('dataset/se-sof4423.txt')
     texts, labels = analyzer.gen_dataset([texts_1, texts_2], [labels_1, labels_2])
     texts_train, texts_test, labels_train, labels_test = analyzer.split_dataset(texts, labels)
 
-    analyzer.train('SGD', texts_train, labels_train)
-    analyzer.test('SGD', texts_test, labels_test)
+    analyzer.train('SGD', texts_train, labels_train, embedder='text-embedding-ada-002')
+    analyzer.test('SGD', texts_test, labels_test, embedder='text-embedding-ada-002')
 
     analyzer.reset()
 
