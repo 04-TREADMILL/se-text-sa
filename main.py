@@ -92,7 +92,7 @@ class NLP:
         self.chunk_parser = nltk.RegexpParser(self.grammar)
         self.contractions_regex = re.compile('(%s)' % '|'.join(self.contractions_dict.keys()))
 
-    def __replace_emoticon(self, text) -> str:
+    def __replace_emoticon(self, text: str) -> str:
         """
         Replace emoticons in the input text with their corresponding words from the emoticon dictionary.
 
@@ -103,7 +103,7 @@ class NLP:
             text = text.replace(k, v)
         return text
 
-    def tokenize_and_stem(self, text) -> list:
+    def tokenize_and_stem(self, text: str) -> list:
         """
         Tokenize the input text into individual words and stem each word.
 
@@ -112,7 +112,7 @@ class NLP:
         """
         return [self.stemmer.stem(t) for t in nltk.word_tokenize(text)]
 
-    def __remove_url(self, text):
+    def __remove_url(self, text: str) -> str:
         """
         Remove all URLs from the input text.
 
@@ -121,7 +121,7 @@ class NLP:
         """
         return self.url_regex.sub(' ', text)
 
-    def __negated(self, input_words) -> bool:
+    def __negated(self, input_words: List[str]) -> bool:
         """
         Check if the input words contain any negation words.
 
@@ -130,7 +130,7 @@ class NLP:
         """
         return len(set(input_words) & set(self.negation_words)) > 0
 
-    def __prepend_not(self, word):
+    def __prepend_not(self, word: str) -> str:
         """
         Prepend 'NOT_' to the input word unless it is a negation word or an emoticon.
 
@@ -139,7 +139,7 @@ class NLP:
         """
         return word if word in self.negation_words or word in self.emoticon_words else 'NOT_' + word
 
-    def __handle_negation(self, text):
+    def __handle_negation(self, text: str) -> str:
         """
         Handle negation in the input text by prepending 'NOT_' to each word that is negated.
 
@@ -173,7 +173,7 @@ class NLP:
                 modified_sentences.append(st)
         return '. '.join(modified_sentences)
 
-    def __expand_contractions(self, text):
+    def __expand_contractions(self, text: str) -> str:
         """
         Expand the contractions in the provided text. For example, "isn't" becomes "is not".
 
@@ -186,7 +186,7 @@ class NLP:
 
         return self.contractions_regex.sub(replace, text.lower())
 
-    def preprocess_text(self, text):
+    def preprocess_text(self, text: str) -> str:
         """
         Preprocess the given text by removing newline characters, ignoring non-ASCII characters,
         expanding contractions, removing URLs, replacing emoticons, and handling negations.
@@ -246,7 +246,8 @@ class SentimentAnalyzer:
                 print(f'- {api}')
             return
         model = self.algos[algo]
-        x_train = [self.nlp.preprocess_text(text) for text in x_train]
+        if not self.use_openai_emb_api:
+            x_train = [self.nlp.preprocess_text(text) for text in x_train]
         x_train = self.__get_embeddings(x_train, embedder, mode='train')
         x_train = np.array(x_train)
         y_train = np.array(y_train)
@@ -357,7 +358,7 @@ class SentimentAnalyzer:
             = train_test_split(texts, labels, test_size=test_size, random_state=seed)
         return texts_train.tolist(), texts_test.tolist(), labels_train.tolist(), labels_test.tolist()
 
-    def __get_embedding(self, text, embedder):
+    def __get_embedding(self, text, embedder) -> np.ndarray:
         """
         Generate the embedding for a given text using a specified embedder.
 
@@ -368,9 +369,9 @@ class SentimentAnalyzer:
         if embedder == 'TF-IDF':
             assert self.vectorizer is not None
             return self.vectorizer.transform([text]).toarray()
-        return get_embedding(text=text, engine=embedder)
+        return np.array([get_embedding(text=text, engine=embedder)])
 
-    def __get_embeddings(self, texts, embedder, mode='test'):
+    def __get_embeddings(self, texts, embedder, mode='test') -> np.ndarray:
         """
         Generate the embeddings for a list of texts using a specified embedder.
 
@@ -387,7 +388,20 @@ class SentimentAnalyzer:
             else:
                 assert self.vectorizer is not None
                 return self.vectorizer.transform(texts).toarray()
-        return get_embeddings(list_of_text=texts, engine=embedder)
+        else:
+            assert self.use_openai_emb_api and embedder in self.optional_apis
+            openai_max_token = 2048
+            if len(texts) <= openai_max_token:
+                return np.array(get_embeddings(list_of_text=texts, engine=embedder))
+            embeddings = []
+            start = 0
+            end = openai_max_token
+            while len(texts) >= end != start:
+                embeds = get_embeddings(list_of_text=texts[start:end], engine=embedder)
+                embeddings.extend(embeds)
+                start = end
+                end = min(start + openai_max_token, len(texts))
+            return np.array(embeddings)
 
     def run(self, algo: str, text: str, embedder: str = ''):
         """
@@ -406,7 +420,6 @@ class SentimentAnalyzer:
             classifier = self.models[algo]
             text = self.nlp.preprocess_text(text)
             feature_vector = self.__get_embedding(text, embedder)
-            feature_vector = np.array(feature_vector)
             result = classifier.predict(feature_vector)
             print(f'result: {result[0]}')
 
@@ -425,13 +438,13 @@ class SentimentAnalyzer:
             embedder = 'TF-IDF'
         if not self.__load_model(algo, embedder):
             print('Fail to load model!')
-            return
+            return None, None, None, None
         else:
             classifier = self.models[algo]
-            texts = [self.nlp.preprocess_text(text) for text in texts]
-            embeds = self.__get_embeddings(texts, embedder)
-            embeds = np.array(embeds)
-            y_pred = classifier.predict(embeds)
+            if not self.use_openai_emb_api:
+                texts = [self.nlp.preprocess_text(text) for text in texts]
+            embeddings = self.__get_embeddings(texts, embedder)
+            y_pred = classifier.predict(embeddings)
             y_true = np.array(y_true)
             y_pred = np.array(y_pred)
             precision = precision_score(y_true, y_pred, average=None)
