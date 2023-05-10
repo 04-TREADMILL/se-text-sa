@@ -1,5 +1,25 @@
 ######################################################
 training message:
+- Ensemble all models below
+
+testing result:
+- Precision: [0.84210526 0.80169972 0.9286754 ]
+- Recall:    [0.81203008 0.83113069 0.92063492]
+- F-measure: [0.82679426 0.81614996 0.92463768]
+- Accuracy:  0.8583420776495279
+- Classification Report:
+              precision    recall  f1-score   support
+
+          -1     0.8421    0.8120    0.8268       532
+           0     0.8017    0.8311    0.8161       681
+           1     0.9287    0.9206    0.9246       693
+
+    accuracy                         0.8583      1906
+   macro avg     0.8575    0.8546    0.8559      1906
+weighted avg     0.8591    0.8583    0.8586      1906
+
+######################################################
+training message:
 - dataset: `app-review`+`sof-4423` mixed
 - split: train-test-split 6:4 random-seed 42
 - preprocess: None
