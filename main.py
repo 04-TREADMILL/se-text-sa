@@ -9,6 +9,7 @@ from typing import List, Tuple
 import nltk
 import numpy as np
 import openai
+from scipy.stats import mode
 
 from nltk.stem.snowball import SnowballStemmer
 
@@ -466,6 +467,42 @@ class SentimentAnalyzer:
         self.vectorizer = None
         print('Analyzer reset.')
 
+    def ensemble_test(self, texts: List[str], y_true: List[str]):
+        y_pred = []
+        y_true = np.array(y_true)
+
+        self.use_openai_emb_api = True
+        for algo in self.algos:
+            self.reset()
+            if not self.__load_model(algo, 'text-embedding-ada-002'):
+                print('Fail to load model!')
+            classifier = self.models[algo]
+            embeddings = self.__get_embeddings(texts, 'text-embedding-ada-002')
+            y_pred.append(classifier.predict(embeddings).tolist())
+
+        self.use_openai_emb_api = False
+        for algo in self.algos:
+            self.reset()
+            if not self.__load_model(algo, 'TF-IDF'):
+                print('Fail to load model!')
+            classifier = self.models[algo]
+            texts = [self.nlp.preprocess_text(text) for text in texts]
+            embeddings = self.__get_embeddings(texts, 'TF-IDF')
+            y_pred.append(classifier.predict(embeddings).tolist())
+
+        y_pred = np.array(y_pred)
+        y_pred_final = mode(y_pred, axis=0, keepdims=False).mode
+        precision = precision_score(y_true, y_pred_final, average=None)
+        recall = recall_score(y_true, y_pred_final, average=None)
+        f1score = f1_score(y_true, y_pred_final, average=None)
+        accuracy = accuracy_score(y_true, y_pred_final)
+        print(f'Precision: {precision}')
+        print(f'Recall:    {recall}')
+        print(f'F-measure: {f1score}')
+        print(f'Accuracy:  {accuracy}')
+        print(f'Classification Report:\n{classification_report(y_true, y_pred_final, digits=4)}')
+        return precision, recall, f1score, accuracy
+
 
 def main():
     nlp = NLP()
@@ -475,9 +512,14 @@ def main():
     texts_2, labels_2 = analyzer.read_data('dataset/se-sof4423.txt')
     texts, labels = analyzer.gen_dataset([texts_1, texts_2], [labels_1, labels_2])
     texts_train, texts_test, labels_train, labels_test = analyzer.split_dataset(texts, labels)
+    #
+    # analyzer.train('DT', texts_train, labels_train, embedder='text-embedding-ada-002')
+    # analyzer.test('DT', texts_test, labels_test, embedder='text-embedding-ada-002')
 
-    analyzer.train('SGD', texts_train, labels_train, embedder='text-embedding-ada-002')
-    analyzer.test('SGD', texts_test, labels_test, embedder='text-embedding-ada-002')
+    # analyzer.train('MLP', texts_train, labels_train)
+    # analyzer.test('MLP', texts_test, labels_test)
+
+    analyzer.ensemble_test(texts_test, labels_test)
 
     analyzer.reset()
 
