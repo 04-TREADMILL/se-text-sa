@@ -1,5 +1,5 @@
-python==3.8.16
-nltk==3.8.1
-numpy==1.24.2
-openai==0.27.4
-scikit-learn==1.2.2
+python
+nltk
+numpy
+openai
+scikit-learn
