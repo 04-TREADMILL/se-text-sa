@@ -321,6 +321,14 @@ class SentimentAnalyzer:
     @staticmethod
     def gen_dataset(texts_list: List[List[str]], labels_list: List[List[str]]) \
             -> Tuple[List[str], List[str]]:
+        """
+        Generate a large dataset from small datasets (a list of texts and their corresponding labels).
+
+        :param texts_list: A list of lists of texts. Each inner list represents texts in certain dataset.
+        :param labels_list: A list of lists of labels. Each inner list represents the labels corresponding
+        to the texts in the same position in texts_list.
+        :return: Two lists: the first one is a list of all texts, and the second one is a list of all labels.
+        """
         texts = []
         labels = []
         for sub_texts in texts_list:
@@ -332,6 +340,16 @@ class SentimentAnalyzer:
     @staticmethod
     def split_dataset(texts: List[str], labels: List[str], test_size=0.4, seed=42) \
             -> Tuple[List[str], List[str], List[str], List[str]]:
+        """
+        Split the dataset into training and testing sets.
+
+        :param texts: A list of texts.
+        :param labels: A list of labels corresponding to the texts.
+        :param test_size: The proportion of the dataset to include in the test split. Default value is 0.4.
+        :param seed: Random seed to ensure reproducibility. Default value is 42.
+        :return: Four lists: the first one is a list of texts for training, the second one is a list of texts
+        for testing, the third one is a list of labels for training and the fourth one is a list of labels for testing.
+        """
         texts = np.array(texts)
         labels = np.array(labels)
         texts_train, texts_test, labels_train, labels_test \
