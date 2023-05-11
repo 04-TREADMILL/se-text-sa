@@ -9,10 +9,11 @@ class Chat:
         self.model = model
 
     def chat(self, prompt):
+        messages = [{'role': 'user', 'content': prompt}]
         print('Waiting for response from chatGPT ...')
         response = openai.ChatCompletion.create(
             model=self.model,
-            messages=prompt,
+            messages=messages,
             temperature=0,  # this is the degree of randomness of the model's output
         )
         return response.choices[0].message['content']
