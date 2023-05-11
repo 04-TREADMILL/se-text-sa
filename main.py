@@ -404,6 +404,27 @@ class SentimentAnalyzer:
                 end = min(start + openai_max_token, len(texts))
             return np.array(embeddings)
 
+    @staticmethod
+    def __print_result(y_true: np.ndarray, y_pred: np.ndarray):
+        """
+        Print and return the results of a classification model.
+
+        :param y_true: The true labels as a NumPy array.
+        :param y_pred: The predicted labels as a NumPy array.
+        :return: precision, recall, F1 score, and accuracy.
+        """
+        precision = precision_score(y_true, y_pred, average=None)
+        recall = recall_score(y_true, y_pred, average=None)
+        f1score = f1_score(y_true, y_pred, average=None)
+        accuracy = accuracy_score(y_true, y_pred)
+        print('testing result:')
+        print(f'- Precision: {precision}')
+        print(f'- Recall:    {recall}')
+        print(f'- F-measure: {f1score}')
+        print(f'- Accuracy:  {accuracy}')
+        print(f'- Classification Report:\n{classification_report(y_true, y_pred, digits=4)}')
+        return precision, recall, f1score, accuracy
+
     def run(self, algo: str, text: str, embedder: str = ''):
         """
         Use a specified algorithm to predict the label of a given text.
@@ -426,8 +447,8 @@ class SentimentAnalyzer:
 
     def test(self, algo: str, texts: List[str], y_true: List[str], embedder: str = ''):
         """
-        Test a specified algorithm using provided texts and true labels,
-        prints out various scores related to the model's performance.
+        Test a specified algorithm using provided texts and true labels.
+        Print and return the performance metrics.
 
         :param algo: The name of the machine learning algorithm to use for prediction.
         :param texts: A list of texts to be processed and passed to the model for prediction.
@@ -448,16 +469,7 @@ class SentimentAnalyzer:
             y_pred = classifier.predict(embeddings)
             y_true = np.array(y_true)
             y_pred = np.array(y_pred)
-            precision = precision_score(y_true, y_pred, average=None)
-            recall = recall_score(y_true, y_pred, average=None)
-            f1score = f1_score(y_true, y_pred, average=None)
-            accuracy = accuracy_score(y_true, y_pred)
-            print(f'Precision: {precision}')
-            print(f'Recall:    {recall}')
-            print(f'F-measure: {f1score}')
-            print(f'Accuracy:  {accuracy}')
-            print(f'Classification Report:\n{classification_report(y_true, y_pred, digits=4)}')
-            return precision, recall, f1score, accuracy
+            return self.__print_result(y_true, y_pred)
 
     def reset(self):
         """
@@ -468,6 +480,16 @@ class SentimentAnalyzer:
         print('Analyzer reset.')
 
     def ensemble_test(self, texts: List[str], y_true: List[str]):
+        """
+        Perform ensemble testing on a list of texts, using different algorithms and
+        embedding techniques to predict the labels and then adopting the mode rule to determine the
+        final predicted labels.
+        Print and return the performance metrics.
+
+        :param texts: A list of texts to be classified.
+        :param y_true: A list of true labels corresponding to the texts.
+        :return: Performance metrics including precision, recall, F1 score, and accuracy.
+        """
         y_pred = []
         y_true = np.array(y_true)
 
@@ -492,16 +514,7 @@ class SentimentAnalyzer:
 
         y_pred = np.array(y_pred)
         y_pred_final = mode(y_pred, axis=0, keepdims=False).mode
-        precision = precision_score(y_true, y_pred_final, average=None)
-        recall = recall_score(y_true, y_pred_final, average=None)
-        f1score = f1_score(y_true, y_pred_final, average=None)
-        accuracy = accuracy_score(y_true, y_pred_final)
-        print(f'Precision: {precision}')
-        print(f'Recall:    {recall}')
-        print(f'F-measure: {f1score}')
-        print(f'Accuracy:  {accuracy}')
-        print(f'Classification Report:\n{classification_report(y_true, y_pred_final, digits=4)}')
-        return precision, recall, f1score, accuracy
+        return self.__print_result(y_true, y_pred_final)
 
 
 def main():
