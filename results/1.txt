@@ -1,0 +1,339 @@
+#######################
+training message:
+- dataset: `sof-4423`
+- split: pre-specified
+#######################
+
+T0: SGD+text-embedding-ada-002 & SVM+text-embedding-ada-002
+T1: RF+TF-IDF & GB+TF-IDF
+
+01. SGD + text-embedding-ada-002:
+- Model saved: SGD-text-embedding-ada-002-2023-05-21-19-54-23.pkl
+- Model loaded: SGD-text-embedding-ada-002-2023-05-21-19-54-23.pkl
+testing result:
+- Precision: [0.85797101 0.81447124 0.92986425]
+- Recall:    [0.82222222 0.86417323 0.89737991]
+- F-measure: [0.83971631 0.83858644 0.91333333]
+- Accuracy:  0.8642533936651584
+- Classification Report:
+              precision    recall  f1-score   support
+
+    negative     0.8580    0.8222    0.8397       360
+     neutral     0.8145    0.8642    0.8386       508
+    positive     0.9299    0.8974    0.9133       458
+
+    accuracy                         0.8643      1326
+   macro avg     0.8674    0.8613    0.8639      1326
+weighted avg     0.8661    0.8643    0.8647      1326
+
+
+02. SVM + text-embedding-ada-002:
+- Model saved: SVM-text-embedding-ada-002-2023-05-21-19-51-19.pkl
+- Model loaded: SVM-text-embedding-ada-002-2023-05-21-19-51-19.pkl
+testing result:
+- Precision: [0.82825485 0.82514735 0.91447368]
+- Recall:    [0.83055556 0.82677165 0.91048035]
+- F-measure: [0.82940361 0.8259587  0.91247265]
+- Accuracy:  0.8567119155354449
+- Classification Report:
+              precision    recall  f1-score   support
+
+    negative     0.8283    0.8306    0.8294       360
+     neutral     0.8251    0.8268    0.8260       508
+    positive     0.9145    0.9105    0.9125       458
+
+    accuracy                         0.8567      1326
+   macro avg     0.8560    0.8559    0.8559      1326
+weighted avg     0.8568    0.8567    0.8568      1326
+
+
+03. RF + TF-IDF:
+- Model saved: RF-local-2023-05-21-19-41-39.pkl
+- Model saved: embedding-2023-05-21-19-41-39.pkl
+- Model loaded: RF-local-2023-05-21-19-41-39.pkl
+- Model loaded: embedding-2023-05-21-19-41-39.pkl
+testing result:
+- Precision: [0.80538922 0.81422925 0.88477366]
+- Recall:    [0.74722222 0.81102362 0.93886463]
+- F-measure: [0.77521614 0.81262327 0.91101695]
+- Accuracy:  0.8378582202111614
+- Classification Report:
+              precision    recall  f1-score   support
+
+    negative     0.8054    0.7472    0.7752       360
+     neutral     0.8142    0.8110    0.8126       508
+    positive     0.8848    0.9389    0.9110       458
+
+    accuracy                         0.8379      1326
+   macro avg     0.8348    0.8324    0.8330      1326
+weighted avg     0.8362    0.8379    0.8365      1326
+
+
+04. GB + TF-IDF:
+- Model saved: GB-local-2023-05-21-19-31-03.pkl
+- Model saved: embedding-2023-05-21-19-31-03.pkl
+- Model loaded: GB-local-2023-05-21-19-31-03.pkl
+- Model loaded: embedding-2023-05-21-19-31-03.pkl
+testing result:
+- Precision: [0.83121019 0.79622642 0.87551867]
+- Recall:    [0.725      0.83070866 0.92139738]
+- F-measure: [0.77448071 0.81310212 0.89787234]
+- Accuracy:  0.8333333333333334
+- Classification Report:
+              precision    recall  f1-score   support
+
+    negative     0.8312    0.7250    0.7745       360
+     neutral     0.7962    0.8307    0.8131       508
+    positive     0.8755    0.9214    0.8979       458
+
+    accuracy                         0.8333      1326
+   macro avg     0.8343    0.8257    0.8285      1326
+weighted avg     0.8331    0.8333    0.8319      1326
+
+
+05. SGD + TF-IDF:
+- Model loaded: SGD-local-2023-05-21-19-24-12.pkl
+- Model loaded: embedding-2023-05-21-19-24-12.pkl
+testing result:
+- Precision: [0.78393352 0.7938343  0.90807175]
+- Recall:    [0.78611111 0.81102362 0.88427948]
+- F-measure: [0.7850208 0.8023369 0.8960177]
+- Accuracy:  0.8295625942684767
+- Classification Report:
+              precision    recall  f1-score   support
+
+    negative     0.7839    0.7861    0.7850       360
+     neutral     0.7938    0.8110    0.8023       508
+    positive     0.9081    0.8843    0.8960       458
+
+    accuracy                         0.8296      1326
+   macro avg     0.8286    0.8271    0.8278      1326
+weighted avg     0.8306    0.8296    0.8300      1326
+
+
+06. SVM + TF-IDF
+- Model loaded: SVM-local-2023-05-21-19-18-54.pkl
+- Model loaded: embedding-2023-05-21-19-18-54.pkl
+testing result:
+- Precision: [0.82662539 0.77962963 0.88768898]
+- Recall:    [0.74166667 0.82874016 0.89737991]
+- F-measure: [0.7818448  0.80343511 0.89250814]
+- Accuracy:  0.8288084464555053
+- Classification Report:
+              precision    recall  f1-score   support
+
+    negative     0.8266    0.7417    0.7818       360
+     neutral     0.7796    0.8287    0.8034       508
+    positive     0.8877    0.8974    0.8925       458
+
+    accuracy                         0.8288      1326
+   macro avg     0.8313    0.8226    0.8259      1326
+weighted avg     0.8297    0.8288    0.8283      1326
+
+
+07. MLP + text-embedding-ada-002:
+- Model saved: MLP-text-embedding-ada-002-2023-05-21-20-07-13.pkl
+- Model loaded: MLP-text-embedding-ada-002-2023-05-21-20-07-13.pkl
+testing result:
+- Precision: [0.80229226 0.78210117 0.88336933]
+- Recall:    [0.77777778 0.79133858 0.8930131 ]
+- F-measure: [0.78984485 0.78669276 0.88816504]
+- Accuracy:  0.8227752639517345
+- Classification Report:
+              precision    recall  f1-score   support
+
+    negative     0.8023    0.7778    0.7898       360
+     neutral     0.7821    0.7913    0.7867       508
+    positive     0.8834    0.8930    0.8882       458
+
+    accuracy                         0.8228      1326
+   macro avg     0.8226    0.8207    0.8216      1326
+weighted avg     0.8226    0.8228    0.8226      1326
+
+
+08. MLP + TF-IDF:
+- Model saved: MLP-local-2023-05-21-19-46-34.pkl
+- Model saved: embedding-2023-05-21-19-46-34.pkl
+- Model loaded: MLP-local-2023-05-21-19-46-34.pkl
+- Model loaded: embedding-2023-05-21-19-46-34.pkl
+testing result:
+- Precision: [0.77101449 0.78666667 0.89473684]
+- Recall:    [0.73888889 0.81299213 0.89082969]
+- F-measure: [0.75460993 0.79961278 0.89277899]
+- Accuracy:  0.8197586726998491
+- Classification Report:
+              precision    recall  f1-score   support
+
+    negative     0.7710    0.7389    0.7546       360
+     neutral     0.7867    0.8130    0.7996       508
+    positive     0.8947    0.8908    0.8928       458
+
+    accuracy                         0.8198      1326
+   macro avg     0.8175    0.8142    0.8157      1326
+weighted avg     0.8197    0.8198    0.8196      1326
+
+
+09. AB + TF-IDF:
+- Model saved: AB-local-2023-05-21-19-40-33.pkl
+- Model saved: embedding-2023-05-21-19-40-33.pkl
+- Model loaded: AB-local-2023-05-21-19-40-33.pkl
+- Model loaded: embedding-2023-05-21-19-40-33.pkl
+testing result:
+- Precision: [0.84027778 0.73613445 0.88939052]
+- Recall:    [0.67222222 0.86220472 0.86026201]
+- F-measure: [0.74691358 0.79419764 0.8745838 ]
+- Accuracy:  0.8099547511312217
+- Classification Report:
+              precision    recall  f1-score   support
+
+    negative     0.8403    0.6722    0.7469       360
+     neutral     0.7361    0.8622    0.7942       508
+    positive     0.8894    0.8603    0.8746       458
+
+    accuracy                         0.8100      1326
+   macro avg     0.8219    0.7982    0.8052      1326
+weighted avg     0.8173    0.8100    0.8091      1326
+
+
+10. GB + text-embedding-ada-002:
+- Model saved: GB-text-embedding-ada-002-2023-05-21-20-18-58.pkl
+- Model loaded: GB-text-embedding-ada-002-2023-05-21-20-18-58.pkl
+testing result:
+- Precision: [0.78901734 0.74060823 0.89548694]
+- Recall:    [0.75833333 0.81496063 0.8231441 ]
+- F-measure: [0.7733711  0.7760075  0.85779295]
+- Accuracy:  0.8024132730015083
+- Classification Report:
+              precision    recall  f1-score   support
+
+    negative     0.7890    0.7583    0.7734       360
+     neutral     0.7406    0.8150    0.7760       508
+    positive     0.8955    0.8231    0.8578       458
+
+    accuracy                         0.8024      1326
+   macro avg     0.8084    0.7988    0.8024      1326
+weighted avg     0.8072    0.8024    0.8035      1326
+
+
+11. DT + TF-IDF:
+- Model saved: DT-local-2023-05-21-19-43-10.pkl
+- Model saved: embedding-2023-05-21-19-43-10.pkl
+- Model loaded: DT-local-2023-05-21-19-43-10.pkl
+- Model loaded: embedding-2023-05-21-19-43-10.pkl
+testing result:
+- Precision: [0.68947368 0.78861789 0.87004405]
+- Recall:    [0.72777778 0.76377953 0.86244541]
+- F-measure: [0.70810811 0.776      0.86622807]
+- Accuracy:  0.7880844645550528
+- Classification Report:
+              precision    recall  f1-score   support
+
+    negative     0.6895    0.7278    0.7081       360
+     neutral     0.7886    0.7638    0.7760       508
+    positive     0.8700    0.8624    0.8662       458
+
+    accuracy                         0.7881      1326
+   macro avg     0.7827    0.7847    0.7834      1326
+weighted avg     0.7898    0.7881    0.7887      1326
+
+
+12. RF + text-embedding-ada-002:
+- Model saved: RF-text-embedding-ada-002-2023-05-21-19-58-06.pkl
+- Model loaded: RF-text-embedding-ada-002-2023-05-21-19-58-06.pkl
+testing result:
+- Precision: [0.8200692  0.65522388 0.91825613]
+- Recall:    [0.65833333 0.86417323 0.73580786]
+- F-measure: [0.73035439 0.74533107 0.8169697 ]
+- Accuracy:  0.7639517345399698
+- Classification Report:
+              precision    recall  f1-score   support
+
+    negative     0.8201    0.6583    0.7304       360
+     neutral     0.6552    0.8642    0.7453       508
+    positive     0.9183    0.7358    0.8170       458
+
+    accuracy                         0.7640      1326
+   macro avg     0.7978    0.7528    0.7642      1326
+weighted avg     0.7908    0.7640    0.7660      1326
+
+
+13. NB + text-embedding-ada-002:
+- Model saved: NB-text-embedding-ada-002-2023-05-21-19-53-22.pkl
+- Model loaded: NB-text-embedding-ada-002-2023-05-21-19-53-22.pkl
+testing result:
+- Precision: [0.7434555  0.67656766 0.93195266]
+- Recall:    [0.78888889 0.80708661 0.68777293]
+- F-measure: [0.76549865 0.73608618 0.79145729]
+- Accuracy:  0.7609351432880844
+- Classification Report:
+              precision    recall  f1-score   support
+
+    negative     0.7435    0.7889    0.7655       360
+     neutral     0.6766    0.8071    0.7361       508
+    positive     0.9320    0.6878    0.7915       458
+
+    accuracy                         0.7609      1326
+   macro avg     0.7840    0.7612    0.7643      1326
+weighted avg     0.7829    0.7609    0.7632      1326
+
+
+14. NB + TF-IDF:
+- Model saved: NB-local-2023-05-21-19-32-25.pkl
+- Model saved: embedding-2023-05-21-19-32-25.pkl
+- Model loaded: NB-local-2023-05-21-19-32-25.pkl
+- Model loaded: embedding-2023-05-21-19-32-25.pkl
+testing result:
+- Precision: [0.68421053 0.69670711 0.89213483]
+- Recall:    [0.57777778 0.79133858 0.86681223]
+- F-measure: [0.62650602 0.74101382 0.87929125]
+- Accuracy:  0.7594268476621417
+- Classification Report:
+              precision    recall  f1-score   support
+
+    negative     0.6842    0.5778    0.6265       360
+     neutral     0.6967    0.7913    0.7410       508
+    positive     0.8921    0.8668    0.8793       458
+
+    accuracy                         0.7594      1326
+   macro avg     0.7577    0.7453    0.7489      1326
+weighted avg     0.7608    0.7594    0.7577      1326
+
+
+15. AB + text-embedding-ada-002:
+- Model saved: AB-text-embedding-ada-002-2023-05-21-19-56-28.pkl
+- Model loaded: AB-text-embedding-ada-002-2023-05-21-19-56-28.pkl
+testing result:
+- Precision: [0.70605187 0.64310954 0.83535109]
+- Recall:    [0.68055556 0.71653543 0.75327511]
+- F-measure: [0.69306931 0.67783985 0.79219288]
+- Accuracy:  0.7194570135746606
+- Classification Report:
+              precision    recall  f1-score   support
+
+    negative     0.7061    0.6806    0.6931       360
+     neutral     0.6431    0.7165    0.6778       508
+    positive     0.8354    0.7533    0.7922       458
+
+    accuracy                         0.7195      1326
+   macro avg     0.7282    0.7168    0.7210      1326
+weighted avg     0.7266    0.7195    0.7215      1326
+
+
+16. DT + text-embedding-ada-002:
+- Model saved: DT-text-embedding-ada-002-2023-05-21-20-05-16.pkl
+- Model loaded: DT-text-embedding-ada-002-2023-05-21-20-05-16.pkl
+testing result:
+- Precision: [0.48849105 0.56224066 0.63355408]
+- Recall:    [0.53055556 0.53346457 0.62663755]
+- F-measure: [0.50865513 0.54747475 0.63007684]
+- Accuracy:  0.5648567119155354
+- Classification Report:
+              precision    recall  f1-score   support
+
+    negative     0.4885    0.5306    0.5087       360
+     neutral     0.5622    0.5335    0.5475       508
+    positive     0.6336    0.6266    0.6301       458
+
+    accuracy                         0.5649      1326
+   macro avg     0.5614    0.5636    0.5621      1326
+weighted avg     0.5668    0.5649    0.5655      1326
