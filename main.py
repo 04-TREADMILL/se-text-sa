@@ -255,13 +255,19 @@ class SentimentAnalyzer:
         model.fit(x_train, y_train)
         curr_time = datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
         if self.use_openai_emb_api:
-            with open(f'./model/{algo}-{embedder}-{curr_time}.pkl', 'wb') as model_file:
+            model_name = f'{algo}-{embedder}-{curr_time}.pkl'
+            with open(f'./model/{model_name}', 'wb') as model_file:
                 pickle.dump(model, model_file)
+            print(f'- Model saved: {model_name}')
         else:
-            with open(f'./model/{algo}-local-{curr_time}.pkl', 'wb') as model_file:
+            model_name = f'{algo}-local-{curr_time}.pkl'
+            with open(f'./model/{model_name}', 'wb') as model_file:
                 pickle.dump(model, model_file)
-            with open(f'./model/embedding-{curr_time}.pkl', 'wb') as emb_file:
+            print(f'- Model saved: {model_name}')
+            model_name = f'embedding-{curr_time}.pkl'
+            with open(f'./model/{model_name}', 'wb') as emb_file:
                 pickle.dump(self.vectorizer, emb_file)
+            print(f'- Model saved: {model_name}')
         return model
 
     def __load_model(self, algo, embedder) -> bool:
@@ -283,7 +289,7 @@ class SentimentAnalyzer:
             if classifier_model is not None:
                 with open(f'./model/{classifier_model}', 'rb') as f:
                     self.models[algo] = pickle.load(f)
-                print(f'Model loaded: {classifier_model}')
+                print(f'- Model loaded: {classifier_model}')
                 return True
             return False
         else:
@@ -304,17 +310,18 @@ class SentimentAnalyzer:
             return False
 
     @staticmethod
-    def read_data(file_name, text_index=1, label_index=2) -> Tuple[List[str], List[str]]:
+    def read_data(file_name, delimiter='\t', text_index=1, label_index=2) -> Tuple[List[str], List[str]]:
         """
         Read data from a file and extract text and label information based on provided indices.
 
         :param file_name: The name (and path if necessary) of the file to be read.
+        :param delimiter: parameter for delimiter in csv.reader()
         :param text_index: The index of the text in each line of the file. Defaults to 1.
         :param label_index: The index of the label in each line of the file. Defaults to 2.
         :return: A list of texts and a list of corresponding labels.
         """
         with open(file_name, encoding='utf-8', mode='r') as file:
-            file_reader = csv.reader(file, delimiter='\t')
+            file_reader = csv.reader(file, delimiter=delimiter)
             dataset = [(line[text_index], line[label_index]) for line in file_reader]
             texts = [data[0] for data in dataset]
             labels = [data[1] for data in dataset]
@@ -521,18 +528,26 @@ def main():
     nlp = NLP()
     analyzer = SentimentAnalyzer(nlp, use_openai_emb_api=True)
 
-    texts_1, labels_1 = analyzer.read_data('dataset/se-appreview.txt')
-    texts_2, labels_2 = analyzer.read_data('dataset/se-sof4423.txt')
-    texts, labels = analyzer.gen_dataset([texts_1, texts_2], [labels_1, labels_2])
-    texts_train, texts_test, labels_train, labels_test = analyzer.split_dataset(texts, labels)
-    #
+    texts_train, labels_train = analyzer.read_data('dataset/train3098itemPOLARITY.csv',
+                                                   delimiter=';', text_index=2, label_index=1)
+    texts_test, labels_test = analyzer.read_data('dataset/test1326itemPOLARITY.csv',
+                                                 delimiter=';', text_index=2, label_index=1)
+
+    analyzer.train('GB', texts_train, labels_train, embedder='text-embedding-ada-002')
+    analyzer.test('GB', texts_test, labels_test, embedder='text-embedding-ada-002')
+
+    # texts_1, labels_1 = analyzer.read_data('dataset/se-appreview.txt')
+    # texts_2, labels_2 = analyzer.read_data('dataset/se-sof4423.txt')
+    # texts, labels = analyzer.gen_dataset([texts_1, texts_2], [labels_1, labels_2])
+    # texts_train, texts_test, labels_train, labels_test = analyzer.split_dataset(texts, labels)
+
     # analyzer.train('DT', texts_train, labels_train, embedder='text-embedding-ada-002')
     # analyzer.test('DT', texts_test, labels_test, embedder='text-embedding-ada-002')
 
     # analyzer.train('MLP', texts_train, labels_train)
     # analyzer.test('MLP', texts_test, labels_test)
 
-    analyzer.ensemble_test(texts_test, labels_test)
+    # analyzer.ensemble_test(texts_test, labels_test)
 
     analyzer.reset()
 
