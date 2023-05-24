@@ -23,21 +23,26 @@ def main():
     text = f"""
         """
     prompt = f"""
-        Identify the emotion of each line in the software engineering text delimited by triple backticks.
-        ```{text}```
-        Classify each line of the text as '1' or '-1' or '0':
-        - '1' means it expresses positive emotion
-        - '-1' means it expresses negative emotion
-        - '0' means it is neutral
-        Provide them in JSON format with the following keys:
-        index, message, label, reason.
-        Remember that:
-        - 'index' starts from 0.
-        - 'label' is the classification result.
-        - 'message' is the first 3 words of the corresponding line in the text delimited by triple backticks.
-        - 'reason' gives a brief summary and explains how it is classified based on the summary within 10 words.
-        """
-
+    Identify the emotion of each line in the software engineering text delimited by triple backticks.
+    ```
+    {text}
+    ```
+    Classify each line of the text as '1' or '-1' or '0':
+    - '1' means it expresses positive emotion
+    - '-1' means it expresses negative emotion
+    - '0' means it is neutral
+    Provide them in JSON format with the following keys:
+    index, message, label, reason.
+    Remember that:
+    - 'index' starts from 0.
+    - 'label' is the classification result.
+    - 'message' is the first 3 words of the corresponding line in the text delimited by triple backticks.
+    - 'reason' gives a brief summary and explains how it is classified based on the summary within 10 words.
+    """
     chat = Chat()
     response = chat.chat(prompt=prompt)
     print(response)
+
+
+if __name__ == '__main__':
+    main()
