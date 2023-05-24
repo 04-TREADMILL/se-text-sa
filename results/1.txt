@@ -7,6 +7,25 @@ training message:
 T0: SGD+text-embedding-ada-002 & SVM+text-embedding-ada-002
 T1: RF+TF-IDF & GB+TF-IDF
 
+
+00. ada:ft-personal-2023-05-24-16-11-39
+testing result:
+- Precision: [0.87988827 0.87872763 0.93978495]
+- Recall:    [0.875      0.87007874 0.95414847]
+- F-measure: [0.87743733 0.8743818  0.94691224]
+- Accuracy:  0.9004524886877828
+- Classification Report:
+              precision    recall  f1-score   support
+
+    negative     0.8799    0.8750    0.8774       360
+     neutral     0.8787    0.8701    0.8744       508
+    positive     0.9398    0.9541    0.9469       458
+
+    accuracy                         0.9005      1326
+   macro avg     0.8995    0.8997    0.8996      1326
+weighted avg     0.9001    0.9005    0.9003      1326
+
+
 01. SGD + text-embedding-ada-002:
 - Model saved: SGD-text-embedding-ada-002-2023-05-21-19-54-23.pkl
 - Model loaded: SGD-text-embedding-ada-002-2023-05-21-19-54-23.pkl
@@ -27,7 +46,25 @@ testing result:
 weighted avg     0.8661    0.8643    0.8647      1326
 
 
-02. SVM + text-embedding-ada-002:
+02. ada:ft-personal-2023-05-24-14-29-32
+testing result:
+- Precision: [0.8611898  0.80036298 0.9478673 ]
+- Recall:    [0.84444444 0.86811024 0.87336245]
+- F-measure: [0.85273492 0.83286119 0.90909091]
+- Accuracy:  0.8634992458521871
+- Classification Report:
+              precision    recall  f1-score   support
+
+    negative     0.8612    0.8444    0.8527       360
+     neutral     0.8004    0.8681    0.8329       508
+    positive     0.9479    0.8734    0.9091       458
+
+    accuracy                         0.8635      1326
+   macro avg     0.8698    0.8620    0.8649      1326
+weighted avg     0.8678    0.8635    0.8646      1326
+
+
+03. SVM + text-embedding-ada-002:
 - Model saved: SVM-text-embedding-ada-002-2023-05-21-19-51-19.pkl
 - Model loaded: SVM-text-embedding-ada-002-2023-05-21-19-51-19.pkl
 testing result:
@@ -47,7 +84,7 @@ testing result:
 weighted avg     0.8568    0.8567    0.8568      1326
 
 
-03. RF + TF-IDF:
+04. RF + TF-IDF:
 - Model saved: RF-local-2023-05-21-19-41-39.pkl
 - Model saved: embedding-2023-05-21-19-41-39.pkl
 - Model loaded: RF-local-2023-05-21-19-41-39.pkl
@@ -69,7 +106,7 @@ testing result:
 weighted avg     0.8362    0.8379    0.8365      1326
 
 
-04. GB + TF-IDF:
+05. GB + TF-IDF:
 - Model saved: GB-local-2023-05-21-19-31-03.pkl
 - Model saved: embedding-2023-05-21-19-31-03.pkl
 - Model loaded: GB-local-2023-05-21-19-31-03.pkl
@@ -91,7 +128,7 @@ testing result:
 weighted avg     0.8331    0.8333    0.8319      1326
 
 
-05. SGD + TF-IDF:
+06. SGD + TF-IDF:
 - Model loaded: SGD-local-2023-05-21-19-24-12.pkl
 - Model loaded: embedding-2023-05-21-19-24-12.pkl
 testing result:
@@ -111,7 +148,7 @@ testing result:
 weighted avg     0.8306    0.8296    0.8300      1326
 
 
-06. SVM + TF-IDF
+07. SVM + TF-IDF
 - Model loaded: SVM-local-2023-05-21-19-18-54.pkl
 - Model loaded: embedding-2023-05-21-19-18-54.pkl
 testing result:
@@ -131,7 +168,7 @@ testing result:
 weighted avg     0.8297    0.8288    0.8283      1326
 
 
-07. MLP + text-embedding-ada-002:
+08. MLP + text-embedding-ada-002:
 - Model saved: MLP-text-embedding-ada-002-2023-05-21-20-07-13.pkl
 - Model loaded: MLP-text-embedding-ada-002-2023-05-21-20-07-13.pkl
 testing result:
@@ -151,7 +188,7 @@ testing result:
 weighted avg     0.8226    0.8228    0.8226      1326
 
 
-08. MLP + TF-IDF:
+09. MLP + TF-IDF:
 - Model saved: MLP-local-2023-05-21-19-46-34.pkl
 - Model saved: embedding-2023-05-21-19-46-34.pkl
 - Model loaded: MLP-local-2023-05-21-19-46-34.pkl
@@ -173,7 +210,7 @@ testing result:
 weighted avg     0.8197    0.8198    0.8196      1326
 
 
-09. AB + TF-IDF:
+10. AB + TF-IDF:
 - Model saved: AB-local-2023-05-21-19-40-33.pkl
 - Model saved: embedding-2023-05-21-19-40-33.pkl
 - Model loaded: AB-local-2023-05-21-19-40-33.pkl
@@ -195,7 +232,7 @@ testing result:
 weighted avg     0.8173    0.8100    0.8091      1326
 
 
-10. GB + text-embedding-ada-002:
+11. GB + text-embedding-ada-002:
 - Model saved: GB-text-embedding-ada-002-2023-05-21-20-18-58.pkl
 - Model loaded: GB-text-embedding-ada-002-2023-05-21-20-18-58.pkl
 testing result:
@@ -215,7 +252,7 @@ testing result:
 weighted avg     0.8072    0.8024    0.8035      1326
 
 
-11. DT + TF-IDF:
+12. DT + TF-IDF:
 - Model saved: DT-local-2023-05-21-19-43-10.pkl
 - Model saved: embedding-2023-05-21-19-43-10.pkl
 - Model loaded: DT-local-2023-05-21-19-43-10.pkl
@@ -237,7 +274,7 @@ testing result:
 weighted avg     0.7898    0.7881    0.7887      1326
 
 
-12. RF + text-embedding-ada-002:
+13. RF + text-embedding-ada-002:
 - Model saved: RF-text-embedding-ada-002-2023-05-21-19-58-06.pkl
 - Model loaded: RF-text-embedding-ada-002-2023-05-21-19-58-06.pkl
 testing result:
@@ -257,7 +294,7 @@ testing result:
 weighted avg     0.7908    0.7640    0.7660      1326
 
 
-13. NB + text-embedding-ada-002:
+14. NB + text-embedding-ada-002:
 - Model saved: NB-text-embedding-ada-002-2023-05-21-19-53-22.pkl
 - Model loaded: NB-text-embedding-ada-002-2023-05-21-19-53-22.pkl
 testing result:
@@ -277,7 +314,7 @@ testing result:
 weighted avg     0.7829    0.7609    0.7632      1326
 
 
-14. NB + TF-IDF:
+15. NB + TF-IDF:
 - Model saved: NB-local-2023-05-21-19-32-25.pkl
 - Model saved: embedding-2023-05-21-19-32-25.pkl
 - Model loaded: NB-local-2023-05-21-19-32-25.pkl
@@ -299,7 +336,25 @@ testing result:
 weighted avg     0.7608    0.7594    0.7577      1326
 
 
-15. AB + text-embedding-ada-002:
+16. gpt3.5-turbo:
+testing result:
+- Precision: [0.79069767 0.6404321  0.90718563]
+- Recall:    [0.75555556 0.81692913 0.66157205]
+- F-measure: [0.77272727 0.71799308 0.76515152]
+- Accuracy:  0.746606334841629
+- Classification Report:
+              precision    recall  f1-score   support
+
+    negative     0.7907    0.7556    0.7727       360
+     neutral     0.6404    0.8169    0.7180       508
+    positive     0.9072    0.6616    0.7652       458
+
+    accuracy                         0.7466      1326
+   macro avg     0.7794    0.7447    0.7520      1326
+weighted avg     0.7734    0.7466    0.7491      1326
+
+
+17. AB + text-embedding-ada-002:
 - Model saved: AB-text-embedding-ada-002-2023-05-21-19-56-28.pkl
 - Model loaded: AB-text-embedding-ada-002-2023-05-21-19-56-28.pkl
 testing result:
@@ -319,7 +374,7 @@ testing result:
 weighted avg     0.7266    0.7195    0.7215      1326
 
 
-16. DT + text-embedding-ada-002:
+18. DT + text-embedding-ada-002:
 - Model saved: DT-text-embedding-ada-002-2023-05-21-20-05-16.pkl
 - Model loaded: DT-text-embedding-ada-002-2023-05-21-20-05-16.pkl
 testing result:
