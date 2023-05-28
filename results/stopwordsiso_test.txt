@@ -1,0 +1,233 @@
+######################################################
+training message:
+- dataset: `app-review`+`sof-4423` mixed
+- split: train-test-split 6:4 random-seed 42
+- preprocess: SentiCR
+- classifier: LinearSVC
+- embedding: TF-IDF
+- stop-words: stopwords_nltk
+- SVM
+
+testing result:
+Model loaded: SVM-local-2023-05-17-22-18-07.pkl
+Model loaded: embedding-2023-05-17-22-18-07.pkl
+testing result:
+- Precision: [0.74505929 0.72739917 0.86490455]
+- Recall:    [0.70864662 0.76798825 0.84992785]
+- F-measure: [0.72639692 0.74714286 0.8573508 ]
+- Accuracy:  0.7812172088142707
+- Classification Report:
+              precision    recall  f1-score   support
+
+          -1     0.7451    0.7086    0.7264       532
+           0     0.7274    0.7680    0.7471       681
+           1     0.8649    0.8499    0.8574       693
+
+    accuracy                         0.7812      1906
+   macro avg     0.7791    0.7755    0.7770      1906
+weighted avg     0.7823    0.7812    0.7814      1906
+
+
+######################################################
+training message:
+- dataset: `app-review`+`sof-4423` mixed
+- split: train-test-split 6:4 random-seed 42
+- preprocess: SentiCR
+- classifier: LinearSVC
+- embedding: TF-IDF
+- stop-words: stopwordsiso
+- NB
+
+testing result:
+Model loaded: NB-local-2023-05-18-23-22-38.pkl
+Model loaded: embedding-2023-05-18-23-22-38.pkl
+testing result:
+- Precision: [0.63090129 0.68188105 0.82426778]
+- Recall:    [0.55263158 0.72393539 0.85281385]
+- F-measure: [0.58917836 0.7022792  0.83829787]
+- Accuracy:  0.7229800629590766
+- Classification Report:
+              precision    recall  f1-score   support
+
+          -1     0.6309    0.5526    0.5892       532
+           0     0.6819    0.7239    0.7023       681
+           1     0.8243    0.8528    0.8383       693
+
+    accuracy                         0.7230      1906
+   macro avg     0.7124    0.7098    0.7099      1906
+weighted avg     0.7194    0.7230    0.7202      1906
+
+######################################################
+training message:
+- dataset: `app-review`+`sof-4423` mixed
+- split: train-test-split 6:4 random-seed 42
+- preprocess: SentiCR
+- classifier: LinearSVC
+- embedding: TF-IDF
+- stop-words: stopwordsiso
+- SGD
+
+testing result:
+Model loaded: SGD-local-2023-05-18-23-23-24.pkl
+Model loaded: embedding-2023-05-18-23-23-24.pkl
+testing result:
+- Precision: [0.72407407 0.74160584 0.86343612]
+- Recall:    [0.73496241 0.74596182 0.84848485]
+- F-measure: [0.72947761 0.74377745 0.8558952 ]
+- Accuracy:  0.7801678908709339
+- Classification Report:
+              precision    recall  f1-score   support
+
+          -1     0.7241    0.7350    0.7295       532
+           0     0.7416    0.7460    0.7438       681
+           1     0.8634    0.8485    0.8559       693
+
+    accuracy                         0.7802      1906
+   macro avg     0.7764    0.7765    0.7764      1906
+weighted avg     0.7810    0.7802    0.7806      1906
+
+
+######################################################
+training message:
+- dataset: `app-review`+`sof-4423` mixed
+- split: train-test-split 6:4 random-seed 42
+- preprocess: SentiCR
+- classifier: LinearSVC
+- embedding: TF-IDF
+- stop-words: stopwordsiso
+- AB
+
+testing result:
+Model loaded: AB-local-2023-05-18-23-15-22.pkl
+Model loaded: embedding-2023-05-18-23-15-22.pkl
+testing result:
+- Precision: [0.79391101 0.72083879 0.82960894]
+- Recall:    [0.63721805 0.80763583 0.85714286]
+- F-measure: [0.70698644 0.76177285 0.84315117]
+- Accuracy:  0.7780692549842603
+- Classification Report:
+              precision    recall  f1-score   support
+
+          -1     0.7939    0.6372    0.7070       532
+           0     0.7208    0.8076    0.7618       681
+           1     0.8296    0.8571    0.8432       693
+
+    accuracy                         0.7781      1906
+   macro avg     0.7815    0.7673    0.7706      1906
+weighted avg     0.7808    0.7781    0.7761      1906
+
+######################################################
+training message:
+- dataset: `app-review`+`sof-4423` mixed
+- split: train-test-split 6:4 random-seed 42
+- preprocess: SentiCR
+- classifier: LinearSVC
+- embedding: TF-IDF
+- stop-words: stopwordsiso
+- RF
+
+testing result:
+Model loaded: RF-local-2023-05-18-23-16-33.pkl
+Model loaded: embedding-2023-05-18-23-16-33.pkl
+testing result:
+- Precision: [0.8202765  0.77524893 0.82964889]
+- Recall:    [0.66917293 0.80029369 0.92063492]
+- F-measure: [0.73706004 0.78757225 0.87277702]
+- Accuracy:  0.8074501573976915
+- Classification Report:
+              precision    recall  f1-score   support
+
+          -1     0.8203    0.6692    0.7371       532
+           0     0.7752    0.8003    0.7876       681
+           1     0.8296    0.9206    0.8728       693
+
+    accuracy                         0.8075      1906
+   macro avg     0.8084    0.7967    0.7991      1906
+weighted avg     0.8076    0.8075    0.8045      1906
+
+######################################################
+training message:
+- dataset: `app-review`+`sof-4423` mixed
+- split: train-test-split 6:4 random-seed 42
+- preprocess: SentiCR
+- classifier: LinearSVC
+- embedding: TF-IDF
+- stop-words: stopwordsiso
+- GB
+
+testing result:
+Model loaded: GB-local-2023-05-18-23-18-43.pkl
+Model loaded: embedding-2023-05-18-23-18-43.pkl
+testing result:
+- Precision: [0.83962264 0.75       0.83153639]
+- Recall:    [0.66917293 0.81497797 0.89033189]
+- F-measure: [0.74476987 0.78114004 0.85993031]
+- Accuracy:  0.8016789087093389
+- Classification Report:
+              precision    recall  f1-score   support
+
+          -1     0.8396    0.6692    0.7448       532
+           0     0.7500    0.8150    0.7811       681
+           1     0.8315    0.8903    0.8599       693
+
+    accuracy                         0.8017      1906
+   macro avg     0.8071    0.7915    0.7953      1906
+weighted avg     0.8047    0.8017    0.7996      1906
+
+######################################################
+training message:
+- dataset: `app-review`+`sof-4423` mixed
+- split: train-test-split 6:4 random-seed 42
+- preprocess: SentiCR
+- classifier: LinearSVC
+- embedding: TF-IDF
+- stop-words: stopwordsiso
+- DT
+
+testing result:
+Model loaded: DT-local-2023-05-18-23-20-16.pkl
+Model loaded: embedding-2023-05-18-23-20-16.pkl
+testing result:
+- Precision: [0.67773438 0.71037464 0.80142857]
+- Recall:    [0.65225564 0.72393539 0.80952381]
+- F-measure: [0.66475096 0.71709091 0.80545585]
+- Accuracy:  0.7350472193074502
+- Classification Report:
+              precision    recall  f1-score   support
+
+          -1     0.6777    0.6523    0.6648       532
+           0     0.7104    0.7239    0.7171       681
+           1     0.8014    0.8095    0.8055       693
+
+    accuracy                         0.7350      1906
+   macro avg     0.7298    0.7286    0.7291      1906
+weighted avg     0.7344    0.7350    0.7346      1906
+
+######################################################
+training message:
+- dataset: `app-review`+`sof-4423` mixed
+- split: train-test-split 6:4 random-seed 42
+- preprocess: SentiCR
+- classifier: LinearSVC
+- embedding: TF-IDF
+- stop-words: stopwordsiso
+- MLP
+
+testing result:
+Model loaded: MLP-local-2023-05-18-23-21-18.pkl
+Model loaded: embedding-2023-05-18-23-21-18.pkl
+testing result:
+- Precision: [0.70955166 0.70876672 0.80972222]
+- Recall:    [0.68421053 0.70044053 0.84126984]
+- F-measure: [0.69665072 0.70457903 0.82519462]
+- Accuracy:  0.7471143756558237
+- Classification Report:
+              precision    recall  f1-score   support
+
+          -1     0.7096    0.6842    0.6967       532
+           0     0.7088    0.7004    0.7046       681
+           1     0.8097    0.8413    0.8252       693
+
+    accuracy                         0.7471      1906
+   macro avg     0.7427    0.7420    0.7421      1906
+weighted avg     0.7457    0.7471    0.7462      1906

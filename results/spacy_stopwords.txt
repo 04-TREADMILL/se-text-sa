@@ -1,0 +1,215 @@
+######################################################
+training message:
+- dataset: `app-review`+`sof-4423` mixed
+- split: train-test-split 6:4 random-seed 42
+- preprocess: None
+- classifier: LinearSVC
+- embedding: text-embedding-ada-002
+
+testing result:
+Model loaded: SVM-local-2023-05-20-19-55-42.pkl
+Model loaded: embedding-2023-05-20-19-55-42.pkl
+testing result:
+- Precision: [0.75332068 0.74927536 0.88534107]
+- Recall:    [0.7462406  0.75917768 0.88023088]
+- F-measure: [0.74976393 0.75419402 0.88277858]
+- Accuracy:  0.7995802728226653
+- Classification Report:
+              precision    recall  f1-score   support
+
+          -1     0.7533    0.7462    0.7498       532
+           0     0.7493    0.7592    0.7542       681
+           1     0.8853    0.8802    0.8828       693
+
+    accuracy                         0.7996      1906
+   macro avg     0.7960    0.7952    0.7956      1906
+weighted avg     0.7999    0.7996    0.7997      1906
+
+######################################################
+training message:
+- dataset: `app-review`+`sof-4423` mixed
+- split: train-test-split 6:4 random-seed 42
+- preprocess: None
+- classifier: LinearSVC
+- embedding: text-embedding-ada-002
+
+testing result:
+Model loaded: NB-local-2023-05-20-19-56-55.pkl
+Model loaded: embedding-2023-05-20-19-56-55.pkl
+testing result:
+- Precision: [0.64757709 0.66358839 0.86887608]
+- Recall:    [0.55263158 0.73861968 0.87012987]
+- F-measure: [0.59634888 0.69909659 0.86950252]
+- Accuracy:  0.7345225603357818
+- Classification Report:
+              precision    recall  f1-score   support
+
+          -1     0.6476    0.5526    0.5963       532
+           0     0.6636    0.7386    0.6991       681
+           1     0.8689    0.8701    0.8695       693
+
+    accuracy                         0.7345      1906
+   macro avg     0.7267    0.7205    0.7216      1906
+weighted avg     0.7338    0.7345    0.7324      1906
+
+######################################################
+training message:
+- dataset: `app-review`+`sof-4423` mixed
+- split: train-test-split 6:4 random-seed 42
+- preprocess: None
+- classifier: LinearSVC
+- embedding: text-embedding-ada-002
+
+testing result:
+Model loaded: SGD-local-2023-05-20-19-57-58.pkl
+Model loaded: embedding-2023-05-20-19-57-58.pkl
+testing result:
+- Precision: [0.7251773  0.75519288 0.9011976 ]
+- Recall:    [0.76879699 0.74743025 0.86868687]
+- F-measure: [0.74635036 0.75129151 0.88464364]
+- Accuracy:  0.7974816369359916
+- Classification Report:
+              precision    recall  f1-score   support
+
+          -1     0.7252    0.7688    0.7464       532
+           0     0.7552    0.7474    0.7513       681
+           1     0.9012    0.8687    0.8846       693
+
+    accuracy                         0.7975      1906
+   macro avg     0.7939    0.7950    0.7941      1906
+weighted avg     0.7999    0.7975    0.7984      1906
+
+######################################################
+training message:
+- dataset: `app-review`+`sof-4423` mixed
+- split: train-test-split 6:4 random-seed 42
+- preprocess: None
+- classifier: LinearSVC
+- embedding: text-embedding-ada-002
+
+testing result:
+Model loaded: AB-local-2023-05-20-19-58-47.pkl
+Model loaded: embedding-2023-05-20-19-58-47.pkl
+testing result:
+- Precision: [0.77853881 0.70191083 0.86090776]
+- Recall:    [0.64097744 0.80910426 0.84848485]
+- F-measure: [0.70309278 0.75170532 0.85465116]
+- Accuracy:  0.776495278069255
+- Classification Report:
+              precision    recall  f1-score   support
+
+          -1     0.7785    0.6410    0.7031       532
+           0     0.7019    0.8091    0.7517       681
+           1     0.8609    0.8485    0.8547       693
+
+    accuracy                         0.7765      1906
+   macro avg     0.7805    0.7662    0.7698      1906
+weighted avg     0.7811    0.7765    0.7756      1906
+
+######################################################
+training message:
+- dataset: `app-review`+`sof-4423` mixed
+- split: train-test-split 6:4 random-seed 42
+- preprocess: None
+- classifier: LinearSVC
+- embedding: text-embedding-ada-002
+
+testing result:
+Model loaded: RF-local-2023-05-20-19-59-35.pkl
+Model loaded: embedding-2023-05-20-19-59-35.pkl
+testing result:
+- Precision: [0.80851064 0.78343023 0.85427807]
+- Recall:    [0.71428571 0.79148311 0.92207792]
+- F-measure: [0.75848303 0.78743608 0.88688411]
+- Accuracy:  0.8174186778593914
+- Classification Report:
+              precision    recall  f1-score   support
+
+          -1     0.8085    0.7143    0.7585       532
+           0     0.7834    0.7915    0.7874       681
+           1     0.8543    0.9221    0.8869       693
+
+    accuracy                         0.8174      1906
+   macro avg     0.8154    0.8093    0.8109      1906
+weighted avg     0.8162    0.8174    0.8155      1906
+
+######################################################
+training message:
+- dataset: `app-review`+`sof-4423` mixed
+- split: train-test-split 6:4 random-seed 42
+- preprocess: None
+- classifier: LinearSVC
+- embedding: text-embedding-ada-002
+
+testing result:
+Model loaded: GB-local-2023-05-20-20-02-04.pkl
+Model loaded: embedding-2023-05-20-20-02-04.pkl
+testing result:
+- Precision: [0.83783784 0.75335121 0.86871508]
+- Recall:    [0.69924812 0.82525698 0.8975469 ]
+- F-measure: [0.76229508 0.78766643 0.88289567]
+- Accuracy:  0.8163693599160545
+- Classification Report:
+              precision    recall  f1-score   support
+
+          -1     0.8378    0.6992    0.7623       532
+           0     0.7534    0.8253    0.7877       681
+           1     0.8687    0.8975    0.8829       693
+
+    accuracy                         0.8164      1906
+   macro avg     0.8200    0.8074    0.8110      1906
+weighted avg     0.8189    0.8164    0.8152      1906
+
+######################################################
+training message:
+- dataset: `app-review`+`sof-4423` mixed
+- split: train-test-split 6:4 random-seed 42
+- preprocess: None
+- classifier: LinearSVC
+- embedding: text-embedding-ada-002
+
+testing result:
+Model loaded: DT-local-2023-05-20-20-00-37.pkl
+Model loaded: embedding-2023-05-20-20-00-37.pkl
+testing result:
+- Precision: [0.65692008 0.69662921 0.84287812]
+- Recall:    [0.63345865 0.72834068 0.82828283]
+- F-measure: [0.64497608 0.71213209 0.83551674]
+- Accuracy:  0.7381951731374606
+- Classification Report:
+              precision    recall  f1-score   support
+
+          -1     0.6569    0.6335    0.6450       532
+           0     0.6966    0.7283    0.7121       681
+           1     0.8429    0.8283    0.8355       693
+
+    accuracy                         0.7382      1906
+   macro avg     0.7321    0.7300    0.7309      1906
+weighted avg     0.7387    0.7382    0.7382      1906
+
+######################################################
+training message:
+- dataset: `app-review`+`sof-4423` mixed
+- split: train-test-split 6:4 random-seed 42
+- preprocess: None
+- classifier: LinearSVC
+- embedding: text-embedding-ada-002
+
+testing result:
+Model loaded: MLP-local-2023-05-20-19-54-43.pkl
+Model loaded: embedding-2023-05-20-19-54-43.pkl
+testing result:
+- Precision: [0.70175439 0.69230769 0.87315634]
+- Recall:    [0.67669173 0.72687225 0.85425685]
+- F-measure: [0.68899522 0.70916905 0.86360321]
+- Accuracy:  0.7591815320041972
+- Classification Report:
+              precision    recall  f1-score   support
+
+          -1     0.7018    0.6767    0.6890       532
+           0     0.6923    0.7269    0.7092       681
+           1     0.8732    0.8543    0.8636       693
+
+    accuracy                         0.7592      1906
+   macro avg     0.7557    0.7526    0.7539      1906
+weighted avg     0.7607    0.7592    0.7597      1906
