@@ -1,4 +1,5 @@
 import csv
+import json
 import os
 import pickle
 import re
@@ -14,6 +15,10 @@ from scipy.stats import mode
 from nltk.stem.snowball import SnowballStemmer
 
 from sklearn.model_selection import train_test_split
+from textattack.augmentation import EmbeddingAugmenter
+from textattack.transformations import WordSwapRandomCharacterDeletion
+from textattack.transformations import CompositeTransformation
+from textattack.augmentation import Augmenter
 
 from openai.embeddings_utils import get_embeddings, get_embedding
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -35,6 +40,7 @@ from sklearn.metrics import precision_score
 from sklearn.metrics import f1_score
 from sklearn.metrics import classification_report
 
+from preProcessing import PreProcessor
 # from sklearn.model_selection import KFold
 
 warnings.filterwarnings("ignore")
@@ -44,6 +50,9 @@ openai.api_key = os.getenv('OPENAI_API_KEY')
 nltk.download('universal_tagset', quiet=True)
 nltk.download('averaged_perceptron_tagger', quiet=True)
 nltk.download('punkt', quiet=True)
+nltk.download('stopwords', quiet=True)
+
+os.makedirs('./model/', exist_ok=True)
 
 
 class NLP:
@@ -201,6 +210,9 @@ class NLP:
         text = self.__remove_url(text)
         text = self.__replace_emoticon(text)
         text = self.__handle_negation(text)
+        preProcessor=PreProcessor()
+        text = preProcessor.replace_PROPN(text)
+        text = preProcessor.replace_entity(text)
         return text
 
 
@@ -255,13 +267,19 @@ class SentimentAnalyzer:
         model.fit(x_train, y_train)
         curr_time = datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
         if self.use_openai_emb_api:
-            with open(f'./model/{algo}-{embedder}-{curr_time}.pkl', 'wb') as model_file:
+            model_name = f'{algo}-{embedder}-{curr_time}.pkl'
+            with open(f'./model/{model_name}', 'wb') as model_file:
                 pickle.dump(model, model_file)
+            print(f'- Model saved: {model_name}')
         else:
-            with open(f'./model/{algo}-local-{curr_time}.pkl', 'wb') as model_file:
+            model_name = f'{algo}-local-{curr_time}.pkl'
+            with open(f'./model/{model_name}', 'wb') as model_file:
                 pickle.dump(model, model_file)
-            with open(f'./model/embedding-{curr_time}.pkl', 'wb') as emb_file:
+            print(f'- Model saved: {model_name}')
+            model_name = f'embedding-{curr_time}.pkl'
+            with open(f'./model/{model_name}', 'wb') as emb_file:
                 pickle.dump(self.vectorizer, emb_file)
+            print(f'- Model saved: {model_name}')
         return model
 
     def __load_model(self, algo, embedder) -> bool:
@@ -283,7 +301,7 @@ class SentimentAnalyzer:
             if classifier_model is not None:
                 with open(f'./model/{classifier_model}', 'rb') as f:
                     self.models[algo] = pickle.load(f)
-                print(f'Model loaded: {classifier_model}')
+                print(f'- Model loaded: {classifier_model}')
                 return True
             return False
         else:
@@ -298,23 +316,24 @@ class SentimentAnalyzer:
                         open(f'./model/{embedding_model}', 'rb') as f2:
                     self.models[algo] = pickle.load(f1)
                     self.vectorizer = pickle.load(f2)
-                print(f'Model loaded: {classifier_model}')
-                print(f'Model loaded: {embedding_model}')
+                print(f'- Model loaded: {classifier_model}')
+                print(f'- Model loaded: {embedding_model}')
                 return True
             return False
 
     @staticmethod
-    def read_data(file_name, text_index=1, label_index=2) -> Tuple[List[str], List[str]]:
+    def read_data(file_name, delimiter='\t', text_index=1, label_index=2) -> Tuple[List[str], List[str]]:
         """
         Read data from a file and extract text and label information based on provided indices.
 
         :param file_name: The name (and path if necessary) of the file to be read.
+        :param delimiter: parameter for delimiter in csv.reader()
         :param text_index: The index of the text in each line of the file. Defaults to 1.
         :param label_index: The index of the label in each line of the file. Defaults to 2.
         :return: A list of texts and a list of corresponding labels.
         """
         with open(file_name, encoding='utf-8', mode='r') as file:
-            file_reader = csv.reader(file, delimiter='\t')
+            file_reader = csv.reader(file, delimiter=delimiter)
             dataset = [(line[text_index], line[label_index]) for line in file_reader]
             texts = [data[0] for data in dataset]
             labels = [data[1] for data in dataset]
@@ -471,6 +490,74 @@ class SentimentAnalyzer:
             y_pred = np.array(y_pred)
             return self.__print_result(y_true, y_pred)
 
+    def run_gpt(self, text: str):
+        prompt = f"""
+        Identify the emotion of the software engineering text delimited by triple backticks.
+        ```{text}```
+        Classify it as 'positive' or 'negative' or 'neutral'.
+        Provide answer in JSON format with key 'label', which is the classification result.
+        """
+        messages = [{'role': 'user', 'content': prompt}]
+        print('Waiting for response from chatGPT ...')
+        response = openai.ChatCompletion.create(
+            model='gpt-3.5-turbo',
+            messages=messages,
+            temperature=0
+        )
+        result = response.choices[0].message['content']
+        result = result[result.find('{'):result.rfind('}') + 1]
+        result = json.loads(result)
+        print(result['label'])
+
+    def test_chatgpt(self, texts: List[str], y_true: List[str], start=0):
+        y_pred = []
+        for i in range(start, len(texts)):
+            text = texts[i]
+            prompt = f"""
+            Identify the emotion of the software engineering text delimited by triple backticks.
+            ```{text}```
+            Classify it as 'positive' or 'negative' or 'neutral'.
+            Provide answer in JSON format with key 'label', which is the classification result.
+            """
+            messages = [{'role': 'user', 'content': prompt}]
+            print(f'Waiting for response from chatGPT ... {i}')
+            response = openai.ChatCompletion.create(
+                model='gpt-3.5-turbo',
+                messages=messages,
+                temperature=0
+            )
+            result = response.choices[0].message['content']
+            result = result[result.find('{'):result.rfind('}') + 1]
+            result = json.loads(result)
+            y_pred.append(result['label'])
+            print(str(i) + ': ' + str(y_pred))
+        y_true = np.array(y_true)
+        y_pred = np.array(y_pred)
+        return self.__print_result(y_true, y_pred)
+
+    def test_fine_tune(self, texts: List[str], y_true: List[str],
+                       fine_tune_model='ada:ft-personal-2023-05-24-16-11-39', special_prompt=' ->'):
+        y_pred = []
+        for i in range(len(texts)):
+            text = texts[i]
+            print(f'Testing {i}')
+            response = openai.Completion.create(
+                model=fine_tune_model,
+                prompt=text + special_prompt,
+                temperature=0,
+                max_tokens=1,
+            )
+            result = response['choices'][0]['text']
+            if 'negative' in result:
+                y_pred.append('negative')
+            elif 'positive' in result:
+                y_pred.append('positive')
+            else:
+                y_pred.append('neutral')
+        y_true = np.array(y_true)
+        y_pred = np.array(y_pred)
+        return self.__print_result(y_true, y_pred)
+
     def reset(self):
         """
         Reset the state of the instance by clearing all loaded models and vectorizer.
@@ -519,22 +606,55 @@ class SentimentAnalyzer:
 
 def main():
     nlp = NLP()
-    analyzer = SentimentAnalyzer(nlp, use_openai_emb_api=True)
+    analyzer = SentimentAnalyzer(nlp, use_openai_emb_api=False)
 
-    texts_1, labels_1 = analyzer.read_data('dataset/se-appreview.txt')
-    texts_2, labels_2 = analyzer.read_data('dataset/se-sof4423.txt')
-    texts, labels = analyzer.gen_dataset([texts_1, texts_2], [labels_1, labels_2])
-    texts_train, texts_test, labels_train, labels_test = analyzer.split_dataset(texts, labels)
-    #
+    texts_train, labels_train = analyzer.read_data('dataset/train3098itemPOLARITY_augmented0.csv',
+                                                   delimiter=';', text_index=2, label_index=1)
+    texts_test, labels_test = analyzer.read_data('dataset/test1326itemPOLARITY.csv',
+                                                 delimiter=';', text_index=2, label_index=1)
+    # texts_train_augmented = []
+    # labels_train_augmented = []
+    # augmenter = EmbeddingAugmenter(transformations_per_example=2)
+    # index = 0
+    # print('start augment')
+    # for text, label in zip(texts_train, labels_train):
+    #     text_aug_res = augmenter.augment(text)
+    #     label_aug_res = [label] * len(text_aug_res)
+    #     texts_train_augmented.extend(text_aug_res)
+    #     labels_train_augmented.extend(label_aug_res)
+    #     print(f'finish augment text {index}')
+    #     index += 1
+    # print('finish augment')
+    # with open('dataset/train3098itemPOLARITY_augmented0.csv', mode='w', encoding='utf-8') as f:
+    #     for text, label in zip(texts_train_augmented, labels_train_augmented):
+    #         line = f'xx;{label};{text}\n'
+    #         f.write(line)
+    # f.close()
+
+    # analyzer.train('GB', texts_train, labels_train)
+    # analyzer.test('GB', texts_test, labels_test)
+
+    # analyzer.test_gpt(texts_test, labels_test)
+
+    # analyzer.test_fine_tune(texts_test, labels_test)
+
+    # analyzer.train('GB', texts_train, labels_train, embedder='text-embedding-ada-002')
+    # analyzer.test('GB', texts_test, labels_test, embedder='text-embedding-ada-002')
+
+    # texts_1, labels_1 = analyzer.read_data('dataset/se-appreview.txt')
+    # texts_2, labels_2 = analyzer.read_data('dataset/se-sof4423.txt')
+    # texts, labels = analyzer.gen_dataset([texts_1, texts_2], [labels_1, labels_2])
+    # texts_train, texts_test, labels_train, labels_test = analyzer.split_dataset(texts, labels)
+
     # analyzer.train('DT', texts_train, labels_train, embedder='text-embedding-ada-002')
     # analyzer.test('DT', texts_test, labels_test, embedder='text-embedding-ada-002')
 
     # analyzer.train('MLP', texts_train, labels_train)
     # analyzer.test('MLP', texts_test, labels_test)
 
-    analyzer.ensemble_test(texts_test, labels_test)
+    # analyzer.ensemble_test(texts_test, labels_test)
 
-    analyzer.reset()
+    # analyzer.reset()
 
 
 if __name__ == '__main__':
