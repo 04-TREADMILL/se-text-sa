@@ -40,6 +40,9 @@ from sklearn.metrics import precision_score
 from sklearn.metrics import f1_score
 from sklearn.metrics import classification_report
 
+from preProcessing import PreProcessor
+# from sklearn.model_selection import KFold
+
 warnings.filterwarnings("ignore")
 
 openai.api_key = os.getenv('OPENAI_API_KEY')
@@ -207,6 +210,9 @@ class NLP:
         text = self.__remove_url(text)
         text = self.__replace_emoticon(text)
         text = self.__handle_negation(text)
+        preProcessor=PreProcessor()
+        text = preProcessor.replace_PROPN(text)
+        text = preProcessor.replace_entity(text)
         return text
 
 
