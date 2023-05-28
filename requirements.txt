@@ -1,0 +1,6 @@
+python
+nltk
+numpy
+openai
+scikit-learn
+textattack

@@ -1,92 +1,170 @@
-# SE-Text-SA
+# SE-Text-Sentiment-Analysis
 
+针对软件工程文本进行情绪分析，具体表现为使用分类模型将文本分类为 `positive`、`negative` 和 `neutral`
 
+代码框架和基本处理思路来自于：https://github.com/senticr/SentiCR
 
-## Getting started
+#### 处理思路
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+- 对文本数据进行预处理
+- 将预处理后的文本数据嵌入成向量
+- 将数据集划分成训练集和测试集
+- 使用训练集训练一个三分类器
+- 将训练好的模型在测试集上进行测试
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+#### 可以推进的点
 
-## Add your files
+- 方向一：预处理，尝试不同的文本预处理方法
+- 方向二：文本嵌入，尝试不同的嵌入方法或模型
+- 方向三：分类器，尝试不同的分类器算法
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+#### 基于 SentiCR
+
+- 使用 NLP 算法，进行展开缩写、去除 URL 等预处理（方向一）
+- 使用 TF-IDF 的方法将文本转化为向量（方向二）
+- 使用 sklearn 库中不同的分类器进行训练和测试（方向三）
+
+#### 个人尝试
+
+- 使用 OpenAI 的 embedding 模型将文本嵌入成向量（需要用到 OpenAI API）（方向二）
+- 将新的文本嵌入方法与 sklearn 库中不同的分类器组合进行训练和测试（方向三）
+
+#### 新思路
+
+- 通过 Prompt 的方式，使用 ChatGPT 端到端地完成分类
+- 使用训练集对 GPT3 模型进行微调，端到端地完成分类
+
+#### 实验方式
+
+对不同的文本向量化方法，分别训练一系列不同的分类器，比较预测效果
+
+注：由于经过 SentiCR 的预处理后的文本在使用 OpenAI 的 embedding 模型进行向量嵌入时遇到了报错，并且考虑到一条文本通过该模型被嵌入到对应向量空间时一定程度上自带有语义信息，所以在使用 OpenAI 的 embedding 模型时没有进行文本预处理步骤
+
+#### 实验结果
+
+**实验一**：
+
+- 使用迭代二中助教提供的软工文本数据集 `sof4423` 和 `app-review`，将两者合并打乱并按照 6:4 的比例划分为训练集和测试集
+- 文本向量化方法选用 TF-IDF 方法和 OpenAI 的 text-embedding-ada-002 模型，分类算法选择 sklearn 库中可以调用的一系列机器学习分类器（LinearSVC, BernoulliNB, SGDClassifier, AdaBoostClassifier, RandomForestClassifier, GradientBoostingClassifier, DecisionTreeClassifier, MLPClassifier），两两组合记录预测结果
+- 实验数据：（详细数据见 `./results/0.txt`）
+
+| 排名 | 文本向量化方法         | 分类器算法                 | 预测准确率 |
+| ---- | ---------------------- | -------------------------- | ---------- |
+| 1    | text-embedding-ada-002 | LinearSVC                  | **85.52%** |
+| 2    | text-embedding-ada-002 | SGDClassifier              | **85.20%** |
+| 3    | TF-IDF                 | GradientBoostingClassifier | **82.00%** |
+| 4    | TF-IDF                 | RandomForestClassifier     | 81.85%     |
+| 5    | text-embedding-ada-002 | MLPClassifier              | 81.69%     |
+| 6    | text-embedding-ada-002 | GradientBoostingClassifier | 79.80%     |
+| 7    | TF-IDF                 | LinearSVC                  | 79.22%     |
+| 8    | TF-IDF                 | SGDClassifier              | 78.17%     |
+| 9    | TF-IDF                 | AdaBoostClassifier         | 78.12%     |
+| 10   | text-embedding-ada-002 | RandomForestClassifier     | 77.96%     |
+| 11   | TF-IDF                 | MLPClassifier              | 76.76%     |
+| 12   | text-embedding-ada-002 | BernoulliNB                | 76.71%     |
+| 13   | TF-IDF                 | DecisionTreeClassifier     | 74.92%     |
+| 14   | text-embedding-ada-002 | AdaBoostClassifier         | 72.51%     |
+| 15   | TF-IDF                 | BernoulliNB                | 71.09%     |
+| 16   | text-embedding-ada-002 | DecisionTreeClassifier     | 58.03%     |
+
+**实验二**：
+
+- 使用助教指定的训练集和测试集（由数据集 `sof4423` 预划分而来）
+- 文本向量化方法选用 TF-IDF 方法和 OpenAI 的 text-embedding-ada-002 模型，分类算法选择 sklearn 库中可以调用的一系列机器学习分类器（LinearSVC, BernoulliNB, SGDClassifier, AdaBoostClassifier, RandomForestClassifier, GradientBoostingClassifier, DecisionTreeClassifier, MLPClassifier），两两组合记录预测结果
+- 实验数据：（详细数据见 `./results/1.txt`）
+
+| 排名 | 文本向量化方法         | 分类器算法                 | 预测准确率 |
+| ---- | ---------------------- | -------------------------- | ---------- |
+| 1    | text-embedding-ada-002 | SGDClassifier              | **86.43%** |
+| 2    | text-embedding-ada-002 | LinearSVC                  | **85.67%** |
+| 3    | TF-IDF                 | RandomForestClassifier     | **83.79%** |
+| 4    | TF-IDF                 | GradientBoostingClassifier | **83.33%** |
+| 5    | TF-IDF                 | SGDClassifier              | **82.96%** |
+| 6    | TF-IDF                 | LinearSVC                  | **82.88%** |
+| 7    | text-embedding-ada-002 | MLPClassifier              | **82.28%** |
+| 8    | TF-IDF                 | MLPClassifier              | 81.98%     |
+| 9    | TF-IDF                 | AdaBoostClassifier         | 81.00%     |
+| 10   | text-embedding-ada-002 | GradientBoostingClassifier | 80.24%     |
+| 11   | TF-IDF                 | DecisionTreeClassifier     | 78.81%     |
+| 12   | text-embedding-ada-002 | RandomForestClassifier     | 76.40%     |
+| 13   | text-embedding-ada-002 | BernoulliNB                | 76.09%     |
+| 14   | TF-IDF                 | BernoulliNB                | 75.94%     |
+| 15   | text-embedding-ada-002 | AdaBoostClassifier         | 71.95%     |
+| 16   | text-embedding-ada-002 | DecisionTreeClassifier     | 56.49%     |
+
+**实验三**：
+
+- 使用助教指定的训练集和测试集（由数据集 `sof4423` 预划分而来）
+- 通过 Prompt 的方式，直接使用 ChatGPT（gpt-3.5-turbo）完成端到端的软工文本情绪分类任务（需要用到 OpenAI API）
+
+~~~python
+import json
+import openai
+
+text = '<text under test>'
+prompt = f"""
+Identify the emotion of the software engineering text delimited by triple backticks.
+ ```{text}```
+Classify it as 'positive' or 'negative' or 'neutral'.
+Provide answer in JSON format with key 'label', which is the classification result.
+"""
+messages = [{'role': 'user', 'content': prompt}]
+response = openai.ChatCompletion.create(
+	model='gpt-3.5-turbo',
+	messages=messages,
+	temperature=0,
+)
+result = response.choices[0].message['content']
+result = result[result.find('{'):result.rfind('}') + 1]
+y_pred = json.loads(result)['label']
+~~~
+
+- 实验数据：（详细数据见 `./results/1.txt`）
+
+初步尝试预测准确率不够理想，仅有 **74.66%**，由于 API 网络通信和 OpenAI 相关服务器负载问题，测试过程经常被迫中止，测试时间开销极大，因此放弃了通过优化 Prompt 方式来提高预测准确率的想法
+
+**实验四**：
+
+- 使用助教指定的训练集和测试集（由数据集 `sof4423` 预划分而来）
+- 使用训练集对 OpenAI 的 Ada 模型进行微调，以完成端到端的软工文本情绪分类任务，在测试集上进行测试
+
+将用于微调的数据集（训练集）转换为 JSONL 格式，每条数据的表示方式如下：
+
+```json
+{"prompt": "<prompt text>", "completion": "<ideal generated text>"}
+```
+
+使用 OpenAI CLI 微调基础模型，这里选用了参数量最少且响应速度最快的 Ada 模型：
 
 ```
-cd existing_repo
-git remote add origin http://172.29.4.49/0021/se-text-sa.git
-git branch -M master
-git push -uf origin master
+openai api fine_tunes.create -t <TRAIN_FILE_ID_OR_PATH> -m ada
 ```
 
-## Integrate with your tools
+通过以下命令检测微调任务进度
 
-- [ ] [Set up project integrations](http://172.29.4.49/0021/se-text-sa/-/settings/integrations)
+```
+openai api fine_tunes.follow -i <YOUR_FINE_TUNE_JOB_ID>
+```
 
-## Collaborate with your team
+微调完成后可以获得新模型的名称，在 Python 代码中调用：
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+```python
+import openai
 
-## Test and Deploy
+text = '<text under test>'
+fine_tune_model = '<fine_tuned_model_name>'
 
-Use the built-in continuous integration in GitLab.
+response = openai.Completion.create(
+	model=fine_tune_model,
+	prompt=text,
+	temperature=0,  # 控制模型回答内容的创造性, 取值为[0,2], 对分类任务而言设定为0 
+	max_tokens=1,  # 限制模型回答的Token数量, 否则模型的回答大概率包含多余的内容
+)
+y_pred = response['choices'][0]['text']
+```
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+- 实验数据：（详细数据见 `./results/1.txt`）
 
-***
+初次尝试得到的预测准确率为 **86.35%**，与实验二中表现最好的方法效果相当，但观察测试结果发现，模型对某些文本给出的回答不在 `positive`、`negative` 和 `neutral` 这三个单词的范围内，若将不是 `positive` 或 `negative` 的回答全部算作 `neutral`，对实验结果没有产生实质影响
 
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+为了进一步挖掘大模型的能力，选择对训练集和测试集进行特殊处理，在每一段文本的末尾添加字符串 `" ->"` （提示模型需要进行情感分类的软工文本到此已经结束，接下来需要回答分类结果了），再次进行模型微调得到新模型，预测准确率有了显著提升，达到 **90.05%**
