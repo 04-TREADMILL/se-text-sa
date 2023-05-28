@@ -49,6 +49,8 @@ nltk.download('averaged_perceptron_tagger', quiet=True)
 nltk.download('punkt', quiet=True)
 nltk.download('stopwords', quiet=True)
 
+os.makedirs('./model/', exist_ok=True)
+
 
 class NLP:
     def __init__(self):
