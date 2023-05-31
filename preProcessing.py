@@ -5,7 +5,6 @@ import spacy
 import csv
 import re
 from typing import List
-import nltk
 
 
 class PreProcessor:
@@ -182,6 +181,13 @@ class PreProcessor:
         text = self.__remove_url(text)
         text = self.__replace_emoticon(text)
         text = self.__handle_negation(text)
+        text = self.__remove_md_pic(text)
+        text = self.__remove_html_tag(text)
+        return text
+
+    def preprocess_text_v2(self, text: str) -> str:
+        text = text.strip('\n').strip(' ')
+        text = self.__remove_url(text)
         text = self.__remove_md_pic(text)
         text = self.__remove_html_tag(text)
         return text
