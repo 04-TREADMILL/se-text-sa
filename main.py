@@ -442,7 +442,7 @@ def main():
     nlp = PreProcessor()
     analyzer = SentimentAnalyzer(nlp, use_openai_emb_api=False)
 
-    texts_train, labels_train = analyzer.read_data('dataset/train3098itemPOLARITY_augmented0.csv',
+    texts_train, labels_train = analyzer.read_data('dataset/train3098itemPOLARITY.csv',
                                                    delimiter=';', text_index=2, label_index=1)
     texts_test, labels_test = analyzer.read_data('dataset/test1326itemPOLARITY.csv',
                                                  delimiter=';', text_index=2, label_index=1)
@@ -465,8 +465,8 @@ def main():
     #         f.write(line)
     # f.close()
 
-    # analyzer.train('GB', texts_train, labels_train)
-    # analyzer.test('GB', texts_test, labels_test)
+    analyzer.train('GB', texts_train, labels_train)
+    analyzer.test('GB', texts_test, labels_test)
 
     # analyzer.test_gpt(texts_test, labels_test)
 

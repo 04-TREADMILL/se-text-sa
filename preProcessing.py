@@ -182,8 +182,9 @@ class PreProcessor:
         :param prefix: 要加上的前缀，默认为"neutral_"
         :return: 加上前缀之后的字符串
         """
-        domain_specific_words = ["value", "values", "support", "supported", "supporting", "dead",
-                                 "block", "default", "error", "bug"]
+        # "value", "values", "default", "dead",
+        domain_specific_words = ["support", "supported", "supporting",
+                                 "block", "error", "bug"]
         word_list = text.split()
         for i in range(len(word_list)):
             if word_list[i].lower() in domain_specific_words:
@@ -219,6 +220,12 @@ class PreProcessor:
         text = self.__handle_negation(text)
         text = self.__remove_md_pic(text)
         text = self.__remove_html_tag(text)
+        # sjy
+        # text = self.replace_PROPN(text)
+        # text = self.replace_entity(text)
+        # mys
+        # text = self.add_prefix_to_domain_specific_words(text)
+        # text = self.add_prefix_to_italic_and_uppercase(text)
         return text
 
 
