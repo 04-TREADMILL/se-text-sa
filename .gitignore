@@ -1,3 +1,5 @@
 .idea/
 venv/
 *.pkl
+model/
+.gitignore
