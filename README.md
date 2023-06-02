@@ -250,6 +250,8 @@ f.close()
 openai api fine_tunes.create -t ./dataset/fine_tune_set_augmented.jsonl -m ada
 ```
 
+- 实验数据：（详细数据见 `./results/2.txt`）
+
 使用 Ada 模型预测准确率为 **90.12%**，相比没有数据增强的预测结果有一定提升
 
 **实验八**
@@ -262,6 +264,8 @@ openai api fine_tunes.create -t ./dataset/fine_tune_set_prepreocessed.jsonl -m b
 openai api fine_tunes.create -t ./dataset/fine_tune_set_prepreocessed.jsonl -m curie
 openai api fine_tunes.create -t ./dataset/fine_tune_set_prepreocessed_augmented.jsonl -m ada
 ```
+
+- 实验数据：（详细数据见 `./results/2.txt`）
 
 本次实验我们发现了许多难以解释的实验结果：
 
@@ -282,4 +286,6 @@ openai api fine_tunes.create -t ./dataset/fine_tune_set_new_data.jsonl -m ada
 openai api fine_tunes.create -t ./dataset/fine_tune_set_new_data_preprocessed.jsonl -m ada
 ```
 
-很遗憾，新增的数据集对预测结果并没有产生影响 :(
+- 实验数据：（详细数据见 `./results/2.txt`）
+
+很遗憾，新增的数据集对预测结果并没有产生影响 :(，对于未进行预处理和进行预处理两种情况，预测准确率分别为 **89.22%** 和 **90.57%**
