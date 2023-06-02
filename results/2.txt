@@ -43,7 +43,25 @@ testing result:
 weighted avg     0.9056    0.9057    0.9056      1326
 
 
-03. ada:ft-personal-2023-06-01-03-59-38 [base-preprocess][special-prompt-v2]
+02. ada:ft-personal-2023-06-02-11-29-46 [base-preprocess][special-prompt-v2][new-data]
+testing result:
+- Precision: [0.89664804 0.87695312 0.94517544]
+- Recall:    [0.89166667 0.88385827 0.94104803]
+- F-measure: [0.89415042 0.88039216 0.94310722]
+- Accuracy:  0.9057315233785822
+- Classification Report:
+              precision    recall  f1-score   support
+
+    negative     0.8966    0.8917    0.8942       360
+     neutral     0.8770    0.8839    0.8804       508
+    positive     0.9452    0.9410    0.9431       458
+
+    accuracy                         0.9057      1326
+   macro avg     0.9063    0.9055    0.9059      1326
+weighted avg     0.9059    0.9057    0.9058      1326
+
+
+03. ada:ft-personal-2023-06-01-03-59-38 [base-preprocess][special-prompt-v2][augmented]
 testing result:
 - Precision: [0.87027027 0.8891129  0.94565217]
 - Recall:    [0.89444444 0.86811024 0.94978166]
@@ -61,7 +79,7 @@ testing result:
 weighted avg     0.9035    0.9035    0.9034      1326
 
 
-03. babbage:ft-personal-2023-05-29-18-51-23 [no-preprocess][special-prompt][augmented]
+03. babbage:ft-personal-2023-05-29-18-51-23 [no-preprocess][special-prompt]
 testing result:
 - Precision: [0.88010899 0.88554217 0.94143167]
 - Recall:    [0.89722222 0.86811024 0.94759825]
@@ -223,7 +241,25 @@ testing result:
 weighted avg     0.8935    0.8929    0.8931      1326
 
 
-11. ada:ft-personal-2023-05-24-14-29-32 [no-preprocess]
+11. ada:ft-personal-2023-06-02-10-38-12 [no-preprocess][new-data][special-prompt-v2]
+testing result:
+- Precision: [0.86426593 0.86732673 0.94130435]
+- Recall:    [0.86666667 0.86220472 0.94541485]
+- F-measure: [0.86546463 0.86475814 0.94335512]
+- Accuracy:  0.8921568627450981
+- Classification Report:
+              precision    recall  f1-score   support
+
+    negative     0.8643    0.8667    0.8655       360
+     neutral     0.8673    0.8622    0.8648       508
+    positive     0.9413    0.9454    0.9434       458
+
+    accuracy                         0.8922      1326
+   macro avg     0.8910    0.8914    0.8912      1326
+weighted avg     0.8920    0.8922    0.8921      1326
+
+
+12. ada:ft-personal-2023-05-24-14-29-32 [no-preprocess]
 testing result:
 - Precision: [0.8611898  0.80036298 0.9478673 ]
 - Recall:    [0.84444444 0.86811024 0.87336245]
@@ -241,7 +277,7 @@ testing result:
 weighted avg     0.8678    0.8635    0.8646      1326
 
 
-12. gpt3.5-turbo [no-preprocess]
+13. gpt3.5-turbo [no-preprocess]
 testing result:
 - Precision: [0.79069767 0.6404321  0.90718563]
 - Recall:    [0.75555556 0.81692913 0.66157205]
