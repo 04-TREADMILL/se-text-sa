@@ -18,7 +18,7 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.svm import LinearSVC
 from sklearn.tree import DecisionTreeClassifier
 
-from preProcessing import PreProcessor
+from preprocessor import PreProcessor
 
 
 class Analyzer:

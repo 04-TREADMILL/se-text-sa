@@ -4,7 +4,7 @@ import random
 from textattack.augmentation import EmbeddingAugmenter
 
 from analyzer import Analyzer
-from preProcessing import PreProcessor
+from preprocessor import PreProcessor
 
 
 def gen_fine_tune_dataset(fine_tune_suffix: str = '', base_suffix: str = ''):
