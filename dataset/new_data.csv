@@ -1,0 +1,646 @@
+2|gulp-symdest does not preserve links on electron|-1
+3|Omnisharp not included in Linux build|-1
+4|C# bracket insertion, indentation not working|-1
+5|welcome.md packaged wrongly|-1
+6|Windows only - OmniSharp does not provide IntelliSense for strong named assemblies|-1
+7|Can't run from dev [osx]|-1
+8|Flash between opening of workspaces, reload|-1
+9|Extension development: null and undefined values not printed to debug repl|-1
+10|Cannot find module 'sinon' when running test/run.sh from terminal|-1
+12|[clojure] Block comment is not colored any different|-1
+13|Bad coloring in Kimbie dark theme for some languages|-1
+14|C#: Line/Block comment does not work|-1
+15|CSS: toggle line comment is not preserving|-1
+16|[f#] Block comment not colored as comment|-1
+17|HTML: Not auto-closing quotes when typing attributes|-1
+18|Python: Block comment is three single quotes and not two|0
+20|[ruby] the mode failed to tokenize the input|-1
+21|[vb] Block comment is not colored|-1
+22|Development Environment Improvements (code.bat/code.sh)|1
+23|[xml] Element and attribute in light and dark theme use same colors|0
+24|TypeScript: Error: Promise did not implement oncancel(…)|-1
+25|Languageconf fixes|0
+26|https://twitter.com/code uses a Visual Studio icon which is confusing|-1
+27|Bundled files don't have a top copyright statement|-1
+28|No blue icon on linux|-1
+29|"Send a smile > ""Submit a bug"" should open Github repo"|0
+30|Variables in local window stop stop updating their value when stepping through code quickly|-1
+31|Extension uninstall leaves empty directories behind|0
+33|build errors: vscode.d.ts is not found|-1
+34|Javascript - regular expressions are not colored - Javascript mode instantiated twice|-1
+36|[Git] weird indicator for renamed file|-1
+37|"vscode ""--extensionHomePath"" option does not work when used with the vscode proxy"|-1
+38|activeTextEditor not correct while the extension is activated|-1
+39|broken selection feedback when selecting bold text in markdown files|-1
+40|Expected treatment of threads in debug viewlet UI?|0
+42|Document symbols are duplicated|0
+43|VSCODE|0
+46|Disabling telemetry before first run does not work|-1
+47|Commenting using ctrl+k,ctrl+c does not work for JSX files|-1
+48|Running Code should open a new instance, not activate a currently opened one|-1
+49|Fix typo particpate -> participate|0
+50|Crash when opening Code via the command line|-1
+52|Interpolation strings don't have colouring|-1
+54|ES6 jsconfig.json error|-1
+55|Searching large projects is too slow|-1
+57|Git integration doesn't work if the open folder in a sub-folder of a git repository|-1
+58|Provide API to open a new folder|0
+59|Cannot attach debugger to a node.js application running inside a Docker container|-1
+61|Fix small typo|0
+62|Go to definition and navigate back puts cursor in wrong spot|-1
+63|File Search got stuck with a great number of files|-1
+64|Rounded selection seems broken due to current word highlight|-1
+66|Git conflict highlighting can get messed up easily|-1
+67|Electron-Build has wrong filename for the .exe|-1
+68|Git: Support git history in VSCode|0
+71|[xml] provide a formatter|0
+72|Add text/ng-template to the HTML mime types|0
+73|add support for TFVC in on-premise TFS resp. Visual Studio Team Services|1
+75|Allow overriding hardcoded jsconfig/tsconfig defaults|0
+77|Simplify shell command for Linux and OS X|1
+78|use .gitignore to ignore search inside files and folders|0
+79|"Getting ""Visual Studio Code has crashed"" a few times"|-1
+81|react file with .js extension and JavaScript React language doesn't work very well|-1
+82|Extension docs page gives a 404|-1
+83|"Changed the adapters separation from "","" to ""and"""|0
+84|Add more mouse gestures for multi-cursor|1
+85|Go Plugin: Show Method Type in Symbol Browser|1
+86|PHP autocompletion: $_GET completes into $$_GET|1
+87|Node error for Import saying no exports for files that use module.exports|-1
+88|Console is difficult to work with on a small screen|-1
+89|Add C/C++ support|1
+91|Incorrect Breakpoint bindings when using source maps|-1
+92|Unable to launch application on OSX|-1
+93|Documentation issue for Extensions, LanguageServer|0
+94|VSCode very slooow when opening minified css file|-1
+95|ES6 support does not work|-1
+96|Add support for Perl5 symbol indexing|1
+97|Fix grunt task detector retrieving task names improperly|-1
+98|Support user-wide installations|1
+99|Type Definition imports not working for *.ts files|-1
+100|GitHub link on page is broken|-1
+101|Unsaved files should be preserved on quit (hot exit)|0
+102|Environment variables are not being defined while debugging|0
+103|Tabs don't update column counter|0
+105|Enable code folding and collapsing|0
+108|Feature: SSL Settings|0
+113|[stylus] Add Stylus language support|0
+115|Odd code in vscode/src/vs/editor/common/modes/lineStream.ts|0
+117|RST language support|0
+118|Support running extension tests through cmd line|0
+119|TypeScript: Code styling broken when no EOL semi-colons|0
+120|Polymorphic this (TS 1.7)|0
+121|Add Python support|0
+126|Mac Omnisharp Error on RC1|0
+128|build fails on Windows|0
+129|Unclosed Single/Double Quotes in Template Strings Break Syntax Highlighting|0
+131|"[less] mixins ""{ expected"" errors"|0
+137|install golang plugin failed|0
+139|Crush if dragging a large file to open|0
+141|Can VS code will support more theme or theme package?|0
+143|"Request feature ""Integrated terminal"""|0
+144|TextEdit[] returned from provideDocumentFormattingEdits doesn't behave correctly?|0
+145|Bad Default/Regression: C++ .h headers colored as C files|0
+150|Feature request: more complete git integration|0
+151|Support undo and redo in input fields|0
+152|Global Typings?|0
+153|When can support Razor IntelliSense in ASP.NET 5?|0
+154|Changes to Emmet snippets.json lost after update|0
+155|How to install plugins behind a proxy with a self-signed certificate?|0
+156|Find symbols, find references, format code does not work on Ubuntu 15.04|0
+158|Snippet variables not detected after double backslash|0
+160|Visual Studio Code is no longer responding|0
+161|[php] missing user code auto-complete on 0.10.1|0
+162|Typing in the editor is very laggy on Linux|0
+163|Show the application window as soon as possible|0
+167|Windows 10: window not put to foreground in all cases|0
+168|Application Architecture|0
+170|"""PreLaunchTask"" is not finished before the launching starts"|0
+173|OSX El Capitan: Code crashes on quit when in split full-screen mode|0
+175|Diff editor: restore the action to quickly toggle between inline and normal diff|0
+178|Git status in File Explorer|0
+180|Fix bug #103|0
+181|Wrong multiline parenthesis indent (JS)|0
+182|Debug: click on breakpoint does not focus editor if already opened|0
+184|Wrong comment indent in multiline expressions (TS, JS)|0
+189|Goto definition acts too early in some cases|0
+193|OS X: no selection occurances in scrollbar (scroll-map) after ~260 lines|0
+197|[Debug] Console HTTP links match incorrectly|0
+198|Keybindings using brackets (eg. indent) doesn't work with a Danish keyboard layout on Mac OSX|0
+204|"Integrate ""gulp whitespace-style"" in ""gulp watch"" & cont. build"|0
+205|Feature Request: Mercurial Support|0
+206|Feature Request: SVN Support|0
+209|Small changes to improve document readabilty|1
+213|Debug Console has lost highlighting in|0
+214|Terminate an task by keyboard|0
+216|[grammars] provide alternative to TextMate grammars|0
+217|Support the ability to copy to clipboard in extensions|0
+218|Webdav network drive not work|0
+221|stdfork does not respect stderr|0
+223|Please provide column selection cut and paste[feature request]|0
+225|Crash|0
+228|[debug] Console triggers bad/blurry Chrome antialising|0
+230|Getting TypeScript errors in JavaScript files|0
+231|Code completion breaks snippet flow|0
+233|"InputBox and Info|Warning|0
+234|Open a folder via navigation bar doesn't work in 0.10.0|0
+236|[network] after adding a folder mapped to a SharePoint library, Code editor doesn't work (at all)|-1
+237|Is CSP enabled in @code?|0
+240|No intellisense on Linux for ASP .NET 5 coreclr x64 1.0.0.-rc1-final|0
+241|Windows: Jump list misses files and folders in the recent category when opened|0
+245|Setup Travis CI|0
+246|"support for ""complex"" data types in C"|0
+248|JavaScript syntax highlighting detects wrong string start in regex|0
+250|[scss] IntelliSense Suggestions After Semicolon|0
+251|Cannot validate the php file.|0
+253|option to not render lines in Debug Console|0
+256|How to debug Meteor app?|0
+257|[javascript] TextMate themes don't seem to apply to all keywords|0
+259|Shortcut `use regular expression` mode in Find|0
+260|Copyright scripts need love :heart:|1
+262|Support Custom User Agent String in http.proxy|0
+265|Ctrl-Shift-Tab File Switching Querk|0
+266|Application freezes after pasting information|0
+267|User snippets not working for installed PowerShell extension|0
+271|xml formatting no longer an option|0
+276|Add more extensions to built-in PowerShell support|0
+281|Git remote options (push, pull & sync) are disabled|0
+282|Where is Electron?|0
+287|Editor no longer closes quotes for PHP|0
+295|For large git repositories the git integration button shows a visually distracting clock periodically|0
+298|Object methods are missing IntelliSense|0
+299|[Handlebars] No understanding of open Handlebars tags|0
+300|Vim control mode|0
+302|"[Handlebars/HTMLBars/Ember] For block components `as` and `|` are not parameters"|0
+303|High DPI scaling for UI or settings for UI addition|0
+306|Debugger is not working|0
+307|Text selection cursor is visible when mousing over the git icon in the status bar|0
+308|Use default cursor for .git-statusbar-item|0
+309|Proposal: Add support for bash/sh file type|0
+311|target not support ES7 in jsconfig.json file|0
+312|Find and replace with regex on does not allow replacing with \n|0
+313|Find does not match multi-line regex strings|0
+314|Enable regex's ^, $ and ^$ to be matched in file dialog|0
+316|Fix CSS frequency capitalization|0
+319|Error installing extensions|0
+325|Extension Cannot be installed|0
+328|Feature: allow editing the taskSampleConfig file|0
+329|Portable version!|1
+333|Make sure not each provider registers a support|0
+335|Slow startup / crashes - unusable|0
+340|Browse the Gallery command windows always disappear when clicked somewhere else|0
+341|Use auth tokens for downloading omnisharp builds from GitHub|0
+343|Running from source, missing dependency 'run-in-terminal'|0
+345|Editing a simple C# program always shows errors (despite compiling fine)|0
+347|Support workspace extensions|0
+348|Wrong indentation of block comments.|-1
+349|TypeScript syntax highlighting wrong after decorator|0
+350|Should collapse xml elements|0
+351|move pulling omnisharp into another script so that it doesn't run whe…|0
+352|"'No best common type exists among return expressions.' in function that returns either ""new Promise"" or ""Promise.reject"""|0
+354|Error from the plugin host: write EPIPE|0
+355|Linux: WatcherService consumes 100% cpu on large folder|0
+356|Flicker when use Chinese IME for the first character|0
+357|wiki: npm global install requires sudo on *nix|0
+361|Facing problem writing definitely typed file.|0
+364|Extension process makes Macbook Air fan goes crazy!|-1
+365|Allow developers create custom main menu items from extensions.|0
+367|Allow detachable multiple windows on the same workspace|0
+373|Expose FILE_SAVING event to extensions|0
+375|[html] intellisense should be more context aware|0
+376|Git current branch status indicator show hash instead of name|0
+377|OutputChannel.hide throws error|0
+379|Error when trying to save to root of drive|0
+380|Markdown preview does not handle links with parentheses|0
+384|Feature request: in the file open shortcut, support substring searching|0
+385|Do not mkdir if saving to drive root (fixes #379)|0
+387|git doesn't work on windows/mingw64|0
+391|Open in terminal should open new terminal window|0
+393|Auto Intelisense for C#|0
+394|VScode is no longer responding|0
+395|Omnisharp times out when getting started|0
+397|Feature Request: add a Structure Inspector for TS, JS|0
+398|Noupdate|0
+401|[Marketplace] Set background color the same as gallery banner|0
+402|Linux block select|0
+403|Function calls not highlighted in JS|0
+404|Breaks with xml file bigger than 55MB|-1
+405|syntax highlighting for c++: 'value' keyword removed.|0
+406|Keyboard shortcuts for Find & Replace In-View Options|0
+408|This can only be used in ts files|0
+414|Wiki Documentation Issue|0
+416|redirecting test results output to file instead of debug console|0
+417|Incorrect licence listed on the website|0
+425|.editorconfig added|0
+428|IntelliSense descriptions cutoff in Visual Studio Code for Mac|0
+429|Unable to zoom out past default zoom level.|0
+430|Delete files not using|0
+431|Renaming identifiers should save on other files|0
+434|"Keyboard shortcut to focus the ""Working Files"" section of the sidebar."|0
+439|fold functions and code|0
+440|Allow to pick working files via quick open|0
+441|Open next file when you close one file|0
+442|Find and replace all open/pinned files in current session|0
+450|Unable to save file without extension|0
+451|"Problem matcher severity handles ""Note"" and ""Hint"" as errors"|0
+455|OSS Build - Failed to tokenize input error with certain languages|0
+456|Php autocomplete issue|0
+458|Support user stylesheet(s) and user script(s)|0
+460|Update HTML highlighting & IntelliSense|0
+465|Trim trailing whitespaces on line with cursor when explicitly saving|0
+467|Replace does not work on mac|0
+468|VsCode keeps freezing|0
+469|"""dnu restore"" tries to use ASP.NET beta3?"|0
+470|VSCode/OmniSharp looking for DNX runtime in wrong directory|0
+472|Add Edge to list of browsers|0
+474|mkdirp: don't try to create fs roots|0
+478|Cannot install extension behind NTLM proxy (Windows)|0
+479|add cusor bug: ctrl+alt+up/down conflict with windows shortcut.|0
+480|File watcher fails with chinese characters in path|0
+481|Run tests in Electron|0
+483|Run tests in Electron|0
+485|Source map debugging not working for built in extensions|0
+486|[bat] Batch File Syntax highlighting not working on variables or comments.|0
+490|"Resizable ""Opened Editors"""|0
+493|Color Theme completely changed|0
+495|Find widget only highlights the first 19999/20000 matches|0
+496|Crash every few minutes|0
+497|Change the editor fallback defaults to insertSpaces: true, tabSize: 4|0
+499|Adding option to configure cursor blinking|0
+102|Fair enough, sorry. I was just letting them know there is already a place for feature requests.|1
+103|"> The github issue tracker is not really the place for questions.  I disagree. The primary problem with pushing questions away from GitHub issues is there is not a clear line between ""questions"" and ""bugs"". For example, a user experiencing a problem might have simply misconfigured something on their local system, but just as easily could have found a bug that affects many people. Alternately, a bunch of repeated questions (duplicates) likely indicates a problem in the user documentation should should be addressed. GitHub issues is the place where people who are interested in participating in the project should feel comfortable participating, and never be dismissed based on something like the ""kind"" of issue they reported."|1
+104|I have always assumed the best practice is to ask on StackOverflow or a forum first. You have obviously been around a lot longer than I have so I guess I was wrong, thank you for the correction.|1
+105|@joaomoreno works great, thanks!|1
+107|> I have always assumed the best practice is to ask on StackOverflow or a forum first. You have obviously been around a lot longer than I have so I guess I was wrong, thank you for the correction.  No problem. :smile: By the way, please don't take my comment as dismissing _you_ either. You obviously have a knack for picking out bugs from other issues. I'd love nothing more than seeing you continue to give feedback as those items start to get fixed (perhaps even by you!).|1
+108|@snowiow  https://github.com/VSCode-Extension/VSCodeVim|0
+110|I can help with Simplified and Traditional Chinese.|0
+112|I can't reproduce it on Windows either. I tried it with wakatime and backspace plus plus.|0
+113|I'm also experiencing this issue. Ignoring it for now, but occasionally I run into an actual syntax error that would have been caught if I hadn't trained myself to ignore them! :)|1
+115|Furthermore, could you please edit this blog post to make the images of text into actual text? http://blogs.msdn.com/b/vscode/archive/2015/07/06/vs-code-es6.aspx Classic Microsoft :)|1
+116|Hi **@Enet4**, I'm your friendly neighborhood Microsoft Pull Request Bot (You can call me MSBOT). Thanks for your contribution!     <span>         This seems like a small (but important) contribution, so no Contribution License Agreement is required at this point. Real humans will now evaluate your PR.     </span>  TTYL, MSBOT;|1
+118|Thx @guillermooo, I am currently getting myself comfortable with the plugin system and typescript and hope I can contribute something soon :)|1
+120|Well, it's an ES7 feature, but it doesn't highlight any errors when you use the .jsx extension.. Also, it's even highlighting the `<div>` tag so... Something is wrong :D|1
+122|Fixed, thanks!|1
+126|"Also this doesn't work. It works if I specify the full path in ""files"" but with the globbing config my file still shows pure errors."|0
+127|+1 jsx support in .js file extensions is a required feature|1
+128|Is anyone else not getting bracket completion and auto indent with .jsx files?|0
+129|"for me, removing the whole ""files"" section altogether seems to cause the errors to go away, indicating that ES6 applies to the entire project.  Not sure if that helps your situation.  The filesGlob wasn't actually the fix.  (FYI, I got the filesGlob idea from tsconfig.json which is a superset of jsconfig.json, and it seemed to fix the issue, as simply removing the 'files' section fixes it for me... but then you're stuck with ES6 for your whole project)"|0
+130|"If my jsconfig.json file is just:  ``` {     ""compilerOptions"": {         ""target"": ""ES6"",         ""module"": ""commonjs""     } } ```  It still doesn't work, my file is highlighted as syntax errors. The only thing that's worked so far is specifying the absolute file path."|0
+131|"Also ""filesGlob"" doesn't autocomplete, only ""files"", with a strangely bad doc message:  ![screen shot 2015-11-18 at 1 32 52 pm](https://cloud.githubusercontent.com/assets/79215/11255046/f21941f4-8df8-11e5-8ee9-a423f78cdfe9.png)  making it seem like filesGlob isn't supportd?"|-1
+133|https://github.com/TypeStrong/atom-typescript/blob/master/docs/tsconfig.md#filesglob  > filesGlob is specific to atom-typescript|0
+135|I am experiencing the same issue with XML files. Prior to the 0.10.1 update, XML files could be formatted using Alt-Shift-F or the context menu. Since pulling the update, I cannot format XML files.  I can, however, format .js files.|0
+136|If you were on the insiders program and were using the Auto update feature, download the app and replace in Applications and launch.  This should fix this issue, if it does not resolve by replacing. `rm -rf` your `$HOME/Library/Application Support/Code` directory and re-install. This resolved the issue for me.|0
+137|+1 - I believe atom manage to do this using a similar mechanism to Chromium's browser tests.|1
+138|What support are you after specifically? [Syntax highlighting is in](https://github.com/Microsoft/vscode/tree/master/extensions/python/syntaxes).|0
+139|:+1: thanks|1
+140|I would love this feature as well, something on the level of https://github.com/microsoft/vscode-go|1
+141|Hi **@weinand**, I'm your friendly neighborhood Microsoft Pull Request Bot (You can call me MSBOT). Thanks for your contribution!     <p>         It looks like you're a Microsoft contributor (Andr&#233; Weinand). If you're full-time, we DON'T require a Contribution License Agreement. If you are a vendor, please DO sign the electronic Contribution License Agreement. It will take 2 minutes and there's no faxing! https://cla.microsoft.com.     </p>  TTYL, MSBOT;|1
+142|JSX support in `.js` files is one of the only things keeping me from using VSCode as my primary editor. +1 for getting some sort of support for this.|1
+146|Hi, can I work on this bug?|1
+148|"On OS X El Capitan, I just ran through this scenario with: - git 2.4.9 (Apple Git-60) - Code 0.9.2 3fd93bd0833cc6ad311134e254f8ec2b048994a3 - hub 2.2.1  and staging looks as I'd expect:  <img width=""828"" alt=""contributing_md_-_vscode-36"" src=""https://cloud.githubusercontent.com/assets/109659/11259418/7cc13ba0-8e2f-11e5-8bac-65c5ae76214b.png"">  Edit: updated Code to 0.10.1, same result as my previous image"|0
+149|+1.I like this feature.|1
+151|I am having related issues to this, and wasn't really sure how to fix it. It seems to happen a lot for new files, but if I save the file, close VS Code and reopen it, the errors go away. Editing `jsconfig.json` and saving it seems to correct the issue as well, doesn't seem to matter what changes I made the jsconfig, just that it did change.|0
+152|"It seems like vscode is ignoring the ""http.proxy"" configuration when downloading extensions. For me, it works fine when listing extensions.  So, it's getting the IP resolved and connecting directly, rather than using a proxy."|-1
+153|@male110 这个编辑器目前主打的是前端，自己去官网看一下language的overview，带intellisense功能的包括HTML/CSS/JS/JSON/TS/C#，也包括Sass和Less，PHP目前还不支持  另外在issue里不要说中文，speak English please|0
+154|@OshotOkill “Speak” English…|-1
+155|I'm just going to add to this issue as I'm also getting breakpoint errors. When doing the [word count extension tutorial](https://code.visualstudio.com/docs/extensions/example-word-count) setting a breakpoint inside of `updateWordCount()` doesn't hit even though it must be working as the extension works as expected. I'm on osx if that helps.|0
+156|You have to add `%GOPATH%\bin` into `%PATH%` maybe.|0
+157|Figured it out, I reinstalled mono and removed ~/.k/ directory.|0
+158|Hi @jpoon,  Even if there is no selected text, you have to use the `selection` object. Something like this:  ```     // current editor     const editor = vscode.window.activeTextEditor;      // check if there is no selection     if (editor.selection.isEmpty) {       // the Position object gives you the line and character where the cursor is       const position = editor.selection.active;     } ```  Hope this helps|1
+159|PHP symbol navigation is working on previous builds after today's build it's now broken.  Please help us, I'm using vscode in mac.|0
+160|@infinnie Sorry, already fixed it.|1
+161|yeah, I met the same issue.|0
+162|I'm having the same issue.  It looks like its looking for the old path of the dnvm.  Where beta8 was located.  Its not picking up the new location.  [INFO] Starting OmniSharp at '/Users/irperez/Repos/dotnet5/webAPI'... [INFO] Started OmniSharp from '/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/csharp-o/bin/omnisharp' with process id 2444... [INFORMATION:OmniSharp.Startup] Omnisharp server running using stdio at location '/Users/irperez/Repos/dotnet5/webAPI' on host 2434. [INFORMATION:OmniSharp.Dnx.DnxPaths] Looking for sdk version in '/Users/irperez/Repos/dotnet5/global.json'. [INFORMATION:OmniSharp.Dnx.DnxProjectSystem] Scanning '/Users/irperez/Repos/dotnet5/webAPI' for DNX projects [INFORMATION:OmniSharp.Dnx.DnxProjectSystem] Found project '/Users/irperez/Repos/dotnet5/webAPI/project.json'. [INFORMATION:OmniSharp.MSBuild.MSBuildProjectSystem] No solution files found in '/Users/irperez/Repos/dotnet5/webAPI' [INFORMATION:OmniSharp.ScriptCs.ScriptCsProjectSystem] Detecting CSX fil|0
+163|@alefragnani perfect. I'm going to close this issue :+1:|1
+164|As a follow-up, using the same VM specs, but installed Win10-64bit and VS code pops right up with no problem.|1
+165|+1 add es7 support|1
+167|@Oscarzhao See https://github.com/Microsoft/vscode-go/issues/10 for details on this.  I believe this is the same issue so I'll close this one for now.|0
+168|Please give it another try, it can take some time for the link changes to propagate.  I can no longer repro the issue.|1
+169|+1. term3 can't support zsh well, and it will make atom slowly. Hope vscode can solve it.|1
+170|Seems that changing language only affect highlighting?|0
+171|@leafduo So it does, and I must change file extension into .jsx to get rid of these warnings.|0
+173|And `async` from ES7 seems to be interpreted to TypeScript keyword.|0
+175|Now, it can't support large file. I suggest you use st or vim to open it.|0
+178|Got it, I wasn't revisiting the original site to get the updated link.  Can confirm this is fixed.|1
+179|+1|1
+180|+1|1
+181|http://stackoverflow.com/questions/32832264/change-language-to-jsx-on-visual-studio-code  Found this but it is not working for the latest VS Code build|0
+183|@gigafied what naming convention were you using for your files when you had the errors. I also found that restarting in conjunction with dropping my myfile.controller.js convention for a more straight forward myfileController.s seemed to clear the es6 messages. So like you say it is possible that it is just a new file thing.|0
+184|I get it even if I rename an existing file, from `Something.js` to `SomethingElse.js`, but indeed, if i just edit `jsconfig.json` and add a insignificant space somewhere, then hit save, everything starts working again.|0
+185|Same, still looking for runtime location in home directory when new rc-1 installer installed it in /usr/local/lib/dnx/runtimes|0
+187|Even trying to run `update-self` results in confusion around where it's located:  ``` $ dnvm update-self ~/.dnx/dnvm/dnvm.sh doesn't exist. This command assumes you have installed dnvm in the usual location and are trying to update it. If you want to use update-self then dnvm.sh should be sourced from ~/.dnx/dnvm. dnvm is currently sourced from /usr/local/lib/dnx/bin/dnvm.sh ```|-1
+188|Also, when specifying a version to use, it creates the `~/.dnx` dir with an `alias` and `runtimes`, but `runtimes` is empty.|0
+189|@sinclairzx81 any chance you can provide a reproducible case? we added some buffering recently but maybe it is not enough.|1
+191|@leafduo That's OK for me, especially colors and highlightings are the same as .tsx files in this version (kinda like C#).|1
+192|Closing, we have theme support and language coloring support via extensions.|1
+193|We have heard issues before like this that running Code inside a VM is not behaving nicely. We have to investigate.|0
+194|@karl20888 can you edit your post into english please?|0
+196|@daiheitan It's a hack lol and could lead to some side effects...  BTW #81 also mentioned these problems.|0
+197|Have also seen this...|0
+198|@chrisdias please chime in|0
+199|node v4.0.0 support Promise . please upgrade your node|0
+200|@boyP yes we do accept pull requests :).|1
+203|+1 this is on our backlog. however you will not be able to run tests without having a windowing system because in order to provide the VS Code APIs for the tests we still need to open a window.|0
+206|Sorry, I'm Chinese and poor English, I just said, The 0.10.1 update cover the file what I edited the snippets.json in the Emmet. So I need to edit it again. Is it can improve?|0
+207|@luisrudge yes this is currently not supported.|0
+210|"Closing, we have instructions for adding ""code"" to the path."|0
+212|Thanks|1
+213|@gwynjudd is this happening when you leave Code running over night e.g.?|0
+214|Great! Thanks for the response, I'm looking forward to the next update.|1
+216|@male110 我觉得php的代码提示功能已经很强大了啊|1
+217|"Hi @bpasero , @karl20888 has modified the default snippets. After he updated the vs code to version 0.10.1, he lost the modification. He suggests that could he overwrite the default snippets using ""User"" or ""Workplace"" snippets,  just like the way we overwrite the default settings."|0
+219|Yes that's when I've noticed it. When I login in the morning it has happened.|0
+220|Translation:  the intellisense for php is not comparable to what phpStorm has to offer. There is no support for variables.|0
+221|I have this as well. With windows 10 at 125%, fonts start off looking clear, then become blurry after several scrolling.|0,
+222|No I was not! Thanks, it all works!|1
+223|OP was complaining about the lack of PHP supports like variable completion, in comparisons with PHPStorm. And he considered vscode an experimental product, not ready for serious use.  This sounds more like a discussion rather than an actionable issue report.|0
+224|No review?|0
+225|Duplicate of #69|0
+226|![image](https://cloud.githubusercontent.com/assets/5619582/11265652/b9798152-8ea6-11e5-9a04-ee1846a3f20a.png)  this is how my task manager looks at VSC freeze|0
+227|Thanks! :+1:|1
+228|+1 for python support, those might be expected  - Python / Django/ Flask debug - OmniComplete for method, class, functions etc. - On the fly syntax check for missing definition - Import of module suggestion. - Go to definition / Find reference of current method / class / function etc.|0
+229|@aeschli isn't this fixed?|0
+233|@ywmail Thank you for your translation!|1
+234|Yes this is fixed, I verfied|0
+235|"@joaomoreno has modified the default snippets. After he updated the vs code to version 0.10.1, he lost the modification. He suggests that could he overwrite the default snippets using ""User"" or""Workplace"" snippets, just like the way we overwrite the default settings."|0
+237|"Same problem here, none of the hacky ""fixes"" I've found around the internet seem to help either. Is renaming our files to use the IDE properly really our only option at the moment?"|-1
+239|"That's interesting. After installing the new version on **Windows 10** with a 4k 28"" screen set to 175% scaling, I had the impression that the text rendering got **better** than with the 0.9.1 release (which was still slightly more blurry than rendering in native apps like normal Visual Studio or Sublime)."|0
+241|:+1:|1
+242|I don't think this is supported. You can, though, define a new command in an extension which simply calls two other commands. You can then assign a keybinding to that command.|0,
+244|[It's a setter!](https://github.com/Microsoft/vscode/blob/master/src/vs/workbench/api/common/pluginHostEditors.ts#L327)|0
+248|No. 🌧|0
+250|:heart_eyes:  Perfect!   ```         const editor = vscode.window.activeTextEditor;         const position = editor.selection.active;          var newPosition = position.with(position.line, 0);         var newSelection = new vscode.Selection(newPosition, newPosition);         editor.selection = newSelection; ```  +1 on the docs to denote setters.|1,
+251|Hi **@zhengqm**, I'm your friendly neighborhood Microsoft Pull Request Bot (You can call me MSBOT). Thanks for your contribution!     <span>         This seems like a small (but important) contribution, so no Contribution License Agreement is required at this point. Real humans will now evaluate your PR.     </span>  TTYL, MSBOT;|1,
+252|same issue, but it could be triggered by ctrl + space|1
+253|"To those experiencing font blurriness, this is an issue I have with all chromium-based apps on Windows 8.1 (and will likely never be fixed). A workaround is to add the `--force-device-scale-factor=1` argument when launching vscode. The whole editor will then be very small, so you'll need to adjust the `""editor.fontSize""` user setting (I have it on 18) to make your code more readable.  I haven't found a way to adjust the size of UI-elements as well; vscode doesn't seem to have custom app theming or css like Atom, but for me the interface is still readable, though for a very high-dpi screen it might not be."|0
+254|thanks :+1:|1
+256|Hi **@punker76**, I'm your friendly neighborhood Microsoft Pull Request Bot (You can call me MSBOT). Thanks for your contribution!     <span>         This seems like a small (but important) contribution, so no Contribution License Agreement is required at this point. Real humans will now evaluate your PR.     </span>  TTYL, MSBOT;|1
+257|@OshitOkill VS Code does have jsx support now. It just could not parse JSX syntax in plain js files. This is assigned to a developer now, so I guess let's just wait.|0
+259|I have the same issue in CoffeeScript and React (JSX) files.|0
+260|:+1:|1
+261|"I looked at https://code.visualstudio.com/docs/editor/tasks_appendix  and apparently some default changed or was added i needed ""suppressTaskName"":true,  so correct tasks.json  ``` json {     ""version"": ""0.1.0"",     ""command"": ""zsh"",     ""isShellCommand"": true,     ""args"":[""-c""],     ""suppressTaskName"":true,     ""tasks"": [       {         ""taskName"": ""up"",         ""args"": [""rsync -avicCFF --no-t --no-p --no-g ./ bastiaan@front:~/front/; echo DONE;""],         ""isBuildCommand"": true       }     ] } ```"|0,
+262|"Just installed version 0.10.1, in a PHP project if I write a variable in a line and in the next line I try to autocomplete it via CTRL+SPACE a ""Loading..."" message appears, and the variable is never autocompleted."|0,
+263|@jrieken just reinstall it ,still don't work. could only see the suggestions by ctrl+space|0
+264|We should make the underlying command API/documented|0
+265|:+1:|1
+266|I've reinstalled it. The issue is still there.|0
+267|All properties that don't have the `@readonly` tag can be set.|0
+268|By @egamma in preview repo:  > This is intentional, we only enable eager 7x24 Intellisense when the suggestion are 'intelligent'. When you only get word based completions we do not enable 7x24.  Maybe that's issue?|0
+269|@joaomoreno Looks like an installer issue and left-overs?|0
+271|when using the `import Thing from 'module'` pattern, export must be in this form `export default ThingScheme`  http://www.2ality.com/2014/09/es6-modules-final.html|0
+272|:+1:|1
+273|Correct, a recent version of nodejs is required.|0
+274|Hi **@W4RH4WK**, I'm your friendly neighborhood Microsoft Pull Request Bot (You can call me MSBOT). Thanks for your contribution!     <span>         This seems like a small (but important) contribution, so no Contribution License Agreement is required at this point. Real humans will now evaluate your PR.     </span>  TTYL, MSBOT;|1
+275|Will add a requirement to `package.json`|0
+276|Yes, for languages like TypeScript and C# we have extensions that provide smart completions, for other we do a textual completion. Those we make show less aggressive|0,
+277|"@Krzysztof-Cieslak It works fine in Typescript, so I assume it is related to that. Still: when pressing CTRL+Space I just get perpetual ""Loading..."" as well. (in javascript)"|0
+279|This is just awesome. :ok_hand: Thanks!|1
+280|@bpasero TypeScript and .tsx files does not support find symbols and find references. Format code does not work for .html, .scss, .ts or .tsx. These are the only file types that I have tried.|0,
+281|I can't confirm this issue, typing in visual-studio-code works without any noticeable delay on my Arch Linux machine:  ``` Version 0.10.1 Commit df352367df2efcfa9d602d471e4e2f42140a0f05 Date 2015-11-17T15:21:23.766Z Shell 0.34.1 Renderer 45.0.2454.85 Node 4.1.1 ```|1,
+285|Good point. You'll need node at least 0.12.|1
+287|Yeah, even in Typescript there seem to be a lot of inconsistencies.|0
+288|@mattn Let's at least try.|1
+289|I've tested it again on the same computer, but on a 15 inch screen and it works ok, without any lag when typing. Only when Visual Studio Code is on a 24 inch monitor the typing is lagging.|0,
+290|Hi @mogemimi, thanks for the fix!|1
+292|@joaomoreno thanks.|1
+293|Project-wide type definition references are supported using tsconfig.json. See https://code.visualstudio.com/docs/languages/typescript for the difference between File scope and project scope.  Supporting download of d.ts files is on our list.|0
+294|Duplicate of #167|0
+295|This is a problem with the textmate grammar provided by the TypeScript team. Opened https://github.com/Microsoft/TypeScript-Sublime-Plugin/issues/399|0
+296|@jrieken Same issue here. IntelliSense is working fine for JS but not showing any suggestions for C# file.|0
+297|"I'm assuming that the 15"" screen is the display of your laptop and the 24"" model should be an external monitor, so which connection do you use for the external one (VGA,HMDI, DVI, DisplayPort)? Can you cross check if this problem persists with any other browser-based editor, g.e. [Atom](https://github.com/atom/atom/releases) or [Brackets](https://github.com/adobe/brackets/releases)."|0,
+298|:+1:|1
+301|"The 24"" monitor is connected via HDMI. However, I can confirm that the same issue is present in Atom v1.2.2: Laggy on 24"" monitor, smooth on the 15"" laptop display."|0
+302|@karl20888 Yes, don't modify files inside the VS Code installation. They will be replaced on every update. We have user definable snippets. Go to 'File > Preferences > User Snippets'.  They appear on Ctrl + Space.|0
+303|I have the same issue since 0.10.1, vscode stops responde every 5mins when it starts. I am writing PHP and js, OS win7 64 bit|0
+304|Still talking about breakpoints and source maps: when we're not in debug mode, we can't put breakpoints in our `.ts` files, because they won't get caught, so, we must put them in the generated js file, so we can debug our files.  Is there any other way to achieve that? Am I missing anything?  Btw, isn't it possible to VSCode handle that automatically?  Thanks in advance.|1
+314|I'm having the same issue. VS Code running in a VirtualBox Windows VM takes several minutes to start.|0
+316|:100:|1
+317|@alexandrudima not sure the fix is right, I can also change the editorStatus.ts to react on any types.|0
+318|Hi **@lucaslra**, I'm your friendly neighborhood Microsoft Pull Request Bot (You can call me MSBOT). Thanks for your contribution!     <span>         In order for us to evaluate and accept your PR, we ask that you sign a contribution license agreement. It's all electronic and will take just minutes. I promise there's no faxing. https://cla.microsoft.com.     </span>  TTYL, MSBOT;|1
+320|"@jrieken I am worried though that our commands leak into the API. how can I ensure that my internal command ""Open Folder"" does not break the assumed API contract of being able to pass in the folder to open? I think if we allow arguments to be passed to a command, the command itself must move into a location where it is very clear that any change to the constructor is a breaking API change."|-1
+321|English please. And if you have any suggests, please list them on your comment instead of complaining incessantly.|-1
+322|@joaomoreno no review for pushes to master :)|1
+323|Great|1
+324|@bpasero our link detection is failing here. Can we improve it to handle this case?|0
+327|@joaomoreno @bpasero I just tried to see in guts of vscode and I guess possible fixes: 1. Increase field height by 1px on https://github.com/Microsoft/vscode/blob/497788c0bcd20859f736d585b49c208af8dd518f/src/vs/workbench/parts/git/browser/views/changes/changesView.css#L24 2. Make field auto resizable when placeholder is wrapped 3. Make placeholder no-wrap|0
+328|**@lucaslra**, Thanks for signing the contribution license agreement so quickly! Actual humans will now validate the agreement and then evaluate the PR. <br />Thanks, MSBOT;|1
+329|@aeschli thanks for taking time for this issue. I ran ts compiler (1.7) on both .ts and .tsx files and it did not throw any error. Do you want any extra information (node version, any Ubuntu logs, etc.) that might be helpful for fixing this issue? Format from menu also does not work, no Intellisense support as well.|1
+330|+1|0
+331|Not particularly easily. Partly because I now longer have the older version (its been upgraded obviously) and partly because I would have to set up a new project with dummy examples in to avoid posting pictures of confidential stuff. I don't know whether I have the skills to do that or not, I didn't set the project up originally.  Do you think there _should_ be red and green highlighting in the debug console if I run Mocha tests?|-1
+332|Perhaps tangentially related: currently, on Linux, selecting text doesn't copy to the X clipboard. Nor does middle-clicking paste. Would be nice to have.|1
+333|This is currently not possible and a limitation of the underlying TS compiler and language service infrastructure we are using. Pls open an issue at https://github.com/Microsoft/TypeScript|0
+334|:+1:|0
+335|@spboyer Can you attach or PM the omnisharp log (Cmd+L, L)?|0
+337|@bpasero  Yes, the commands will become API. As they are already today by the keybindings-config. IMO we should have a list of commands that we consider stable including identifier, args, and return-type if applicable.|0
+338|"Ah. What's changed is that now it it runs the program in an internal console that DOESN'T have highlighting whereas previously it used an external console window.  The external console highlighted things red and green as presumably mocha generates ANSI control characters to configure the colours.  So you appear to have added ""externalConsole"" to the launch configuration, but the default appears to be false if the value isn't specified in the configuration, so it runs it in the Debug Console instead. That's what's changed.  So the request is that the Debug Console honour the ANSI control chars, and that the default appears wrong, from an upgrade migration point of view."|0
+339|This is a bad regression. The text box should automatically adjust its height based on its contents. Thanks for the report and extra info!|1
+340|The detection currently works only for file paths and not for http links. But we can beef it up I think. However, if we move the repl to an editor, we would benefit from automatic link detection imho.|0
+341|Interesting, I would of thought it could accept both. I'll try that out, thank you!!|1
+343|Yeah, but our internal debug console supports basic ansi coloring|0
+345|"@isidorn yes, our internal debug console supports basic ansi colours but it is not a real ""tty"". Some programs (IIRC mocha is one of them) check explicitly whether they are running in a ""tty"" and only then use colours."|0
+347|Oh yes, Ben has overcome this issue by passing in some arguments to mocha. @tomq42 please checkout https://github.com/Microsoft/vscode/blob/master/.vscode/launch.json our Unit Tests configuration where we pass --colors arguments to mocha.  Closing this as desgined for now. Feel free to reopen if you feel like something is missing still.|1
+349|@PooLP does it work with Atom?|0
+350|For now I have reverted to an older version.|0
+351|Excellent.|1
+352|The thing that confused me primarily was the change in behaviour of launching internally verses externally. Is that deliberate?|-1
+353|Passing --colours does indeed make it work.  What's a bit annoying though is that it keeps creating the Debug Console along side my editor. So unless the Debug Console is actually displaying, it will create a new one to the side of the editor, and there doesn't seem to be a way to configure that?|-1
+354|"![image](https://cloud.githubusercontent.com/assets/61557/11273053/7313df2a-8ed1-11e5-92df-2a74082634d9.png)  Usually ""strict-ssl"":""false"" fixes that error in most cmd line tools like git, npm, bower, yeoman, etc.. But VS Code doesn't. How can I specify strict-ssl?"|0
+355|+1|0
+356|Not yet fixed.|0
+357|+1|0
+358|Yes the change was delibarte to launch in internal, you can easily change that behaviour. Hmm if I set `externalConsole: true` the Debug Console does not get open on the side for me. Do you see different behavior? If yes, do you just get an empy Debug Console?|0
+359|+1 for @xqliu's list of features|0
+361|Oddly enough, I have a colleague that's on version 0.9.2 and his syntax highlighting is fine. I'm also experiencing this issue on version 0.10.1.  ### Edit  My colleague shot me a screenshot of his highlighting:   ![xml-highlight](https://cloud.githubusercontent.com/assets/2295721/11273709/656aad5e-8e9a-11e5-90e0-821af46a2111.jpg)|0
+362|dup of #154|0
+363|Sorry, maybe I didn't describe very well. I have extrernalConsole:false, or unspecified, and when I then run, the Debug Console always gets created to the side. There seems to be no way to have it just bring to the front the already existing Debug Console that might exist. So if I Ctrl-Tab, Debug Console is in the list of open windows. Yet when I run, rather than just swapping to that, it brings it up to the side, which I find annoying.|-1
+364|We always have one instance of the debug console, and when you launch we will not open a new one but use the one already there. What I think is the cause of confusion is that on each debug start we clear the contents of the console|0
+365|But it doesn't reuse the one that's there, or at least if it does, it always moves it and splits the screen and puts the Debug Console on the right. _Thats_ what I fine annoying. The splitting of the screen.|-1
+366|Ok, I will need an actual setup and reproducable steps Where do you have the Debug console before starting the debug session? Invisible, or if visible in which of the 3 slots? Where does it end up after the debug session start?|0
+367|For reference, this bug tracks atom/electron#3349.|0
+369|"The ""env"" attribute is a dictionary of **strings**. Please pass the PORT number as a string and not as a number. We will try to improve the schema for ""env"" so that your case will be flagged as an error."|0
+370|A comment on [issue 71](https://github.com/Microsoft/vscode/issues/71) by @aeschli states that the XML formatting has been removed because it was based on the HTML formatter and was full of bugs.|0
+371|Thanks. I saw lower in the launch config that there was another port value which is a number and was copying that instance. Is it possible to define these as numbers?|1
+373|Hi **@joaomoreno**, I'm your friendly neighborhood Microsoft Pull Request Bot (You can call me MSBOT). Thanks for your contribution!     <p>         It looks like you're a Microsoft contributor (Joao Moreno). If you're full-time, we DON'T require a Contribution License Agreement. If you are a vendor, please DO sign the electronic Contribution License Agreement. It will take 2 minutes and there's no faxing! https://cla.microsoft.com.     </p>  TTYL, MSBOT;|1
+374|I just created a new folder, opened VSCode, clicked on the debug icon, then by the launch dropdown clicked on the great icon. It generated me a new launch.json. I then authored app.js with  console.log(hello world). Click on the launch, it opens the DEbug Console to the right.  So then close the Debug Console so I only have my app.js showing. Shift tab though and the Debug Console is still in the list and I can cycle through to it. However if I run the app.js again, with the app.js showing, then the Debug Console pops up again on the right, rather than just dong the equivalent of Ctrl-tab and cycling through to the file.  I personally find this behaviour annoying, as neither the source window nor the debug console window are then wide enough to see all I need to see (I have a widescreen monitor).|-1
+376|Sorry, we removed XML format from 0.10.1 due to the many bugs. We hope we can get a high quality formatter as an extension soon|0
+379|update:  it's my mistake|0
+380|Thanks for getting back to me so fast. I already tried the symlinking approach and everything mentioned [in this Stack Overflow post](http://stackoverflow.com/questions/33032164/how-can-i-attach-vs-code-to-a-node-process-running-in-a-docker-container) (notice that although the question is 0.8, the issues persist) but could not get it to work in any constellation.  Should symlinking work in theory (i.e. has anyone of you ever managed to debug a node app inside a container yet)?|1
+383|Yeah!  This will be really useful.|1
+384|:+1:|0
+385|Actually fixing this as we speak in #245|0
+386|Disagree because the API should stay compact. Also more commands will enable more flexible scenarios like macros etc. I think a rule of thumb could be make a function API if it returns a meaningful and hard to compute result|-1
+387|Duplicate of #69|0
+390|Also, the OmniSharp log should print more details about the exact DNX version it picked, Use Cmd+L,L to show|0
+391|@blackwire Version 0.9.2: https://az764295.vo.msecnd.net/public/0.9.2/VSCodeSetup.exe  ~~Not quite sure how to prevent the auto updating though, not sure if there is an option.~~ Edit regarding auto update: https://github.com/Microsoft/vscode/issues/160#issuecomment-158104614  As for my freezes: I don't have any extensions or plugins that are not shipped by default. I think you are experiencing a different problem. Killing the pluginHost fork on my machine does nothing to get it back to a working state, instead code crashes completely.|0
+393|Of course! As will typing in code, the program just freeze, but the menus (file, edit, view) continue to function normally. After a few seconds the windows warns that the program is not responding and the only solution is to close the program. There is no specific situation I've noticed that causes the problem.  2015-11-19 12:05 GMT-02:00 Benjamin Pasero notifications@github.com:  > @lucasrivoiro https://github.com/lucasrivoiro can you share more > details about your environment? and maybe the interaction you do that leads > to the crash. >  > — > Reply to this email directly or view it on GitHub > https://github.com/Microsoft/vscode/issues/225#issuecomment-158065612.|0
+394|@DerTolleEmil So, I don't have any non standard plugins either. Though, when I opened task manager and killed the process thread that was running as a part of code (not the app) that is using 30+% CPU it terminates intellisense I think, because it's no longer working after that point.|0
+395|Personally I think this is a bad idea. Making the editor a kitchen sink is how we will make it slow and bloated. Besides, the amount of work necessary to get on par with just the basic features of **excellent** terminals out there (e.g. iTerm2, ConEmu) would be huge.  I know not everyone runs OS X but check out my setup below. I'm using El Capitan's full screen features to place VS Code side by side with iTerm2. I am super happy with it.  ![image](https://cloud.githubusercontent.com/assets/22350/11275183/b833d49c-8edc-11e5-90a3-5b062bc07434.png)|-1
+397|@DerTolleEmil Thank you for the older version download! You saved my day! I can keep this open for today and get some work done without it crashing all the time. Life.. saver.|1
+398|"Just read what it says: ""Use the 'php.validate.executablePath' setting to configure the location of 'php'"" And maybe have a look at the release notes:  ### Language - PHP  VS Code is now using the official PHP linter (php -l) for PHP language diagnostics. VS Code will now stay current with PHP linter improvements.  There are two new settings to control the PHP linter: - php.validate.executablePath: points to the PHP executable on disk. Set this if the PHP executable is not on the system path. - php.validate.run: controls whether the validation is triggered on save (value: ""onSave"") or on type (value: ""onType""). Default is on save."|0
+399|@kdelorey No worries, colorization will stay. I'll fix the colorization for the next release.|1
+401|@joaomoreno but some people want coding, and just use CLT when deploy app. Maybe you can make a extension like term3, then the native version of VSCode won't run slowly.|0
+402|@jrieken Mine looks a bit different, I only have 1.0.0-rc1-final installed and the default is set to mono.|0
+403|That is an opportunity for an extension: deployment commands!|1
+404|Yes, you're right. By the way, why i can't search in extension market?|0
+405|I have swapped between mono and coreclr and still get the issue  ![screen shot 2015-11-19 at 9 59 24 am](https://cloud.githubusercontent.com/assets/1335253/11275655/506c8a30-8ea4-11e5-8a86-f7b927ad21ff.png)|0
+406|"Thank you for the detailed steps. However this is as designed for now. In the future we plan to render the debug console horizontally which should fix your issue.  In the meantime if you dislike it I would suggest using `""externalConsole"": true` option."|1
+408|@buzinas If you want to give it a try: Use our [yeoman extension generator](https://code.visualstudio.com/docs/tools/yocode) to create an extension contributing a colorizer based on text mate (we are currently moving away from Monarch). Then read on in the documentation how to add intellisense, validation...|0
+409|#52 seems to indicate this problem is with all interpolation strings, even beyond ES6 JS. It's good to have a solid version number when this did work, though. Should help tracking it down.|0
+410|"@blackwire One more thing regarding auto-update: Edit your `%appdata%\code\storage.json` file and change `""updateChannel"": ""stable""` to `""updateChannel"": ""none""`. That will disable automatic updates."|0
+411|:+1:|1
+412|Is everyone else using WinSCP too?|0
+413|The output control in VS code does not support colors at the moment.|0
+414|"This is how I solved it on Windows 7: download php from here: http://windows.php.net/download, unzip to C: drive, set ""php.validate.executablePath"" : ""C:/{folder php unzipped to}/php.exe""  Mind the forward slashes."|0
+415|I fixed this by hiding the one when the other is present. It is not the same as stacking errors but I think we can try with this approach and see how far we get.|0
+416|@matthewjohnston4  I'm not, my files are all saved locally without anything else touching them.|0
+417|@DerTolleEmil I work primarily in PHP and yes, the issue does seem to arise while I'm working in a PHP file. Also, thank you very much for the update trick! This is great. I'll wait for issues to be resolved with the new version. I really like some of the features, but I need it to be stable before I can take it. Sad too because I was excited to see the themes were working properly. I'll be patient. Again, you've saved my bacon. I'll be able to get some things accomplished today.|1
+418|@weinand not sure if that's the reason, but I'm trying to debug mocha tests in VSCode.  My current workaround is to type `debugger;` in the place I would have a breakpoint, and then, add more breakpoints when the debugger gets caught.  I don't think it's a problem with the sourcemaps, because when I use the `debugger;` statement, I can debug the `.ts` files smoothly.  To reproduce the behavior I'm mentioning, you can follow the steps: - Clone my repo (https://github.com/buzinas/tslint-eslint-rules) - Run `npm install` and then `npm test` - You'll see the `launch.json` configuration. You'll be able to debug TypeScript if:   - You place a breakpoint in the equivalent JS file; or   - You put a `debugger;` where you want to break;  If you put a debugger, then you must run `gulp build` (or ctrl+shift+b).|0
+419|Actually this will work as long as the file is under the working files section. Once the file is not, closing it will also make the mode decision lost.|0
+420|The `php.validate.executablePath` does not have to be set if php.exe is located in a directory which is listed in your %PATH% variable. If that's not the case you need to set it manually like mentioned above.|0
+421|"My simplest repro is:  **sample.ts**  ``` ts async function main() {   await Promise.resolve(1); // bp on this line   console.log(""later""); } main(); ```  Compiled with:  ``` tsc sample.ts --sourceMap --target ES6 --module commonjs ```"|0
+422|I removed mono and only have Core CLR installed 1.0.0-rc1-final, and am still having the same issue.  Mac development is pretty much unusable at this point.|-1
+423|Please use English in this repository. 在這個repository請你用英文。  He's saying that when he tries to open a document that uses GB 2312 the encoding gets messed up, and to get it to display properly he must first reopen the file then choose GB 2312.|0
+424|"Okay I found out that class, super and extends are interpreted as 'invalid.illegal' - why are those interpreted that way? My jsconfig.json contains compiler options for ES6...  ""compilerOptions"": {     ""target"": ""ES6"", }"|0
+426|So I fixed the problem.  Installing the Windows 10 November update was the solution.  However, I also tried installing on an existing VM that does not have the November update installed so I'll leave it up to the MS folks to leave this issue open or close it.|0
+427|+1. Also `=>`  needs to be in a separate syntax class from the operators that are keywords, such as `instanceof` because I want to color keywords separately from  `=>`. Also for `import * as 'foo'` `import` and `as` need to be keywords while `*` needs to be either an operator or something else more specific to imports.|1
+428|This has nothing to do with the tree. You set `tooltip=` and let Electron render the tooltip for you. It's just how tooltips look in your Linux distribution.|0
+429|"@buzinas thanks for providing steps that helped me investigating the problem. The problem was the value of ""outDir"": it should be the path to the **generated code** not the source. So after changing it to ""dist"" setting breakpoints in *.ts files worked for me."|1
+430|@rbuckton yes, changing the default from Bias.GREATEST_LOWER_BOUND to Bias.LEAST_UPPER_BOUND seems to solve the problem. I will test this a little more and then push a fix. Thanks.|1
+431|There is no proxy support in the extension installation at all. Being fixed in #69|0
+432|I think you mean :heart:|1
+433|does not work in the title :crying_cat_face:|-1
+434|:fireworks:|1
+435|thanks joao @weinand fyi|1
+436|@weinand whoa, what a silly mistake hehe Thanks very much, this will improve my productivity a lot!  A little off topic here, only a question: - WIll there be conditional breakpoints available anytime soon?|1
+437|I think that's the correct behavior, since we can import only a set of features, or even name them (giving alias etc). But you could probably write an extension for making this behavior available automatically.|0
+438|Please make it optional. Middle-click can happen by accident when scrolling.|0
+439|I am probably screwed, since I percieve the VS Code's font blurry even in the `default` state, aren't I? Will this be fixed? **The font is just not sharp enough.** :/|-1
+440|@DerTolleEmil, thank you for older version.|1
+442|Ok thanks for the update, will close for now.|1
+443|@smuuf can you compare with 0.9.x release of VS code? I dont see blurriness on my Windows machine in code. Maybe you are still zoomed in?|0
+445|@hashhar we currently do not persist any UI state when you dont open a folder. So you should be able to easily reproduce this by opening Code empty, open a file in it, close and reopen and it will be empty again.|0
+446|I was able to reproduce it. And you are right, opening a workspace didn't face this issue. So, is there going to be a fix for this? Because I find this a normal scenario.  I would like to try to and work on it too (but don't expect my work to be merge worthy). So could you guide me about the related files?|0
+447|This repository is only for the _Visual Studio Code_ editor, which has not much in common with the _Visual Studio IDE_, but I've to admit that the name is quite confusing.  PS: If you're stuck with windows, give the [intel c-compiler](https://software.intel.com/en-us/c-compilers) a try.|0
+448|I see. Ok. (And if you've got any connection to the IDE people, feel free to pass the message along...)  On Thu, Nov 19, 2015 at 7:04 PM, Andreas Linz notifications@github.com wrote:  > This repository is only for the _Visual Studio Code_ editor, which has > not much in common with the _Visual Studio IDE_, but I've to admit that > the name is quite confusing. >  > — > Reply to this email directly or view it on GitHub > https://github.com/Microsoft/vscode/issues/246#issuecomment-158139340.  ##     אופק בירנהולץ   Ofek Birnholtz   Max Planck Institute for Gravitational Physics (AEI)   LIGO Scientific Collaboration   http://phys.huji.ac.il/~ofek/    התנועה הירוקה- מימד סניף ירושלים   חינוך. סביבה. עתיד   http://www.facebook.com/tymjlm   http://www.yeruka.org.il/|0
+449|"If you open a folder in VS Code, we associate all UI state with the folder you opened (you could call this a ""session""). When you open no folder, but just files, we do not store any UI state at all.   Basically in the no-workspace case we need to come up with meaningful identifiers to associate the UI state to. You can have more than one window opened, each without workspace and each with different set of files opened, so it is not as trivial as just picking one random identifier :)"|1
+450|@kypmmhoff can you share the data you pasted to make this happen, e.g. in a Gist? If it does not contain sensitive data of course!|0
+451|I'm not associated with Microsoft whatsoever. Nevertheless, you can send the feature request to the mailadress of [Microsoft's github account](https://github.com/Microsoft). Try another compiler, because we have C11 and Visual Studio's compiler doesn't even support C99.|0
+455|I prefer a notification system that lets you know when updates are available (Atom has this).  So you'd have two options: 1. Automatically check for extension updates. (default: true?) 2. Automatically install extension updates. (default: false)  Plus maybe an option to specify the update check frequency.  You could also do per-extension override settings, but that would be extra work. =)|1
+456|pls see this comment on hacker news: https://news.ycombinator.com/item?id=10589451|0
+458|@tgienger    +1 also have this issue - nor auto indent neither bracket auto close - it is a real pity because when I switch language from `javascript react` to `typescript react` or just `javascript` it all works|-1
+459|Fantastic. Guess we can close this issue|1
+460|I'm also seeing this. I believe it was working correctly in 0.9 but doesn't seem to be working correctly now.|0
+461|"@aeschli thanks for the guidelines, I'll give it a try.  About ""we are currently moving away from Monarch"": are you doing that even with the core TypeScript/Javascript intellisense? It's so powerful (probably the main advantage that Code has against the other editors), why would one move away from that?"|1
+462|Same problem! It's pretty frustrating.|-1
+463|Monarch provides for colouring only and text mate bundles replace the colouring. The deeper language support we provide isn't affected by this change.|0
+464|The problem is that the powershell extension uses a different language identifier. I created a pull request: https://github.com/PowerShell/vscode-powershell/pull/17|0
+465|@egamma sorry, I was confusing Monarch with Monaco.|-1
+466|Thanks a lot for sending that pull request Martin!  I didn't realize I had registered things wrong, glad it's something that can be fixed on my side.|1
+467|Not is a complex code, after edit an existent file, freezes to write a function name. Note: Before a freezes don't display intellisense  ![error](https://cloud.githubusercontent.com/assets/495616/11281622/fb8113d4-8ec0-11e5-9719-8ce49509301e.jpg)|-1
+468|I think we are on the same boat! I've faced this problem hundred times today while coding in PHP.|-1
+469|But wouldn't it be cool to have the install script inside your own binary bundle which you send? I have both the .desktop file and the install script ready and it works fine. I'll send in a PR. yes creating a .desktop file is trivial, but it isn't that trivial. I know Linux users who don't know what a .desktop file is, of course they won't be using this tool, but as a provider of a tool aren't you placing yourself as a distributor of a full fledged application rather than give complete app for Mac and Windows and leave Linux to the mercy of the person who'll package the distribution? The basic premise that vscode is now open source states that it should be painless to use in platforms other than Windows, which isn't the case with Linux, you have to add things to the PATH variable and create the .desktop file just to get it running, it is rather annoying to do that, as an end user, _despite being a nerd who is still coding at 1am after working for 12hours_, I'd really love to have a packaged version of vsc|-1
+470|Syntax highlighting in template strings is not working at all. The template string functionality itself works so far.  Issue seems to be that its not that template strings are not highlighting but that syntax highlighter has no concept of tilda quoted strings(template strings).  Expecting everything except ${expression} to be comment colored.  ![tildaquotes](https://cloud.githubusercontent.com/assets/15118702/11282151/ce0eab68-8ecb-11e5-9d69-2cee67042129.png)|0
+471|Hi **@thewhitetulip**, I'm your friendly neighborhood Microsoft Pull Request Bot (You can call me MSBOT). Thanks for your contribution!     <span>         In order for us to evaluate and accept your PR, we ask that you sign a contribution license agreement. It's all electronic and will take just minutes. I promise there's no faxing. https://cla.microsoft.com.     </span>  TTYL, MSBOT;|1
+472|:+1:|1
+473|> doesn't have to be a .deb package  I definitely disagree. If they package the binary, they should use .deb over a shell script.  IMHO, your approach is wrong and you should ask your distro maintainer to provide a package for Visual Studio.|-1
+474|Moved to vscode-docs repo https://github.com/Microsoft/vscode-docs/issues/44 Thanks @cfjedimaster for calling out the confusing text.|1
+476|Hi **@daviwil**, I'm your friendly neighborhood Microsoft Pull Request Bot (You can call me MSBOT). Thanks for your contribution!     <p>         It looks like you're a Microsoft contributor (David Wilson (WSSC)). If you're full-time, we DON'T require a Contribution License Agreement. If you are a vendor, please DO sign the electronic Contribution License Agreement. It will take 2 minutes and there's no faxing! https://cla.microsoft.com.     </p>  TTYL, MSBOT;|1
+478|And what about .rpm packages for all Fedora, Centos, Red Hat and openSUSE users? It's already binary blob, I don't want it to try to write itself wherever it wants.  Also, to link PR and discussion, it's #274|-1
+479|I looked at said shell script.  It's a disaster. It writes to .bashrc. It doesn't register it`s actions anywhere or provides any way to uninstall. It doesn't check if  there is something in paths already or if $PATH contains vscode path.  Why you want VS Code in your Path, anyway?|-1
+481|My laptop's specifications are: Intel Core i5 (model 460M, up to 2.53 GHz), 4 GB RAM, SSD, Intel i5's GPU (even though the laptop has a GeForce GT 325M discrete graphics card, it's not used under Ubuntu Linux).  The issue that I reported never occurred to me before, and I've been using Visual Studio Code since the very first public release.|0
+482|kc9eye, DerTolleEmil - Thank you very much, you cool.|1
+483|PHP is also affected. See #161|0
+485|+1|1
+487|This problem could manifest if the lines are being split before searching as opposed to doing a full text search.  Interesting side note; `\n` seems to work in find in files (Ctrl+Shift+F), just not in the find dialog (Ctrl+F).|0
+488|Needs to be added to browserEntry too https://github.com/Microsoft/vscode/blob/497788c0bcd20859f736d585b49c208af8dd518f/src/vs/languages/css/common/services/languageFacts.ts#L329|0
+491|+1 Having the same issue|0
+492|In my opinion, such installation scripts belong in a distro-dependent package (since not all Unix systems are the same). For instance, there's a [package for VSCode in the AUR](https://aur.archlinux.org/packages/visual-studio-code) that suitably installs the software on Arch Linux systems.|0
+493|same here. nothing worked until I installed the extension. Very confusing.|-1
+497|Hi **@mliese**, I'm your friendly neighborhood Microsoft Pull Request Bot (You can call me MSBOT). Thanks for your contribution!     <span>         In order for us to evaluate and accept your PR, we ask that you sign a contribution license agreement. It's all electronic and will take just minutes. I promise there's no faxing. https://cla.microsoft.com.     </span>  TTYL, MSBOT;|1
+499|+1|1
+500|ah, I see. There are two places this is documented. I was reading https://code.visualstudio.com/updates/v0_8_0#_languages-javascript-linting-as-you-type and it has no mention of extensions. That is probably where the confusion comes from. Thanks for pointing that out.|1
+501|Spot on. That page refers to version 0.8.0.|0
+502|"What is wrong with you?   There is no need to list ""cups"" when they already listed Ubuntu Desktop 14.04 as a requirement. The cups package is included in the default Ubuntu manifest, so it should not be listed under requirements. If you install some type of minimal install, that is your own problem.  </ Sarcasm> I'd wager you love being snarky and passive aggressive in every comment that you make."|-1
+503|The javascript topic was updated today to call out the need to now install the extension. If you looked at the page yesterday or this morning, you wouldn't have seen the extensions mentioned.  Sorry for the confusion.|0
+504|Hi **@dstorey**, I'm your friendly neighborhood Microsoft Pull Request Bot (You can call me MSBOT). Thanks for your contribution!     <span>         This seems like a small (but important) contribution, so no Contribution License Agreement is required at this point. Real humans will now evaluate your PR.     </span>  TTYL, MSBOT;|1
+505|Started to work on one tonight. I'm not at all happy with it yet, but maybe it's a start. https://github.com/FabianLauer/vs-code-xml-format|0
+506|There are also some other discrepancies with the current [W3C working draft](http://www.w3.org/TR/2012/WD-css3-values-20120308/), `Hz` and `kHz` frequency unit capitalization, the `dppx` resolution unit is missing and so is the `turn` angle unit. These are all present in the [latest spec](http://www.w3.org/TR/css3-values/). Should these be added/amended too?|0
+507|**@mliese**, Thanks for signing the contribution license agreement so quickly! Actual humans will now validate the agreement and then evaluate the PR. <br />Thanks, MSBOT;|1
+508|@tyriar I was planning to look at the others as part of another PR|0
+509|@dstorey :+1:|1
+510|I believe this is the same issue as #160. Check that post and downgrade will be the best choice so far.|0
+511|Unfortunately I can't compare it with any older version. I installed it today and fiddled a bit with for a bit, until the font's bluriness became too much of a displeasure. (on Win 7, 100 percent DPI)  The question that I really want to ask here is this:  ![f](https://cloud.githubusercontent.com/assets/4998498/11274683/3350697c-8eda-11e5-8797-806278ef6e93.png)  This picture _(the top one from the original post)_ - **is this how the font should look like?** Because it looks too blurry for me, too. Less than in the second one, but still.|0
+512|"You joined GitHub only to say that? You literally joined less than two hours ago and first thing you said is this???  I want to point out: Ubuntu Desktop 14.04 isn't ""Requirement"". It's ""has been tested"" on it. Actual requirements for Linux-based OS distribution are noted as minimal versions of libc and libc++ . This is all.  Developers haven't pointed that Ubuntu 14.04 is only supported distribution. They said ""Generic Linux"". And provide 32 and 64 bit binaries. When Visual Studio Code doesn't work in other distros due to lack of CUPS or Wayland or some other library like nette or gconf, that's a bug. Of either documentation or Visual Studio Code. If I was a maniac who tried to use VS Code in beautifully hand-crafted LFS or in container to prevent telemetry, this information would have been useful to know and not to try to find it manually. As I ran headlong into one problem, I feel that it's my duty to report said problem."|-1
+513|"I have a similar issue. Search is extremely slow and gets stuck at some point. I have around 33K files, mostly source code.   A few results are being shown after a while but this is clearly incomplete.   Sublime Text (or even the ""findstr"" command) have no trouble grepping though these files in a few seconds.   I am using a fast SSD as a disk-level storage (Samsung 840 PRO) so disk read performance should be very good both in terms of IOPS and bandwidth."|-1
+515|Hi **@dstorey**, I'm your friendly neighborhood Microsoft Pull Request Bot (You can call me MSBOT). Thanks for your contribution!     <span>         This seems like a small (but important) contribution, so no Contribution License Agreement is required at this point. Real humans will now evaluate your PR.     </span>  TTYL, MSBOT;|1
+516|This may be related to issue #179|0
+517|"I got another freeze trying out a few things in a markdown file. I decided to try to reproduce the error and I did make a bit of progress but not much yet.  Here is what's working so far:  I created a new .php file with the following content:  ``` php <?php echo """"asd"""";  echo """"asd"""" echo """"asd""""; ?> ```  The empty line and the missing semicolon are on purpose. I open the file and then open the editor's development console and switch to the """"console"""" tab. All I need to do now is go to the blank line and enter a function name, for example `fopen()`. As soon as I type the opening bracket you'll see the `[Plugin Host] provideSignatureHelp` console entry followed by the object containing the corresponding help text. So far so good, however, every now and then when I use an invalid function name I don't get the `[Plugin Host] no entry` console output but instead I don't get anything at all. What follows are those two warnings the next time I hover over a function or press ctrl+space to open the autocomplet"|0
+518|I usually right click on the subfolder and use `Find in Folder` option. This will populate the `files to include` text box with the path prefix of the sub-folder. Search will then only return results for that subfolder.|0
+521|+1  Would it be possible to add tabs through a custom extension? I quickly looked at the docs but didn't seem possible to add that type of functionality with the current API|0
+522|There is a simple extension in the marketplace to help: https://marketplace.visualstudio.com/items/chrisdias.vscodeZoom  I'll close this for now - reopen if it does not meet your needs.|0
+523|@aeschli No worries, thanks for the update!|1
+525|sorry this change just change docs. but seems this seems to be trigger of error  https://travis-ci.org/Microsoft/vscode/builds|-1
+527|Experiencing very crashy behavior together with PHP aswell|-1
+528|suggest to reference atom's implementation, by using **strict-ssl = false** https://atom.io/docs/v1.0.0/getting-started-installing-atom#setting-up-a-proxy|0
+530|Hi **@dstorey**, I'm your friendly neighborhood Microsoft Pull Request Bot (You can call me MSBOT). Thanks for your contribution!     <p>         It looks like you're a Microsoft contributor (David Storey). If you're full-time, we DON'T require a Contribution License Agreement. If you are a vendor, please DO sign the electronic Contribution License Agreement. It will take 2 minutes and there's no faxing! https://cla.microsoft.com.     </p>  TTYL, MSBOT;|1
+531|Same here...|0
+533|Same here, it would be good to have jsx support on .js files|1
+534|+1 - chiming in so I can follow this one. Drives me crazy no razor help for .cshtml files. This is core for mvc cross platform stuff. I would really like to have it!|-1
+535|"How did u get code to run from terminal? I get ""command not found."" Did you create some sort of alias?  I created an alias ""code"" that points to the Electron executable inside the .app. `alias code='/Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron'` When I run `code .` it runs just fine."|0
+536|I created https://github.com/Microsoft/vscode-docs/pull/46 in the docs to improve the script to allow you to continue using the terminal that spawned vscode.|0
+541|Hmm seems like the CI failed due an infrastructure issue, complains about API rate having been exceeded.|0
+542|I noticed this problem immediately after allowing the IDE to update itself tonight (to 0.10.1). I was not paying attention to the 'before the update' version myself, but have only had the product (on my mac) since Nov 1 if that helps.|0
+543|Hi **@Tyriar**, I'm your friendly neighborhood Microsoft Pull Request Bot (You can call me MSBOT). Thanks for your contribution!     <span>         This seems like a small (but important) contribution, so no Contribution License Agreement is required at this point. Real humans will now evaluate your PR.     </span>  TTYL, MSBOT;|1
+544|![text_cursor](https://cloud.githubusercontent.com/assets/2193314/11292416/6df47e38-8f02-11e5-9bd9-6f3c396f1aa7.gif)|0
+545|@ojss where can I download the older version?|-1
+546|And why are the two BLAH have different color?|0
+547|Looked at the code, it does indeed look at each line individually. I'm created a new issue for multi-line matching https://github.com/Microsoft/vscode/issues/313|0
+548|Hi **@Tyriar**, I'm your friendly neighborhood Microsoft Pull Request Bot (You can call me MSBOT). Thanks for your contribution!     <span>         In order for us to evaluate and accept your PR, we ask that you sign a contribution license agreement. It's all electronic and will take just minutes. I promise there's no faxing. https://cla.microsoft.com.     </span>  TTYL, MSBOT;|1
+549|Find and replace /^/  ![caret_find_replace](https://cloud.githubusercontent.com/assets/2193314/11293429/e9fd2c1c-8f0e-11e5-877e-5c8e6256b098.gif)  Find and replace /$/  ![dollar_find_replace](https://cloud.githubusercontent.com/assets/2193314/11293431/ebf176a4-8f0e-11e5-9167-d1b3fd59120b.gif)  Find and replace /^$/  ![both_find_replace](https://cloud.githubusercontent.com/assets/2193314/11293432/f047a1c4-8f0e-11e5-9ecd-13aeed90b8b2.gif)|0
+550|**@Tyriar**, Thanks for signing the contribution license agreement so quickly! Actual humans will now validate the agreement and then evaluate the PR. <br />Thanks, MSBOT;|1
+551|**@Tyriar**, Thanks for signing the contribution license agreement so quickly! Actual humans will now validate the agreement and then evaluate the PR. <br />Thanks, MSBOT;|1
+552|Note that code highlighting already exists for shell scripts, the following extensions are supported: "".sh"", "".bash"", "".zsh"", "".bashrc"", "".bash_profile"", "".bash_login"", "".profile"", "".bash_logout"""|0
+553|Hi **@Tyriar**, I'm your friendly neighborhood Microsoft Pull Request Bot (You can call me MSBOT). Thanks for your contribution!     <span>You've already signed the contribution license agreement. Thanks!</span>         <span>We will now validate the agreement and then real humans will evaluate your PR.</span>  TTYL, MSBOT;|1
+554|I'm not sure this matters. CSS isn’t case-senstivie, and keeping everything lower-case can reduce file size (a little) when gzipping.|0
+555|I just got the same issue. in the previous version (0.9.1), when I was writing Python scripts, the word completion works fine, though it is textual. But now the functionality is gone. I tried to reinstall it, but nothing changed. Hope can recover this function soon. Thanks:)|0
+557|Hi, I do not use Atom. I will test this morning.|0
+559|It work on Atom.|0
+561|Closing as duplicate of #160|0
+562|:+1:|1
+563|yes|0
+564|Perfect opportunity to shine as an extension author. :wink:|1
+565|Looks awesome.|0
+567|Sorry cant help with that. I had the zip for the previous version lying around.   Sent from my iPad  On 20-Nov-2015, at 10:45 AM, tangshi notifications@github.com wrote:  > @ojss where can I download the older version? >  > — > Reply to this email directly or view it on GitHub.|-1
+568|@tangshi @ojss The old version (plus how to disable the auto update) can be found in issue #160, comment https://github.com/Microsoft/vscode/issues/160#issuecomment-158093149|0
+569|I notice there's a TODO in htmlTags.ts for this.|0
+570|Duplicate of #69|-1
+571|@mattn There's a bit of flakiness with our current builds, they seem to fail occasionally, unrelated to your changes. Will address it **fast**.|1
+572|yes. this would be really important since we are already pushing updates to addins.|0
+573|Will probably not remove the icon. Pinging the repo every 5-10 seconds is wrong though. There might be something we're doing wrong. Just to confirm: you have the file explorer open and that blue thing keeps on coming and going?|0
+574|Hi **@Mr21**, I'm your friendly neighborhood Microsoft Pull Request Bot (You can call me MSBOT). Thanks for your contribution!     <span>         This seems like a small (but important) contribution, so no Contribution License Agreement is required at this point. Real humans will now evaluate your PR.     </span>  TTYL, MSBOT;|1
+575|Yep that's right.|1
+577|Wow thats great! Thank you.  > On 20-Nov-2015, at 1:43 PM, Klaus Brezina notifications@github.com wrote: >  > @tangshi https://github.com/tangshi @ojss https://github.com/ojss The old version (plus how to disable the auto update) can be found in issue #160 https://github.com/Microsoft/vscode/issues/160, comment #160 (comment) https://github.com/Microsoft/vscode/issues/160#issuecomment-158093149 > — > Reply to this email directly or view it on GitHub https://github.com/Microsoft/vscode/issues/179#issuecomment-158317879.|1
+578|VSCode's lib dependencies are exactly the same as [Electron](https://github.com/atom/electron)'s. That would be the best project to report this to.|0
+580|:+1: :+1: :+1:|1
+581|Yes I acknowledge the bug, happened because of a change in our task framework.|0
+582|"I see that your scenario would not require the workspace, however our vscode frontend has to support multiple languages to debug and for most having a workspace is required. Also debugging requires a launch.json file, and when there is no workspace there needs to be a shared launch.json which is a bit cumbersome.
+
+Due to the above this is by design."|-1
+583|This might not be a dupe after all, thanks @iamzhout!|1
+584|So keep it as an open issue in case someone wants to code up a solution? Or is it something that we don't want to have at all because it would make the product worse?|0
+585|:+1:|1
+586|Fixed the build. Rerunning...|1
+587|@daviwil What is a `.psrc` file, anyway?|0
+588|@joaomoreno  Welcome, hope this issue could be fixed soon :-) otherwise many corporate users may not be able to install extensions and make full use of vscode.|0
+589|Let's keep it open for now then|0
+590|0.9.2  ![screenshot from 2015-11-20 10-10-40](https://cloud.githubusercontent.com/assets/6564217/11295913/0abd7262-8f6f-11e5-9508-870cf51ddce8.png)  0.10.1  ![screenshot from 2015-11-20 10-12-43](https://cloud.githubusercontent.com/assets/6564217/11295951/46abdc6e-8f6f-11e5-8c19-11f8b36e2f3c.png)|0
+591|@Mr21 Very sorry about not communicating this properly, loader.js is a generated file from a TypeScript file that is not yet made public (a different repo). I need to create the public repo that contains it.  Will ping you as soon as I get that done.|-1
+592|Indeed, I think the status bar should reflect the cursor state, regardless of the reason the cursor changed its state. So the fix should be made in editorStatus|0
+593|@punker76 I did some changes to load the settings and landed this again (https://github.com/Microsoft/vscode/commit/e57d6db414ee2f3f4e7da0535b39c6b4c1c02817).|0
+594|:fireworks:|1
+595|same issue,|-1
+596|:+1:|1
+597|who can help me ..|-1
+598|Hi **@jrieken**, I'm your friendly neighborhood Microsoft Pull Request Bot (You can call me MSBOT). Thanks for your contribution!     <p>         It looks like you're a Microsoft contributor (Johannes Rieken). If you're full-time, we DON'T require a Contribution License Agreement. If you are a vendor, please DO sign the electronic Contribution License Agreement. It will take 2 minutes and there's no faxing! https://cla.microsoft.com.     </p>  TTYL, MSBOT;|1
+599|The mono is thing is ~~by design~~ a hack of OmniSharp (since coreclr cannot talk via sockets). Not much to do for us then waiting.|0
+600|From [docs](https://github.com/atom/electron/blob/29052b04986daf55ecda4163bb94adaf522d1a10/docs/tutorial/supported-platforms.md)  > The prebuilt ia32(i686) and x64(amd64) binaries of Electron are built on Ubuntu 12.04, the arm binary is built against ARM v7 with hard-float ABI and NEON for Debian Wheezy.   > Whether the prebuilt binary can run on a distribution depends on whether the distribution includes the libraries that Electron is linked to on the building platform, so only Ubuntu 12.04 is guaranteed to work, but following platforms are also verified to be able to run the prebuilt binaries of Electron: >  >    Ubuntu 12.04 and later  >    Fedora 21  >    Debian 8   Will return to this issue a bit later.|0

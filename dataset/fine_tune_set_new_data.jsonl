@@ -1,0 +1,643 @@
+{"prompt": "gulp-symdest does not preserve links on electron ->", "completion": " negative"}
+{"prompt": "Omnisharp not included in Linux build ->", "completion": " negative"}
+{"prompt": "C# bracket insertion, indentation not working ->", "completion": " negative"}
+{"prompt": "welcome.md packaged wrongly ->", "completion": " negative"}
+{"prompt": "Windows only - OmniSharp does not provide IntelliSense for strong named assemblies ->", "completion": " negative"}
+{"prompt": "Can't run from dev [osx] ->", "completion": " negative"}
+{"prompt": "Flash between opening of workspaces, reload ->", "completion": " negative"}
+{"prompt": "Extension development: null and undefined values not printed to debug repl ->", "completion": " negative"}
+{"prompt": "Cannot find module 'sinon' when running test/run.sh from terminal ->", "completion": " negative"}
+{"prompt": "[clojure] Block comment is not colored any different ->", "completion": " negative"}
+{"prompt": "Bad coloring in Kimbie dark theme for some languages ->", "completion": " negative"}
+{"prompt": "C#: Line/Block comment does not work ->", "completion": " negative"}
+{"prompt": "CSS: toggle line comment is not preserving ->", "completion": " negative"}
+{"prompt": "[f#] Block comment not colored as comment ->", "completion": " negative"}
+{"prompt": "HTML: Not auto-closing quotes when typing attributes ->", "completion": " negative"}
+{"prompt": "Python: Block comment is three single quotes and not two ->", "completion": " neutral"}
+{"prompt": "[ruby] the mode failed to tokenize the input ->", "completion": " negative"}
+{"prompt": "[vb] Block comment is not colored ->", "completion": " negative"}
+{"prompt": "Development Environment Improvements (code.bat/code.sh) ->", "completion": " positive"}
+{"prompt": "[xml] Element and attribute in light and dark theme use same colors ->", "completion": " neutral"}
+{"prompt": "TypeScript: Error: Promise did not implement oncancel(…) ->", "completion": " negative"}
+{"prompt": "Languageconf fixes ->", "completion": " neutral"}
+{"prompt": "https://twitter.com/code uses a Visual Studio icon which is confusing ->", "completion": " negative"}
+{"prompt": "Bundled files don't have a top copyright statement ->", "completion": " negative"}
+{"prompt": "No blue icon on linux ->", "completion": " negative"}
+{"prompt": "\"Send a smile > \"\"Submit a bug\"\" should open Github repo\" ->", "completion": " neutral"}
+{"prompt": "Variables in local window stop stop updating their value when stepping through code quickly ->", "completion": " negative"}
+{"prompt": "Extension uninstall leaves empty directories behind ->", "completion": " neutral"}
+{"prompt": "build errors: vscode.d.ts is not found ->", "completion": " negative"}
+{"prompt": "Javascript - regular expressions are not colored - Javascript mode instantiated twice ->", "completion": " negative"}
+{"prompt": "[Git] weird indicator for renamed file ->", "completion": " negative"}
+{"prompt": "\"vscode \"\"--extensionHomePath\"\" option does not work when used with the vscode proxy\" ->", "completion": " negative"}
+{"prompt": "activeTextEditor not correct while the extension is activated ->", "completion": " negative"}
+{"prompt": "broken selection feedback when selecting bold text in markdown files ->", "completion": " negative"}
+{"prompt": "Expected treatment of threads in debug viewlet UI? ->", "completion": " neutral"}
+{"prompt": "Document symbols are duplicated ->", "completion": " neutral"}
+{"prompt": "VSCODE ->", "completion": " neutral"}
+{"prompt": "Disabling telemetry before first run does not work ->", "completion": " negative"}
+{"prompt": "Commenting using ctrl+k,ctrl+c does not work for JSX files ->", "completion": " negative"}
+{"prompt": "Running Code should open a new instance, not activate a currently opened one ->", "completion": " negative"}
+{"prompt": "Fix typo particpate -> participate ->", "completion": " neutral"}
+{"prompt": "Crash when opening Code via the command line ->", "completion": " negative"}
+{"prompt": "Interpolation strings don't have colouring ->", "completion": " negative"}
+{"prompt": "ES6 jsconfig.json error ->", "completion": " negative"}
+{"prompt": "Searching large projects is too slow ->", "completion": " negative"}
+{"prompt": "Git integration doesn't work if the open folder in a sub-folder of a git repository ->", "completion": " negative"}
+{"prompt": "Provide API to open a new folder ->", "completion": " neutral"}
+{"prompt": "Cannot attach debugger to a node.js application running inside a Docker container ->", "completion": " negative"}
+{"prompt": "Fix small typo ->", "completion": " neutral"}
+{"prompt": "Go to definition and navigate back puts cursor in wrong spot ->", "completion": " negative"}
+{"prompt": "File Search got stuck with a great number of files ->", "completion": " negative"}
+{"prompt": "Rounded selection seems broken due to current word highlight ->", "completion": " negative"}
+{"prompt": "Git conflict highlighting can get messed up easily ->", "completion": " negative"}
+{"prompt": "Electron-Build has wrong filename for the .exe ->", "completion": " negative"}
+{"prompt": "Git: Support git history in VSCode ->", "completion": " neutral"}
+{"prompt": "[xml] provide a formatter ->", "completion": " neutral"}
+{"prompt": "Add text/ng-template to the HTML mime types ->", "completion": " neutral"}
+{"prompt": "add support for TFVC in on-premise TFS resp. Visual Studio Team Services ->", "completion": " positive"}
+{"prompt": "Allow overriding hardcoded jsconfig/tsconfig defaults ->", "completion": " neutral"}
+{"prompt": "Simplify shell command for Linux and OS X ->", "completion": " positive"}
+{"prompt": "use .gitignore to ignore search inside files and folders ->", "completion": " neutral"}
+{"prompt": "\"Getting \"\"Visual Studio Code has crashed\"\" a few times\" ->", "completion": " negative"}
+{"prompt": "react file with .js extension and JavaScript React language doesn't work very well ->", "completion": " negative"}
+{"prompt": "Extension docs page gives a 404 ->", "completion": " negative"}
+{"prompt": "\"Changed the adapters separation from \"\",\"\" to \"\"and\"\"\" ->", "completion": " neutral"}
+{"prompt": "Add more mouse gestures for multi-cursor ->", "completion": " positive"}
+{"prompt": "Go Plugin: Show Method Type in Symbol Browser ->", "completion": " positive"}
+{"prompt": "PHP autocompletion: $_GET completes into $$_GET ->", "completion": " positive"}
+{"prompt": "Node error for Import saying no exports for files that use module.exports ->", "completion": " negative"}
+{"prompt": "Console is difficult to work with on a small screen ->", "completion": " negative"}
+{"prompt": "Add C/C++ support ->", "completion": " positive"}
+{"prompt": "Incorrect Breakpoint bindings when using source maps ->", "completion": " negative"}
+{"prompt": "Unable to launch application on OSX ->", "completion": " negative"}
+{"prompt": "Documentation issue for Extensions, LanguageServer ->", "completion": " neutral"}
+{"prompt": "VSCode very slooow when opening minified css file ->", "completion": " negative"}
+{"prompt": "ES6 support does not work ->", "completion": " negative"}
+{"prompt": "Add support for Perl5 symbol indexing ->", "completion": " positive"}
+{"prompt": "Fix grunt task detector retrieving task names improperly ->", "completion": " negative"}
+{"prompt": "Support user-wide installations ->", "completion": " positive"}
+{"prompt": "Type Definition imports not working for *.ts files ->", "completion": " negative"}
+{"prompt": "GitHub link on page is broken ->", "completion": " negative"}
+{"prompt": "Unsaved files should be preserved on quit (hot exit) ->", "completion": " neutral"}
+{"prompt": "Environment variables are not being defined while debugging ->", "completion": " neutral"}
+{"prompt": "Tabs don't update column counter ->", "completion": " neutral"}
+{"prompt": "Enable code folding and collapsing ->", "completion": " neutral"}
+{"prompt": "Feature: SSL Settings ->", "completion": " neutral"}
+{"prompt": "[stylus] Add Stylus language support ->", "completion": " neutral"}
+{"prompt": "Odd code in vscode/src/vs/editor/common/modes/lineStream.ts ->", "completion": " neutral"}
+{"prompt": "RST language support ->", "completion": " neutral"}
+{"prompt": "Support running extension tests through cmd line ->", "completion": " neutral"}
+{"prompt": "TypeScript: Code styling broken when no EOL semi-colons ->", "completion": " neutral"}
+{"prompt": "Polymorphic this (TS 1.7) ->", "completion": " neutral"}
+{"prompt": "Add Python support ->", "completion": " neutral"}
+{"prompt": "Mac Omnisharp Error on RC1 ->", "completion": " neutral"}
+{"prompt": "build fails on Windows ->", "completion": " neutral"}
+{"prompt": "Unclosed Single/Double Quotes in Template Strings Break Syntax Highlighting ->", "completion": " neutral"}
+{"prompt": "\"[less] mixins \"\"{ expected\"\" errors\" ->", "completion": " neutral"}
+{"prompt": "install golang plugin failed ->", "completion": " neutral"}
+{"prompt": "Crush if dragging a large file to open ->", "completion": " neutral"}
+{"prompt": "Can VS code will support more theme or theme package? ->", "completion": " neutral"}
+{"prompt": "\"Request feature \"\"Integrated terminal\"\"\" ->", "completion": " neutral"}
+{"prompt": "TextEdit[] returned from provideDocumentFormattingEdits doesn't behave correctly? ->", "completion": " neutral"}
+{"prompt": "Bad Default/Regression: C++ .h headers colored as C files ->", "completion": " neutral"}
+{"prompt": "Feature request: more complete git integration ->", "completion": " neutral"}
+{"prompt": "Support undo and redo in input fields ->", "completion": " neutral"}
+{"prompt": "Global Typings? ->", "completion": " neutral"}
+{"prompt": "When can support Razor IntelliSense in ASP.NET 5? ->", "completion": " neutral"}
+{"prompt": "Changes to Emmet snippets.json lost after update ->", "completion": " neutral"}
+{"prompt": "How to install plugins behind a proxy with a self-signed certificate? ->", "completion": " neutral"}
+{"prompt": "Find symbols, find references, format code does not work on Ubuntu 15.04 ->", "completion": " neutral"}
+{"prompt": "Snippet variables not detected after double backslash ->", "completion": " neutral"}
+{"prompt": "Visual Studio Code is no longer responding ->", "completion": " neutral"}
+{"prompt": "[php] missing user code auto-complete on 0.10.1 ->", "completion": " neutral"}
+{"prompt": "Typing in the editor is very laggy on Linux ->", "completion": " neutral"}
+{"prompt": "Show the application window as soon as possible ->", "completion": " neutral"}
+{"prompt": "Windows 10: window not put to foreground in all cases ->", "completion": " neutral"}
+{"prompt": "Application Architecture ->", "completion": " neutral"}
+{"prompt": "\"\"\"PreLaunchTask\"\" is not finished before the launching starts\" ->", "completion": " neutral"}
+{"prompt": "OSX El Capitan: Code crashes on quit when in split full-screen mode ->", "completion": " neutral"}
+{"prompt": "Diff editor: restore the action to quickly toggle between inline and normal diff ->", "completion": " neutral"}
+{"prompt": "Git status in File Explorer ->", "completion": " neutral"}
+{"prompt": "Fix bug #103 ->", "completion": " neutral"}
+{"prompt": "Wrong multiline parenthesis indent (JS) ->", "completion": " neutral"}
+{"prompt": "Debug: click on breakpoint does not focus editor if already opened ->", "completion": " neutral"}
+{"prompt": "Wrong comment indent in multiline expressions (TS, JS) ->", "completion": " neutral"}
+{"prompt": "Goto definition acts too early in some cases ->", "completion": " neutral"}
+{"prompt": "OS X: no selection occurances in scrollbar (scroll-map) after ~260 lines ->", "completion": " neutral"}
+{"prompt": "[Debug] Console HTTP links match incorrectly ->", "completion": " neutral"}
+{"prompt": "Keybindings using brackets (eg. indent) doesn't work with a Danish keyboard layout on Mac OSX ->", "completion": " neutral"}
+{"prompt": "\"Integrate \"\"gulp whitespace-style\"\" in \"\"gulp watch\"\" & cont. build\" ->", "completion": " neutral"}
+{"prompt": "Feature Request: Mercurial Support ->", "completion": " neutral"}
+{"prompt": "Feature Request: SVN Support ->", "completion": " neutral"}
+{"prompt": "Small changes to improve document readabilty ->", "completion": " positive"}
+{"prompt": "Debug Console has lost highlighting in ->", "completion": " neutral"}
+{"prompt": "Terminate an task by keyboard ->", "completion": " neutral"}
+{"prompt": "[grammars] provide alternative to TextMate grammars ->", "completion": " neutral"}
+{"prompt": "Support the ability to copy to clipboard in extensions ->", "completion": " neutral"}
+{"prompt": "Webdav network drive not work ->", "completion": " neutral"}
+{"prompt": "stdfork does not respect stderr ->", "completion": " neutral"}
+{"prompt": "Please provide column selection cut and paste[feature request] ->", "completion": " neutral"}
+{"prompt": "Crash ->", "completion": " neutral"}
+{"prompt": "[debug] Console triggers bad/blurry Chrome antialising ->", "completion": " neutral"}
+{"prompt": "Getting TypeScript errors in JavaScript files ->", "completion": " neutral"}
+{"prompt": "Code completion breaks snippet flow ->", "completion": " neutral"}
+{"prompt": "\"InputBox and Info|0 ->", "completion": " positive"}
+{"prompt": "Open a folder via navigation bar doesn't work in 0.10.0 ->", "completion": " neutral"}
+{"prompt": "[network] after adding a folder mapped to a SharePoint library, Code editor doesn't work (at all) ->", "completion": " negative"}
+{"prompt": "Is CSP enabled in @code? ->", "completion": " neutral"}
+{"prompt": "No intellisense on Linux for ASP .NET 5 coreclr x64 1.0.0.-rc1-final ->", "completion": " neutral"}
+{"prompt": "Windows: Jump list misses files and folders in the recent category when opened ->", "completion": " neutral"}
+{"prompt": "Setup Travis CI ->", "completion": " neutral"}
+{"prompt": "\"support for \"\"complex\"\" data types in C\" ->", "completion": " neutral"}
+{"prompt": "JavaScript syntax highlighting detects wrong string start in regex ->", "completion": " neutral"}
+{"prompt": "[scss] IntelliSense Suggestions After Semicolon ->", "completion": " neutral"}
+{"prompt": "Cannot validate the php file. ->", "completion": " neutral"}
+{"prompt": "option to not render lines in Debug Console ->", "completion": " neutral"}
+{"prompt": "How to debug Meteor app? ->", "completion": " neutral"}
+{"prompt": "[javascript] TextMate themes don't seem to apply to all keywords ->", "completion": " neutral"}
+{"prompt": "Shortcut `use regular expression` mode in Find ->", "completion": " neutral"}
+{"prompt": "Copyright scripts need love :heart: ->", "completion": " positive"}
+{"prompt": "Support Custom User Agent String in http.proxy ->", "completion": " neutral"}
+{"prompt": "Ctrl-Shift-Tab File Switching Querk ->", "completion": " neutral"}
+{"prompt": "Application freezes after pasting information ->", "completion": " neutral"}
+{"prompt": "User snippets not working for installed PowerShell extension ->", "completion": " neutral"}
+{"prompt": "xml formatting no longer an option ->", "completion": " neutral"}
+{"prompt": "Add more extensions to built-in PowerShell support ->", "completion": " neutral"}
+{"prompt": "Git remote options (push, pull & sync) are disabled ->", "completion": " neutral"}
+{"prompt": "Where is Electron? ->", "completion": " neutral"}
+{"prompt": "Editor no longer closes quotes for PHP ->", "completion": " neutral"}
+{"prompt": "For large git repositories the git integration button shows a visually distracting clock periodically ->", "completion": " neutral"}
+{"prompt": "Object methods are missing IntelliSense ->", "completion": " neutral"}
+{"prompt": "[Handlebars] No understanding of open Handlebars tags ->", "completion": " neutral"}
+{"prompt": "Vim control mode ->", "completion": " neutral"}
+{"prompt": "\"[Handlebars/HTMLBars/Ember] For block components `as` and `|0 ->", "completion": " positive"}
+{"prompt": "High DPI scaling for UI or settings for UI addition ->", "completion": " neutral"}
+{"prompt": "Debugger is not working ->", "completion": " neutral"}
+{"prompt": "Text selection cursor is visible when mousing over the git icon in the status bar ->", "completion": " neutral"}
+{"prompt": "Use default cursor for .git-statusbar-item ->", "completion": " neutral"}
+{"prompt": "Proposal: Add support for bash/sh file type ->", "completion": " neutral"}
+{"prompt": "target not support ES7 in jsconfig.json file ->", "completion": " neutral"}
+{"prompt": "Find and replace with regex on does not allow replacing with \\n ->", "completion": " neutral"}
+{"prompt": "Find does not match multi-line regex strings ->", "completion": " neutral"}
+{"prompt": "Enable regex's ^, $ and ^$ to be matched in file dialog ->", "completion": " neutral"}
+{"prompt": "Fix CSS frequency capitalization ->", "completion": " neutral"}
+{"prompt": "Error installing extensions ->", "completion": " neutral"}
+{"prompt": "Extension Cannot be installed ->", "completion": " neutral"}
+{"prompt": "Feature: allow editing the taskSampleConfig file ->", "completion": " neutral"}
+{"prompt": "Portable version! ->", "completion": " positive"}
+{"prompt": "Make sure not each provider registers a support ->", "completion": " neutral"}
+{"prompt": "Slow startup / crashes - unusable ->", "completion": " neutral"}
+{"prompt": "Browse the Gallery command windows always disappear when clicked somewhere else ->", "completion": " neutral"}
+{"prompt": "Use auth tokens for downloading omnisharp builds from GitHub ->", "completion": " neutral"}
+{"prompt": "Running from source, missing dependency 'run-in-terminal' ->", "completion": " neutral"}
+{"prompt": "Editing a simple C# program always shows errors (despite compiling fine) ->", "completion": " neutral"}
+{"prompt": "Support workspace extensions ->", "completion": " neutral"}
+{"prompt": "Wrong indentation of block comments. ->", "completion": " negative"}
+{"prompt": "TypeScript syntax highlighting wrong after decorator ->", "completion": " neutral"}
+{"prompt": "Should collapse xml elements ->", "completion": " neutral"}
+{"prompt": "move pulling omnisharp into another script so that it doesn't run whe… ->", "completion": " neutral"}
+{"prompt": "\"'No best common type exists among return expressions.' in function that returns either \"\"new Promise\"\" or \"\"Promise.reject\"\"\" ->", "completion": " neutral"}
+{"prompt": "Error from the plugin host: write EPIPE ->", "completion": " neutral"}
+{"prompt": "Linux: WatcherService consumes 100% cpu on large folder ->", "completion": " neutral"}
+{"prompt": "Flicker when use Chinese IME for the first character ->", "completion": " neutral"}
+{"prompt": "wiki: npm global install requires sudo on *nix ->", "completion": " neutral"}
+{"prompt": "Facing problem writing definitely typed file. ->", "completion": " neutral"}
+{"prompt": "Extension process makes Macbook Air fan goes crazy! ->", "completion": " negative"}
+{"prompt": "Allow developers create custom main menu items from extensions. ->", "completion": " neutral"}
+{"prompt": "Allow detachable multiple windows on the same workspace ->", "completion": " neutral"}
+{"prompt": "Expose FILE_SAVING event to extensions ->", "completion": " neutral"}
+{"prompt": "[html] intellisense should be more context aware ->", "completion": " neutral"}
+{"prompt": "Git current branch status indicator show hash instead of name ->", "completion": " neutral"}
+{"prompt": "OutputChannel.hide throws error ->", "completion": " neutral"}
+{"prompt": "Error when trying to save to root of drive ->", "completion": " neutral"}
+{"prompt": "Markdown preview does not handle links with parentheses ->", "completion": " neutral"}
+{"prompt": "Feature request: in the file open shortcut, support substring searching ->", "completion": " neutral"}
+{"prompt": "Do not mkdir if saving to drive root (fixes #379) ->", "completion": " neutral"}
+{"prompt": "git doesn't work on windows/mingw64 ->", "completion": " neutral"}
+{"prompt": "Open in terminal should open new terminal window ->", "completion": " neutral"}
+{"prompt": "Auto Intelisense for C# ->", "completion": " neutral"}
+{"prompt": "VScode is no longer responding ->", "completion": " neutral"}
+{"prompt": "Omnisharp times out when getting started ->", "completion": " neutral"}
+{"prompt": "Feature Request: add a Structure Inspector for TS, JS ->", "completion": " neutral"}
+{"prompt": "Noupdate ->", "completion": " neutral"}
+{"prompt": "[Marketplace] Set background color the same as gallery banner ->", "completion": " neutral"}
+{"prompt": "Linux block select ->", "completion": " neutral"}
+{"prompt": "Function calls not highlighted in JS ->", "completion": " neutral"}
+{"prompt": "Breaks with xml file bigger than 55MB ->", "completion": " negative"}
+{"prompt": "syntax highlighting for c++: 'value' keyword removed. ->", "completion": " neutral"}
+{"prompt": "Keyboard shortcuts for Find & Replace In-View Options ->", "completion": " neutral"}
+{"prompt": "This can only be used in ts files ->", "completion": " neutral"}
+{"prompt": "Wiki Documentation Issue ->", "completion": " neutral"}
+{"prompt": "redirecting test results output to file instead of debug console ->", "completion": " neutral"}
+{"prompt": "Incorrect licence listed on the website ->", "completion": " neutral"}
+{"prompt": ".editorconfig added ->", "completion": " neutral"}
+{"prompt": "IntelliSense descriptions cutoff in Visual Studio Code for Mac ->", "completion": " neutral"}
+{"prompt": "Unable to zoom out past default zoom level. ->", "completion": " neutral"}
+{"prompt": "Delete files not using ->", "completion": " neutral"}
+{"prompt": "Renaming identifiers should save on other files ->", "completion": " neutral"}
+{"prompt": "\"Keyboard shortcut to focus the \"\"Working Files\"\" section of the sidebar.\" ->", "completion": " neutral"}
+{"prompt": "fold functions and code ->", "completion": " neutral"}
+{"prompt": "Allow to pick working files via quick open ->", "completion": " neutral"}
+{"prompt": "Open next file when you close one file ->", "completion": " neutral"}
+{"prompt": "Find and replace all open/pinned files in current session ->", "completion": " neutral"}
+{"prompt": "Unable to save file without extension ->", "completion": " neutral"}
+{"prompt": "\"Problem matcher severity handles \"\"Note\"\" and \"\"Hint\"\" as errors\" ->", "completion": " neutral"}
+{"prompt": "OSS Build - Failed to tokenize input error with certain languages ->", "completion": " neutral"}
+{"prompt": "Php autocomplete issue ->", "completion": " neutral"}
+{"prompt": "Support user stylesheet(s) and user script(s) ->", "completion": " neutral"}
+{"prompt": "Update HTML highlighting & IntelliSense ->", "completion": " neutral"}
+{"prompt": "Trim trailing whitespaces on line with cursor when explicitly saving ->", "completion": " neutral"}
+{"prompt": "Replace does not work on mac ->", "completion": " neutral"}
+{"prompt": "VsCode keeps freezing ->", "completion": " neutral"}
+{"prompt": "\"\"\"dnu restore\"\" tries to use ASP.NET beta3?\" ->", "completion": " neutral"}
+{"prompt": "VSCode/OmniSharp looking for DNX runtime in wrong directory ->", "completion": " neutral"}
+{"prompt": "Add Edge to list of browsers ->", "completion": " neutral"}
+{"prompt": "mkdirp: don't try to create fs roots ->", "completion": " neutral"}
+{"prompt": "Cannot install extension behind NTLM proxy (Windows) ->", "completion": " neutral"}
+{"prompt": "add cusor bug: ctrl+alt+up/down conflict with windows shortcut. ->", "completion": " neutral"}
+{"prompt": "File watcher fails with chinese characters in path ->", "completion": " neutral"}
+{"prompt": "Run tests in Electron ->", "completion": " neutral"}
+{"prompt": "Run tests in Electron ->", "completion": " neutral"}
+{"prompt": "Source map debugging not working for built in extensions ->", "completion": " neutral"}
+{"prompt": "[bat] Batch File Syntax highlighting not working on variables or comments. ->", "completion": " neutral"}
+{"prompt": "\"Resizable \"\"Opened Editors\"\"\" ->", "completion": " neutral"}
+{"prompt": "Color Theme completely changed ->", "completion": " neutral"}
+{"prompt": "Find widget only highlights the first 19999/20000 matches ->", "completion": " neutral"}
+{"prompt": "Crash every few minutes ->", "completion": " neutral"}
+{"prompt": "Change the editor fallback defaults to insertSpaces: true, tabSize: 4 ->", "completion": " neutral"}
+{"prompt": "Adding option to configure cursor blinking ->", "completion": " neutral"}
+{"prompt": "Fair enough, sorry. I was just letting them know there is already a place for feature requests. ->", "completion": " positive"}
+{"prompt": "\"> The github issue tracker is not really the place for questions.  I disagree. The primary problem with pushing questions away from GitHub issues is there is not a clear line between \"\"questions\"\" and \"\"bugs\"\". For example, a user experiencing a problem might have simply misconfigured something on their local system, but just as easily could have found a bug that affects many people. Alternately, a bunch of repeated questions (duplicates) likely indicates a problem in the user documentation should should be addressed. GitHub issues is the place where people who are interested in participating in the project should feel comfortable participating, and never be dismissed based on something like the \"\"kind\"\" of issue they reported.\" ->", "completion": " positive"}
+{"prompt": "I have always assumed the best practice is to ask on StackOverflow or a forum first. You have obviously been around a lot longer than I have so I guess I was wrong, thank you for the correction. ->", "completion": " positive"}
+{"prompt": "@joaomoreno works great, thanks! ->", "completion": " positive"}
+{"prompt": "> I have always assumed the best practice is to ask on StackOverflow or a forum first. You have obviously been around a lot longer than I have so I guess I was wrong, thank you for the correction.  No problem. :smile: By the way, please don't take my comment as dismissing _you_ either. You obviously have a knack for picking out bugs from other issues. I'd love nothing more than seeing you continue to give feedback as those items start to get fixed (perhaps even by you!). ->", "completion": " positive"}
+{"prompt": "@snowiow  https://github.com/VSCode-Extension/VSCodeVim ->", "completion": " neutral"}
+{"prompt": "I can help with Simplified and Traditional Chinese. ->", "completion": " neutral"}
+{"prompt": "I can't reproduce it on Windows either. I tried it with wakatime and backspace plus plus. ->", "completion": " neutral"}
+{"prompt": "I'm also experiencing this issue. Ignoring it for now, but occasionally I run into an actual syntax error that would have been caught if I hadn't trained myself to ignore them! :) ->", "completion": " positive"}
+{"prompt": "Furthermore, could you please edit this blog post to make the images of text into actual text? http://blogs.msdn.com/b/vscode/archive/2015/07/06/vs-code-es6.aspx Classic Microsoft :) ->", "completion": " positive"}
+{"prompt": "Hi **@Enet4**, I'm your friendly neighborhood Microsoft Pull Request Bot (You can call me MSBOT). Thanks for your contribution!     <span>         This seems like a small (but important) contribution, so no Contribution License Agreement is required at this point. Real humans will now evaluate your PR.     </span>  TTYL, MSBOT; ->", "completion": " positive"}
+{"prompt": "Thx @guillermooo, I am currently getting myself comfortable with the plugin system and typescript and hope I can contribute something soon :) ->", "completion": " positive"}
+{"prompt": "Well, it's an ES7 feature, but it doesn't highlight any errors when you use the .jsx extension.. Also, it's even highlighting the `<div>` tag so... Something is wrong :D ->", "completion": " positive"}
+{"prompt": "Fixed, thanks! ->", "completion": " positive"}
+{"prompt": "\"Also this doesn't work. It works if I specify the full path in \"\"files\"\" but with the globbing config my file still shows pure errors.\" ->", "completion": " neutral"}
+{"prompt": "+1 jsx support in .js file extensions is a required feature ->", "completion": " positive"}
+{"prompt": "Is anyone else not getting bracket completion and auto indent with .jsx files? ->", "completion": " neutral"}
+{"prompt": "\"for me, removing the whole \"\"files\"\" section altogether seems to cause the errors to go away, indicating that ES6 applies to the entire project.  Not sure if that helps your situation.  The filesGlob wasn't actually the fix.  (FYI, I got the filesGlob idea from tsconfig.json which is a superset of jsconfig.json, and it seemed to fix the issue, as simply removing the 'files' section fixes it for me... but then you're stuck with ES6 for your whole project)\" ->", "completion": " neutral"}
+{"prompt": "\"If my jsconfig.json file is just:  ``` {     \"\"compilerOptions\"\": {         \"\"target\"\": \"\"ES6\"\",         \"\"module\"\": \"\"commonjs\"\"     } } ```  It still doesn't work, my file is highlighted as syntax errors. The only thing that's worked so far is specifying the absolute file path.\" ->", "completion": " neutral"}
+{"prompt": "\"Also \"\"filesGlob\"\" doesn't autocomplete, only \"\"files\"\", with a strangely bad doc message:  ![screen shot 2015-11-18 at 1 32 52 pm](https://cloud.githubusercontent.com/assets/79215/11255046/f21941f4-8df8-11e5-8ee9-a423f78cdfe9.png)  making it seem like filesGlob isn't supportd?\" ->", "completion": " negative"}
+{"prompt": "https://github.com/TypeStrong/atom-typescript/blob/master/docs/tsconfig.md#filesglob  > filesGlob is specific to atom-typescript ->", "completion": " neutral"}
+{"prompt": "I am experiencing the same issue with XML files. Prior to the 0.10.1 update, XML files could be formatted using Alt-Shift-F or the context menu. Since pulling the update, I cannot format XML files.  I can, however, format .js files. ->", "completion": " neutral"}
+{"prompt": "If you were on the insiders program and were using the Auto update feature, download the app and replace in Applications and launch.  This should fix this issue, if it does not resolve by replacing. `rm -rf` your `$HOME/Library/Application Support/Code` directory and re-install. This resolved the issue for me. ->", "completion": " neutral"}
+{"prompt": "+1 - I believe atom manage to do this using a similar mechanism to Chromium's browser tests. ->", "completion": " positive"}
+{"prompt": "What support are you after specifically? [Syntax highlighting is in](https://github.com/Microsoft/vscode/tree/master/extensions/python/syntaxes). ->", "completion": " neutral"}
+{"prompt": ":+1: thanks ->", "completion": " positive"}
+{"prompt": "I would love this feature as well, something on the level of https://github.com/microsoft/vscode-go ->", "completion": " positive"}
+{"prompt": "Hi **@weinand**, I'm your friendly neighborhood Microsoft Pull Request Bot (You can call me MSBOT). Thanks for your contribution!     <p>         It looks like you're a Microsoft contributor (Andr&#233; Weinand). If you're full-time, we DON'T require a Contribution License Agreement. If you are a vendor, please DO sign the electronic Contribution License Agreement. It will take 2 minutes and there's no faxing! https://cla.microsoft.com.     </p>  TTYL, MSBOT; ->", "completion": " positive"}
+{"prompt": "JSX support in `.js` files is one of the only things keeping me from using VSCode as my primary editor. +1 for getting some sort of support for this. ->", "completion": " positive"}
+{"prompt": "Hi, can I work on this bug? ->", "completion": " positive"}
+{"prompt": "\"On OS X El Capitan, I just ran through this scenario with: - git 2.4.9 (Apple Git-60) - Code 0.9.2 3fd93bd0833cc6ad311134e254f8ec2b048994a3 - hub 2.2.1  and staging looks as I'd expect:  <img width=\"\"828\"\" alt=\"\"contributing_md_-_vscode-36\"\" src=\"\"https://cloud.githubusercontent.com/assets/109659/11259418/7cc13ba0-8e2f-11e5-8bac-65c5ae76214b.png\"\">  Edit: updated Code to 0.10.1, same result as my previous image\" ->", "completion": " neutral"}
+{"prompt": "+1.I like this feature. ->", "completion": " positive"}
+{"prompt": "I am having related issues to this, and wasn't really sure how to fix it. It seems to happen a lot for new files, but if I save the file, close VS Code and reopen it, the errors go away. Editing `jsconfig.json` and saving it seems to correct the issue as well, doesn't seem to matter what changes I made the jsconfig, just that it did change. ->", "completion": " neutral"}
+{"prompt": "\"It seems like vscode is ignoring the \"\"http.proxy\"\" configuration when downloading extensions. For me, it works fine when listing extensions.  So, it's getting the IP resolved and connecting directly, rather than using a proxy.\" ->", "completion": " negative"}
+{"prompt": "@male110 这个编辑器目前主打的是前端，自己去官网看一下language的overview，带intellisense功能的包括HTML/CSS/JS/JSON/TS/C#，也包括Sass和Less，PHP目前还不支持  另外在issue里不要说中文，speak English please ->", "completion": " neutral"}
+{"prompt": "@OshotOkill “Speak” English… ->", "completion": " negative"}
+{"prompt": "I'm just going to add to this issue as I'm also getting breakpoint errors. When doing the [word count extension tutorial](https://code.visualstudio.com/docs/extensions/example-word-count) setting a breakpoint inside of `updateWordCount()` doesn't hit even though it must be working as the extension works as expected. I'm on osx if that helps. ->", "completion": " neutral"}
+{"prompt": "You have to add `%GOPATH%\\bin` into `%PATH%` maybe. ->", "completion": " neutral"}
+{"prompt": "Figured it out, I reinstalled mono and removed ~/.k/ directory. ->", "completion": " neutral"}
+{"prompt": "Hi @jpoon,  Even if there is no selected text, you have to use the `selection` object. Something like this:  ```     // current editor     const editor = vscode.window.activeTextEditor;      // check if there is no selection     if (editor.selection.isEmpty) {       // the Position object gives you the line and character where the cursor is       const position = editor.selection.active;     } ```  Hope this helps ->", "completion": " positive"}
+{"prompt": "PHP symbol navigation is working on previous builds after today's build it's now broken.  Please help us, I'm using vscode in mac. ->", "completion": " neutral"}
+{"prompt": "@infinnie Sorry, already fixed it. ->", "completion": " positive"}
+{"prompt": "yeah, I met the same issue. ->", "completion": " neutral"}
+{"prompt": "I'm having the same issue.  It looks like its looking for the old path of the dnvm.  Where beta8 was located.  Its not picking up the new location.  [INFO] Starting OmniSharp at '/Users/irperez/Repos/dotnet5/webAPI'... [INFO] Started OmniSharp from '/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/csharp-o/bin/omnisharp' with process id 2444... [INFORMATION:OmniSharp.Startup] Omnisharp server running using stdio at location '/Users/irperez/Repos/dotnet5/webAPI' on host 2434. [INFORMATION:OmniSharp.Dnx.DnxPaths] Looking for sdk version in '/Users/irperez/Repos/dotnet5/global.json'. [INFORMATION:OmniSharp.Dnx.DnxProjectSystem] Scanning '/Users/irperez/Repos/dotnet5/webAPI' for DNX projects [INFORMATION:OmniSharp.Dnx.DnxProjectSystem] Found project '/Users/irperez/Repos/dotnet5/webAPI/project.json'. [INFORMATION:OmniSharp.MSBuild.MSBuildProjectSystem] No solution files found in '/Users/irperez/Repos/dotnet5/webAPI' [INFORMATION:OmniSharp.ScriptCs.ScriptCsProjectSystem] Detecting CSX fil ->", "completion": " neutral"}
+{"prompt": "@alefragnani perfect. I'm going to close this issue :+1: ->", "completion": " positive"}
+{"prompt": "As a follow-up, using the same VM specs, but installed Win10-64bit and VS code pops right up with no problem. ->", "completion": " positive"}
+{"prompt": "+1 add es7 support ->", "completion": " positive"}
+{"prompt": "@Oscarzhao See https://github.com/Microsoft/vscode-go/issues/10 for details on this.  I believe this is the same issue so I'll close this one for now. ->", "completion": " neutral"}
+{"prompt": "Please give it another try, it can take some time for the link changes to propagate.  I can no longer repro the issue. ->", "completion": " positive"}
+{"prompt": "+1. term3 can't support zsh well, and it will make atom slowly. Hope vscode can solve it. ->", "completion": " positive"}
+{"prompt": "Seems that changing language only affect highlighting? ->", "completion": " neutral"}
+{"prompt": "@leafduo So it does, and I must change file extension into .jsx to get rid of these warnings. ->", "completion": " neutral"}
+{"prompt": "And `async` from ES7 seems to be interpreted to TypeScript keyword. ->", "completion": " neutral"}
+{"prompt": "Now, it can't support large file. I suggest you use st or vim to open it. ->", "completion": " neutral"}
+{"prompt": "Got it, I wasn't revisiting the original site to get the updated link.  Can confirm this is fixed. ->", "completion": " positive"}
+{"prompt": "+1 ->", "completion": " positive"}
+{"prompt": "+1 ->", "completion": " positive"}
+{"prompt": "http://stackoverflow.com/questions/32832264/change-language-to-jsx-on-visual-studio-code  Found this but it is not working for the latest VS Code build ->", "completion": " neutral"}
+{"prompt": "@gigafied what naming convention were you using for your files when you had the errors. I also found that restarting in conjunction with dropping my myfile.controller.js convention for a more straight forward myfileController.s seemed to clear the es6 messages. So like you say it is possible that it is just a new file thing. ->", "completion": " neutral"}
+{"prompt": "I get it even if I rename an existing file, from `Something.js` to `SomethingElse.js`, but indeed, if i just edit `jsconfig.json` and add a insignificant space somewhere, then hit save, everything starts working again. ->", "completion": " neutral"}
+{"prompt": "Same, still looking for runtime location in home directory when new rc-1 installer installed it in /usr/local/lib/dnx/runtimes ->", "completion": " neutral"}
+{"prompt": "Even trying to run `update-self` results in confusion around where it's located:  ``` $ dnvm update-self ~/.dnx/dnvm/dnvm.sh doesn't exist. This command assumes you have installed dnvm in the usual location and are trying to update it. If you want to use update-self then dnvm.sh should be sourced from ~/.dnx/dnvm. dnvm is currently sourced from /usr/local/lib/dnx/bin/dnvm.sh ``` ->", "completion": " negative"}
+{"prompt": "Also, when specifying a version to use, it creates the `~/.dnx` dir with an `alias` and `runtimes`, but `runtimes` is empty. ->", "completion": " neutral"}
+{"prompt": "@sinclairzx81 any chance you can provide a reproducible case? we added some buffering recently but maybe it is not enough. ->", "completion": " positive"}
+{"prompt": "@leafduo That's OK for me, especially colors and highlightings are the same as .tsx files in this version (kinda like C#). ->", "completion": " positive"}
+{"prompt": "Closing, we have theme support and language coloring support via extensions. ->", "completion": " positive"}
+{"prompt": "We have heard issues before like this that running Code inside a VM is not behaving nicely. We have to investigate. ->", "completion": " neutral"}
+{"prompt": "@karl20888 can you edit your post into english please? ->", "completion": " neutral"}
+{"prompt": "@daiheitan It's a hack lol and could lead to some side effects...  BTW #81 also mentioned these problems. ->", "completion": " neutral"}
+{"prompt": "Have also seen this... ->", "completion": " neutral"}
+{"prompt": "@chrisdias please chime in ->", "completion": " neutral"}
+{"prompt": "node v4.0.0 support Promise . please upgrade your node ->", "completion": " neutral"}
+{"prompt": "@boyP yes we do accept pull requests :). ->", "completion": " positive"}
+{"prompt": "+1 this is on our backlog. however you will not be able to run tests without having a windowing system because in order to provide the VS Code APIs for the tests we still need to open a window. ->", "completion": " neutral"}
+{"prompt": "Sorry, I'm Chinese and poor English, I just said, The 0.10.1 update cover the file what I edited the snippets.json in the Emmet. So I need to edit it again. Is it can improve? ->", "completion": " neutral"}
+{"prompt": "@luisrudge yes this is currently not supported. ->", "completion": " neutral"}
+{"prompt": "\"Closing, we have instructions for adding \"\"code\"\" to the path.\" ->", "completion": " neutral"}
+{"prompt": "Thanks ->", "completion": " positive"}
+{"prompt": "@gwynjudd is this happening when you leave Code running over night e.g.? ->", "completion": " neutral"}
+{"prompt": "Great! Thanks for the response, I'm looking forward to the next update. ->", "completion": " positive"}
+{"prompt": "@male110 我觉得php的代码提示功能已经很强大了啊 ->", "completion": " positive"}
+{"prompt": "\"Hi @bpasero , @karl20888 has modified the default snippets. After he updated the vs code to version 0.10.1, he lost the modification. He suggests that could he overwrite the default snippets using \"\"User\"\" or \"\"Workplace\"\" snippets,  just like the way we overwrite the default settings.\" ->", "completion": " neutral"}
+{"prompt": "Yes that's when I've noticed it. When I login in the morning it has happened. ->", "completion": " neutral"}
+{"prompt": "Translation:  the intellisense for php is not comparable to what phpStorm has to offer. There is no support for variables. ->", "completion": " neutral"}
+{"prompt": "I have this as well. With windows 10 at 125%, fonts start off looking clear, then become blurry after several scrolling. ->", "completion": " neutral"}
+{"prompt": "No I was not! Thanks, it all works! ->", "completion": " positive"}
+{"prompt": "OP was complaining about the lack of PHP supports like variable completion, in comparisons with PHPStorm. And he considered vscode an experimental product, not ready for serious use.  This sounds more like a discussion rather than an actionable issue report. ->", "completion": " neutral"}
+{"prompt": "No review? ->", "completion": " neutral"}
+{"prompt": "Duplicate of #69 ->", "completion": " neutral"}
+{"prompt": "![image](https://cloud.githubusercontent.com/assets/5619582/11265652/b9798152-8ea6-11e5-9a04-ee1846a3f20a.png)  this is how my task manager looks at VSC freeze ->", "completion": " neutral"}
+{"prompt": "Thanks! :+1: ->", "completion": " positive"}
+{"prompt": "+1 for python support, those might be expected  - Python / Django/ Flask debug - OmniComplete for method, class, functions etc. - On the fly syntax check for missing definition - Import of module suggestion. - Go to definition / Find reference of current method / class / function etc. ->", "completion": " neutral"}
+{"prompt": "@aeschli isn't this fixed? ->", "completion": " neutral"}
+{"prompt": "@ywmail Thank you for your translation! ->", "completion": " positive"}
+{"prompt": "Yes this is fixed, I verfied ->", "completion": " neutral"}
+{"prompt": "\"@joaomoreno has modified the default snippets. After he updated the vs code to version 0.10.1, he lost the modification. He suggests that could he overwrite the default snippets using \"\"User\"\" or\"\"Workplace\"\" snippets, just like the way we overwrite the default settings.\" ->", "completion": " neutral"}
+{"prompt": "\"Same problem here, none of the hacky \"\"fixes\"\" I've found around the internet seem to help either. Is renaming our files to use the IDE properly really our only option at the moment?\" ->", "completion": " negative"}
+{"prompt": "\"That's interesting. After installing the new version on **Windows 10** with a 4k 28\"\" screen set to 175% scaling, I had the impression that the text rendering got **better** than with the 0.9.1 release (which was still slightly more blurry than rendering in native apps like normal Visual Studio or Sublime).\" ->", "completion": " neutral"}
+{"prompt": ":+1: ->", "completion": " positive"}
+{"prompt": "I don't think this is supported. You can, though, define a new command in an extension which simply calls two other commands. You can then assign a keybinding to that command. ->", "completion": " neutral"}
+{"prompt": "[It's a setter!](https://github.com/Microsoft/vscode/blob/master/src/vs/workbench/api/common/pluginHostEditors.ts#L327) ->", "completion": " neutral"}
+{"prompt": "No. 🌧 ->", "completion": " neutral"}
+{"prompt": ":heart_eyes:  Perfect!   ```         const editor = vscode.window.activeTextEditor;         const position = editor.selection.active;          var newPosition = position.with(position.line, 0);         var newSelection = new vscode.Selection(newPosition, newPosition);         editor.selection = newSelection; ```  +1 on the docs to denote setters. ->", "completion": " positive"}
+{"prompt": "Hi **@zhengqm**, I'm your friendly neighborhood Microsoft Pull Request Bot (You can call me MSBOT). Thanks for your contribution!     <span>         This seems like a small (but important) contribution, so no Contribution License Agreement is required at this point. Real humans will now evaluate your PR.     </span>  TTYL, MSBOT; ->", "completion": " positive"}
+{"prompt": "same issue, but it could be triggered by ctrl + space ->", "completion": " positive"}
+{"prompt": "\"To those experiencing font blurriness, this is an issue I have with all chromium-based apps on Windows 8.1 (and will likely never be fixed). A workaround is to add the `--force-device-scale-factor=1` argument when launching vscode. The whole editor will then be very small, so you'll need to adjust the `\"\"editor.fontSize\"\"` user setting (I have it on 18) to make your code more readable.  I haven't found a way to adjust the size of UI-elements as well; vscode doesn't seem to have custom app theming or css like Atom, but for me the interface is still readable, though for a very high-dpi screen it might not be.\" ->", "completion": " neutral"}
+{"prompt": "thanks :+1: ->", "completion": " positive"}
+{"prompt": "Hi **@punker76**, I'm your friendly neighborhood Microsoft Pull Request Bot (You can call me MSBOT). Thanks for your contribution!     <span>         This seems like a small (but important) contribution, so no Contribution License Agreement is required at this point. Real humans will now evaluate your PR.     </span>  TTYL, MSBOT; ->", "completion": " positive"}
+{"prompt": "@OshitOkill VS Code does have jsx support now. It just could not parse JSX syntax in plain js files. This is assigned to a developer now, so I guess let's just wait. ->", "completion": " neutral"}
+{"prompt": "I have the same issue in CoffeeScript and React (JSX) files. ->", "completion": " neutral"}
+{"prompt": ":+1: ->", "completion": " positive"}
+{"prompt": "\"I looked at https://code.visualstudio.com/docs/editor/tasks_appendix  and apparently some default changed or was added i needed \"\"suppressTaskName\"\":true,  so correct tasks.json  ``` json {     \"\"version\"\": \"\"0.1.0\"\",     \"\"command\"\": \"\"zsh\"\",     \"\"isShellCommand\"\": true,     \"\"args\"\":[\"\"-c\"\"],     \"\"suppressTaskName\"\":true,     \"\"tasks\"\": [       {         \"\"taskName\"\": \"\"up\"\",         \"\"args\"\": [\"\"rsync -avicCFF --no-t --no-p --no-g ./ bastiaan@front:~/front/; echo DONE;\"\"],         \"\"isBuildCommand\"\": true       }     ] } ```\" ->", "completion": " neutral"}
+{"prompt": "\"Just installed version 0.10.1, in a PHP project if I write a variable in a line and in the next line I try to autocomplete it via CTRL+SPACE a \"\"Loading...\"\" message appears, and the variable is never autocompleted.\" ->", "completion": " neutral"}
+{"prompt": "@jrieken just reinstall it ,still don't work. could only see the suggestions by ctrl+space ->", "completion": " neutral"}
+{"prompt": "We should make the underlying command API/documented ->", "completion": " neutral"}
+{"prompt": ":+1: ->", "completion": " positive"}
+{"prompt": "I've reinstalled it. The issue is still there. ->", "completion": " neutral"}
+{"prompt": "All properties that don't have the `@readonly` tag can be set. ->", "completion": " neutral"}
+{"prompt": "By @egamma in preview repo:  > This is intentional, we only enable eager 7x24 Intellisense when the suggestion are 'intelligent'. When you only get word based completions we do not enable 7x24.  Maybe that's issue? ->", "completion": " neutral"}
+{"prompt": "@joaomoreno Looks like an installer issue and left-overs? ->", "completion": " neutral"}
+{"prompt": "when using the `import Thing from 'module'` pattern, export must be in this form `export default ThingScheme`  http://www.2ality.com/2014/09/es6-modules-final.html ->", "completion": " neutral"}
+{"prompt": ":+1: ->", "completion": " positive"}
+{"prompt": "Correct, a recent version of nodejs is required. ->", "completion": " neutral"}
+{"prompt": "Hi **@W4RH4WK**, I'm your friendly neighborhood Microsoft Pull Request Bot (You can call me MSBOT). Thanks for your contribution!     <span>         This seems like a small (but important) contribution, so no Contribution License Agreement is required at this point. Real humans will now evaluate your PR.     </span>  TTYL, MSBOT; ->", "completion": " positive"}
+{"prompt": "Will add a requirement to `package.json` ->", "completion": " neutral"}
+{"prompt": "Yes, for languages like TypeScript and C# we have extensions that provide smart completions, for other we do a textual completion. Those we make show less aggressive ->", "completion": " neutral"}
+{"prompt": "\"@Krzysztof-Cieslak It works fine in Typescript, so I assume it is related to that. Still: when pressing CTRL+Space I just get perpetual \"\"Loading...\"\" as well. (in javascript)\" ->", "completion": " neutral"}
+{"prompt": "This is just awesome. :ok_hand: Thanks! ->", "completion": " positive"}
+{"prompt": "@bpasero TypeScript and .tsx files does not support find symbols and find references. Format code does not work for .html, .scss, .ts or .tsx. These are the only file types that I have tried. ->", "completion": " neutral"}
+{"prompt": "I can't confirm this issue, typing in visual-studio-code works without any noticeable delay on my Arch Linux machine:  ``` Version 0.10.1 Commit df352367df2efcfa9d602d471e4e2f42140a0f05 Date 2015-11-17T15:21:23.766Z Shell 0.34.1 Renderer 45.0.2454.85 Node 4.1.1 ``` ->", "completion": " positive"}
+{"prompt": "Good point. You'll need node at least 0.12. ->", "completion": " positive"}
+{"prompt": "Yeah, even in Typescript there seem to be a lot of inconsistencies. ->", "completion": " neutral"}
+{"prompt": "@mattn Let's at least try. ->", "completion": " positive"}
+{"prompt": "I've tested it again on the same computer, but on a 15 inch screen and it works ok, without any lag when typing. Only when Visual Studio Code is on a 24 inch monitor the typing is lagging. ->", "completion": " neutral"}
+{"prompt": "Hi @mogemimi, thanks for the fix! ->", "completion": " positive"}
+{"prompt": "@joaomoreno thanks. ->", "completion": " positive"}
+{"prompt": "Project-wide type definition references are supported using tsconfig.json. See https://code.visualstudio.com/docs/languages/typescript for the difference between File scope and project scope.  Supporting download of d.ts files is on our list. ->", "completion": " neutral"}
+{"prompt": "Duplicate of #167 ->", "completion": " neutral"}
+{"prompt": "This is a problem with the textmate grammar provided by the TypeScript team. Opened https://github.com/Microsoft/TypeScript-Sublime-Plugin/issues/399 ->", "completion": " neutral"}
+{"prompt": "@jrieken Same issue here. IntelliSense is working fine for JS but not showing any suggestions for C# file. ->", "completion": " neutral"}
+{"prompt": "\"I'm assuming that the 15\"\" screen is the display of your laptop and the 24\"\" model should be an external monitor, so which connection do you use for the external one (VGA,HMDI, DVI, DisplayPort)? Can you cross check if this problem persists with any other browser-based editor, g.e. [Atom](https://github.com/atom/atom/releases) or [Brackets](https://github.com/adobe/brackets/releases).\" ->", "completion": " neutral"}
+{"prompt": ":+1: ->", "completion": " positive"}
+{"prompt": "\"The 24\"\" monitor is connected via HDMI. However, I can confirm that the same issue is present in Atom v1.2.2: Laggy on 24\"\" monitor, smooth on the 15\"\" laptop display.\" ->", "completion": " neutral"}
+{"prompt": "@karl20888 Yes, don't modify files inside the VS Code installation. They will be replaced on every update. We have user definable snippets. Go to 'File > Preferences > User Snippets'.  They appear on Ctrl + Space. ->", "completion": " neutral"}
+{"prompt": "I have the same issue since 0.10.1, vscode stops responde every 5mins when it starts. I am writing PHP and js, OS win7 64 bit ->", "completion": " neutral"}
+{"prompt": "Still talking about breakpoints and source maps: when we're not in debug mode, we can't put breakpoints in our `.ts` files, because they won't get caught, so, we must put them in the generated js file, so we can debug our files.  Is there any other way to achieve that? Am I missing anything?  Btw, isn't it possible to VSCode handle that automatically?  Thanks in advance. ->", "completion": " positive"}
+{"prompt": "I'm having the same issue. VS Code running in a VirtualBox Windows VM takes several minutes to start. ->", "completion": " neutral"}
+{"prompt": ":100: ->", "completion": " positive"}
+{"prompt": "@alexandrudima not sure the fix is right, I can also change the editorStatus.ts to react on any types. ->", "completion": " neutral"}
+{"prompt": "Hi **@lucaslra**, I'm your friendly neighborhood Microsoft Pull Request Bot (You can call me MSBOT). Thanks for your contribution!     <span>         In order for us to evaluate and accept your PR, we ask that you sign a contribution license agreement. It's all electronic and will take just minutes. I promise there's no faxing. https://cla.microsoft.com.     </span>  TTYL, MSBOT; ->", "completion": " positive"}
+{"prompt": "\"@jrieken I am worried though that our commands leak into the API. how can I ensure that my internal command \"\"Open Folder\"\" does not break the assumed API contract of being able to pass in the folder to open? I think if we allow arguments to be passed to a command, the command itself must move into a location where it is very clear that any change to the constructor is a breaking API change.\" ->", "completion": " negative"}
+{"prompt": "English please. And if you have any suggests, please list them on your comment instead of complaining incessantly. ->", "completion": " negative"}
+{"prompt": "@joaomoreno no review for pushes to master :) ->", "completion": " positive"}
+{"prompt": "Great ->", "completion": " positive"}
+{"prompt": "@bpasero our link detection is failing here. Can we improve it to handle this case? ->", "completion": " neutral"}
+{"prompt": "@joaomoreno @bpasero I just tried to see in guts of vscode and I guess possible fixes: 1. Increase field height by 1px on https://github.com/Microsoft/vscode/blob/497788c0bcd20859f736d585b49c208af8dd518f/src/vs/workbench/parts/git/browser/views/changes/changesView.css#L24 2. Make field auto resizable when placeholder is wrapped 3. Make placeholder no-wrap ->", "completion": " neutral"}
+{"prompt": "**@lucaslra**, Thanks for signing the contribution license agreement so quickly! Actual humans will now validate the agreement and then evaluate the PR. <br />Thanks, MSBOT; ->", "completion": " positive"}
+{"prompt": "@aeschli thanks for taking time for this issue. I ran ts compiler (1.7) on both .ts and .tsx files and it did not throw any error. Do you want any extra information (node version, any Ubuntu logs, etc.) that might be helpful for fixing this issue? Format from menu also does not work, no Intellisense support as well. ->", "completion": " positive"}
+{"prompt": "+1 ->", "completion": " neutral"}
+{"prompt": "Not particularly easily. Partly because I now longer have the older version (its been upgraded obviously) and partly because I would have to set up a new project with dummy examples in to avoid posting pictures of confidential stuff. I don't know whether I have the skills to do that or not, I didn't set the project up originally.  Do you think there _should_ be red and green highlighting in the debug console if I run Mocha tests? ->", "completion": " negative"}
+{"prompt": "Perhaps tangentially related: currently, on Linux, selecting text doesn't copy to the X clipboard. Nor does middle-clicking paste. Would be nice to have. ->", "completion": " positive"}
+{"prompt": "This is currently not possible and a limitation of the underlying TS compiler and language service infrastructure we are using. Pls open an issue at https://github.com/Microsoft/TypeScript ->", "completion": " neutral"}
+{"prompt": ":+1: ->", "completion": " neutral"}
+{"prompt": "@spboyer Can you attach or PM the omnisharp log (Cmd+L, L)? ->", "completion": " neutral"}
+{"prompt": "@bpasero  Yes, the commands will become API. As they are already today by the keybindings-config. IMO we should have a list of commands that we consider stable including identifier, args, and return-type if applicable. ->", "completion": " neutral"}
+{"prompt": "\"Ah. What's changed is that now it it runs the program in an internal console that DOESN'T have highlighting whereas previously it used an external console window.  The external console highlighted things red and green as presumably mocha generates ANSI control characters to configure the colours.  So you appear to have added \"\"externalConsole\"\" to the launch configuration, but the default appears to be false if the value isn't specified in the configuration, so it runs it in the Debug Console instead. That's what's changed.  So the request is that the Debug Console honour the ANSI control chars, and that the default appears wrong, from an upgrade migration point of view.\" ->", "completion": " neutral"}
+{"prompt": "This is a bad regression. The text box should automatically adjust its height based on its contents. Thanks for the report and extra info! ->", "completion": " positive"}
+{"prompt": "The detection currently works only for file paths and not for http links. But we can beef it up I think. However, if we move the repl to an editor, we would benefit from automatic link detection imho. ->", "completion": " neutral"}
+{"prompt": "Interesting, I would of thought it could accept both. I'll try that out, thank you!! ->", "completion": " positive"}
+{"prompt": "Yeah, but our internal debug console supports basic ansi coloring ->", "completion": " neutral"}
+{"prompt": "\"@isidorn yes, our internal debug console supports basic ansi colours but it is not a real \"\"tty\"\". Some programs (IIRC mocha is one of them) check explicitly whether they are running in a \"\"tty\"\" and only then use colours.\" ->", "completion": " neutral"}
+{"prompt": "Oh yes, Ben has overcome this issue by passing in some arguments to mocha. @tomq42 please checkout https://github.com/Microsoft/vscode/blob/master/.vscode/launch.json our Unit Tests configuration where we pass --colors arguments to mocha.  Closing this as desgined for now. Feel free to reopen if you feel like something is missing still. ->", "completion": " positive"}
+{"prompt": "@PooLP does it work with Atom? ->", "completion": " neutral"}
+{"prompt": "For now I have reverted to an older version. ->", "completion": " neutral"}
+{"prompt": "Excellent. ->", "completion": " positive"}
+{"prompt": "The thing that confused me primarily was the change in behaviour of launching internally verses externally. Is that deliberate? ->", "completion": " negative"}
+{"prompt": "Passing --colours does indeed make it work.  What's a bit annoying though is that it keeps creating the Debug Console along side my editor. So unless the Debug Console is actually displaying, it will create a new one to the side of the editor, and there doesn't seem to be a way to configure that? ->", "completion": " negative"}
+{"prompt": "\"![image](https://cloud.githubusercontent.com/assets/61557/11273053/7313df2a-8ed1-11e5-92df-2a74082634d9.png)  Usually \"\"strict-ssl\"\":\"\"false\"\" fixes that error in most cmd line tools like git, npm, bower, yeoman, etc.. But VS Code doesn't. How can I specify strict-ssl?\" ->", "completion": " neutral"}
+{"prompt": "+1 ->", "completion": " neutral"}
+{"prompt": "Not yet fixed. ->", "completion": " neutral"}
+{"prompt": "+1 ->", "completion": " neutral"}
+{"prompt": "Yes the change was delibarte to launch in internal, you can easily change that behaviour. Hmm if I set `externalConsole: true` the Debug Console does not get open on the side for me. Do you see different behavior? If yes, do you just get an empy Debug Console? ->", "completion": " neutral"}
+{"prompt": "+1 for @xqliu's list of features ->", "completion": " neutral"}
+{"prompt": "Oddly enough, I have a colleague that's on version 0.9.2 and his syntax highlighting is fine. I'm also experiencing this issue on version 0.10.1.  ### Edit  My colleague shot me a screenshot of his highlighting:   ![xml-highlight](https://cloud.githubusercontent.com/assets/2295721/11273709/656aad5e-8e9a-11e5-90e0-821af46a2111.jpg) ->", "completion": " neutral"}
+{"prompt": "dup of #154 ->", "completion": " neutral"}
+{"prompt": "Sorry, maybe I didn't describe very well. I have extrernalConsole:false, or unspecified, and when I then run, the Debug Console always gets created to the side. There seems to be no way to have it just bring to the front the already existing Debug Console that might exist. So if I Ctrl-Tab, Debug Console is in the list of open windows. Yet when I run, rather than just swapping to that, it brings it up to the side, which I find annoying. ->", "completion": " negative"}
+{"prompt": "We always have one instance of the debug console, and when you launch we will not open a new one but use the one already there. What I think is the cause of confusion is that on each debug start we clear the contents of the console ->", "completion": " neutral"}
+{"prompt": "But it doesn't reuse the one that's there, or at least if it does, it always moves it and splits the screen and puts the Debug Console on the right. _Thats_ what I fine annoying. The splitting of the screen. ->", "completion": " negative"}
+{"prompt": "Ok, I will need an actual setup and reproducable steps Where do you have the Debug console before starting the debug session? Invisible, or if visible in which of the 3 slots? Where does it end up after the debug session start? ->", "completion": " neutral"}
+{"prompt": "For reference, this bug tracks atom/electron#3349. ->", "completion": " neutral"}
+{"prompt": "\"The \"\"env\"\" attribute is a dictionary of **strings**. Please pass the PORT number as a string and not as a number. We will try to improve the schema for \"\"env\"\" so that your case will be flagged as an error.\" ->", "completion": " neutral"}
+{"prompt": "A comment on [issue 71](https://github.com/Microsoft/vscode/issues/71) by @aeschli states that the XML formatting has been removed because it was based on the HTML formatter and was full of bugs. ->", "completion": " neutral"}
+{"prompt": "Thanks. I saw lower in the launch config that there was another port value which is a number and was copying that instance. Is it possible to define these as numbers? ->", "completion": " positive"}
+{"prompt": "Hi **@joaomoreno**, I'm your friendly neighborhood Microsoft Pull Request Bot (You can call me MSBOT). Thanks for your contribution!     <p>         It looks like you're a Microsoft contributor (Joao Moreno). If you're full-time, we DON'T require a Contribution License Agreement. If you are a vendor, please DO sign the electronic Contribution License Agreement. It will take 2 minutes and there's no faxing! https://cla.microsoft.com.     </p>  TTYL, MSBOT; ->", "completion": " positive"}
+{"prompt": "I just created a new folder, opened VSCode, clicked on the debug icon, then by the launch dropdown clicked on the great icon. It generated me a new launch.json. I then authored app.js with  console.log(hello world). Click on the launch, it opens the DEbug Console to the right.  So then close the Debug Console so I only have my app.js showing. Shift tab though and the Debug Console is still in the list and I can cycle through to it. However if I run the app.js again, with the app.js showing, then the Debug Console pops up again on the right, rather than just dong the equivalent of Ctrl-tab and cycling through to the file.  I personally find this behaviour annoying, as neither the source window nor the debug console window are then wide enough to see all I need to see (I have a widescreen monitor). ->", "completion": " negative"}
+{"prompt": "Sorry, we removed XML format from 0.10.1 due to the many bugs. We hope we can get a high quality formatter as an extension soon ->", "completion": " neutral"}
+{"prompt": "update:  it's my mistake ->", "completion": " neutral"}
+{"prompt": "Thanks for getting back to me so fast. I already tried the symlinking approach and everything mentioned [in this Stack Overflow post](http://stackoverflow.com/questions/33032164/how-can-i-attach-vs-code-to-a-node-process-running-in-a-docker-container) (notice that although the question is 0.8, the issues persist) but could not get it to work in any constellation.  Should symlinking work in theory (i.e. has anyone of you ever managed to debug a node app inside a container yet)? ->", "completion": " positive"}
+{"prompt": "Yeah!  This will be really useful. ->", "completion": " positive"}
+{"prompt": ":+1: ->", "completion": " neutral"}
+{"prompt": "Actually fixing this as we speak in #245 ->", "completion": " neutral"}
+{"prompt": "Disagree because the API should stay compact. Also more commands will enable more flexible scenarios like macros etc. I think a rule of thumb could be make a function API if it returns a meaningful and hard to compute result ->", "completion": " negative"}
+{"prompt": "Duplicate of #69 ->", "completion": " neutral"}
+{"prompt": "Also, the OmniSharp log should print more details about the exact DNX version it picked, Use Cmd+L,L to show ->", "completion": " neutral"}
+{"prompt": "@blackwire Version 0.9.2: https://az764295.vo.msecnd.net/public/0.9.2/VSCodeSetup.exe  ~~Not quite sure how to prevent the auto updating though, not sure if there is an option.~~ Edit regarding auto update: https://github.com/Microsoft/vscode/issues/160#issuecomment-158104614  As for my freezes: I don't have any extensions or plugins that are not shipped by default. I think you are experiencing a different problem. Killing the pluginHost fork on my machine does nothing to get it back to a working state, instead code crashes completely. ->", "completion": " neutral"}
+{"prompt": "Of course! As will typing in code, the program just freeze, but the menus (file, edit, view) continue to function normally. After a few seconds the windows warns that the program is not responding and the only solution is to close the program. There is no specific situation I've noticed that causes the problem.  2015-11-19 12:05 GMT-02:00 Benjamin Pasero notifications@github.com:  > @lucasrivoiro https://github.com/lucasrivoiro can you share more > details about your environment? and maybe the interaction you do that leads > to the crash. >  > — > Reply to this email directly or view it on GitHub > https://github.com/Microsoft/vscode/issues/225#issuecomment-158065612. ->", "completion": " neutral"}
+{"prompt": "@DerTolleEmil So, I don't have any non standard plugins either. Though, when I opened task manager and killed the process thread that was running as a part of code (not the app) that is using 30+% CPU it terminates intellisense I think, because it's no longer working after that point. ->", "completion": " neutral"}
+{"prompt": "Personally I think this is a bad idea. Making the editor a kitchen sink is how we will make it slow and bloated. Besides, the amount of work necessary to get on par with just the basic features of **excellent** terminals out there (e.g. iTerm2, ConEmu) would be huge.  I know not everyone runs OS X but check out my setup below. I'm using El Capitan's full screen features to place VS Code side by side with iTerm2. I am super happy with it.  ![image](https://cloud.githubusercontent.com/assets/22350/11275183/b833d49c-8edc-11e5-90a3-5b062bc07434.png) ->", "completion": " negative"}
+{"prompt": "@DerTolleEmil Thank you for the older version download! You saved my day! I can keep this open for today and get some work done without it crashing all the time. Life.. saver. ->", "completion": " positive"}
+{"prompt": "\"Just read what it says: \"\"Use the 'php.validate.executablePath' setting to configure the location of 'php'\"\" And maybe have a look at the release notes:  ### Language - PHP  VS Code is now using the official PHP linter (php -l) for PHP language diagnostics. VS Code will now stay current with PHP linter improvements.  There are two new settings to control the PHP linter: - php.validate.executablePath: points to the PHP executable on disk. Set this if the PHP executable is not on the system path. - php.validate.run: controls whether the validation is triggered on save (value: \"\"onSave\"\") or on type (value: \"\"onType\"\"). Default is on save.\" ->", "completion": " neutral"}
+{"prompt": "@kdelorey No worries, colorization will stay. I'll fix the colorization for the next release. ->", "completion": " positive"}
+{"prompt": "@joaomoreno but some people want coding, and just use CLT when deploy app. Maybe you can make a extension like term3, then the native version of VSCode won't run slowly. ->", "completion": " neutral"}
+{"prompt": "@jrieken Mine looks a bit different, I only have 1.0.0-rc1-final installed and the default is set to mono. ->", "completion": " neutral"}
+{"prompt": "That is an opportunity for an extension: deployment commands! ->", "completion": " positive"}
+{"prompt": "Yes, you're right. By the way, why i can't search in extension market? ->", "completion": " neutral"}
+{"prompt": "I have swapped between mono and coreclr and still get the issue  ![screen shot 2015-11-19 at 9 59 24 am](https://cloud.githubusercontent.com/assets/1335253/11275655/506c8a30-8ea4-11e5-8a86-f7b927ad21ff.png) ->", "completion": " neutral"}
+{"prompt": "\"Thank you for the detailed steps. However this is as designed for now. In the future we plan to render the debug console horizontally which should fix your issue.  In the meantime if you dislike it I would suggest using `\"\"externalConsole\"\": true` option.\" ->", "completion": " positive"}
+{"prompt": "@buzinas If you want to give it a try: Use our [yeoman extension generator](https://code.visualstudio.com/docs/tools/yocode) to create an extension contributing a colorizer based on text mate (we are currently moving away from Monarch). Then read on in the documentation how to add intellisense, validation... ->", "completion": " neutral"}
+{"prompt": "#52 seems to indicate this problem is with all interpolation strings, even beyond ES6 JS. It's good to have a solid version number when this did work, though. Should help tracking it down. ->", "completion": " neutral"}
+{"prompt": "\"@blackwire One more thing regarding auto-update: Edit your `%appdata%\\code\\storage.json` file and change `\"\"updateChannel\"\": \"\"stable\"\"` to `\"\"updateChannel\"\": \"\"none\"\"`. That will disable automatic updates.\" ->", "completion": " neutral"}
+{"prompt": ":+1: ->", "completion": " positive"}
+{"prompt": "Is everyone else using WinSCP too? ->", "completion": " neutral"}
+{"prompt": "The output control in VS code does not support colors at the moment. ->", "completion": " neutral"}
+{"prompt": "\"This is how I solved it on Windows 7: download php from here: http://windows.php.net/download, unzip to C: drive, set \"\"php.validate.executablePath\"\" : \"\"C:/{folder php unzipped to}/php.exe\"\"  Mind the forward slashes.\" ->", "completion": " neutral"}
+{"prompt": "I fixed this by hiding the one when the other is present. It is not the same as stacking errors but I think we can try with this approach and see how far we get. ->", "completion": " neutral"}
+{"prompt": "@matthewjohnston4  I'm not, my files are all saved locally without anything else touching them. ->", "completion": " neutral"}
+{"prompt": "@DerTolleEmil I work primarily in PHP and yes, the issue does seem to arise while I'm working in a PHP file. Also, thank you very much for the update trick! This is great. I'll wait for issues to be resolved with the new version. I really like some of the features, but I need it to be stable before I can take it. Sad too because I was excited to see the themes were working properly. I'll be patient. Again, you've saved my bacon. I'll be able to get some things accomplished today. ->", "completion": " positive"}
+{"prompt": "@weinand not sure if that's the reason, but I'm trying to debug mocha tests in VSCode.  My current workaround is to type `debugger;` in the place I would have a breakpoint, and then, add more breakpoints when the debugger gets caught.  I don't think it's a problem with the sourcemaps, because when I use the `debugger;` statement, I can debug the `.ts` files smoothly.  To reproduce the behavior I'm mentioning, you can follow the steps: - Clone my repo (https://github.com/buzinas/tslint-eslint-rules) - Run `npm install` and then `npm test` - You'll see the `launch.json` configuration. You'll be able to debug TypeScript if:   - You place a breakpoint in the equivalent JS file; or   - You put a `debugger;` where you want to break;  If you put a debugger, then you must run `gulp build` (or ctrl+shift+b). ->", "completion": " neutral"}
+{"prompt": "Actually this will work as long as the file is under the working files section. Once the file is not, closing it will also make the mode decision lost. ->", "completion": " neutral"}
+{"prompt": "The `php.validate.executablePath` does not have to be set if php.exe is located in a directory which is listed in your %PATH% variable. If that's not the case you need to set it manually like mentioned above. ->", "completion": " neutral"}
+{"prompt": "\"My simplest repro is:  **sample.ts**  ``` ts async function main() {   await Promise.resolve(1); // bp on this line   console.log(\"\"later\"\"); } main(); ```  Compiled with:  ``` tsc sample.ts --sourceMap --target ES6 --module commonjs ```\" ->", "completion": " neutral"}
+{"prompt": "I removed mono and only have Core CLR installed 1.0.0-rc1-final, and am still having the same issue.  Mac development is pretty much unusable at this point. ->", "completion": " negative"}
+{"prompt": "Please use English in this repository. 在這個repository請你用英文。  He's saying that when he tries to open a document that uses GB 2312 the encoding gets messed up, and to get it to display properly he must first reopen the file then choose GB 2312. ->", "completion": " neutral"}
+{"prompt": "\"Okay I found out that class, super and extends are interpreted as 'invalid.illegal' - why are those interpreted that way? My jsconfig.json contains compiler options for ES6...  \"\"compilerOptions\"\": {     \"\"target\"\": \"\"ES6\"\", }\" ->", "completion": " neutral"}
+{"prompt": "So I fixed the problem.  Installing the Windows 10 November update was the solution.  However, I also tried installing on an existing VM that does not have the November update installed so I'll leave it up to the MS folks to leave this issue open or close it. ->", "completion": " neutral"}
+{"prompt": "+1. Also `=>`  needs to be in a separate syntax class from the operators that are keywords, such as `instanceof` because I want to color keywords separately from  `=>`. Also for `import * as 'foo'` `import` and `as` need to be keywords while `*` needs to be either an operator or something else more specific to imports. ->", "completion": " positive"}
+{"prompt": "This has nothing to do with the tree. You set `tooltip=` and let Electron render the tooltip for you. It's just how tooltips look in your Linux distribution. ->", "completion": " neutral"}
+{"prompt": "\"@buzinas thanks for providing steps that helped me investigating the problem. The problem was the value of \"\"outDir\"\": it should be the path to the **generated code** not the source. So after changing it to \"\"dist\"\" setting breakpoints in *.ts files worked for me.\" ->", "completion": " positive"}
+{"prompt": "@rbuckton yes, changing the default from Bias.GREATEST_LOWER_BOUND to Bias.LEAST_UPPER_BOUND seems to solve the problem. I will test this a little more and then push a fix. Thanks. ->", "completion": " positive"}
+{"prompt": "There is no proxy support in the extension installation at all. Being fixed in #69 ->", "completion": " neutral"}
+{"prompt": "I think you mean :heart: ->", "completion": " positive"}
+{"prompt": "does not work in the title :crying_cat_face: ->", "completion": " negative"}
+{"prompt": ":fireworks: ->", "completion": " positive"}
+{"prompt": "thanks joao @weinand fyi ->", "completion": " positive"}
+{"prompt": "@weinand whoa, what a silly mistake hehe Thanks very much, this will improve my productivity a lot!  A little off topic here, only a question: - WIll there be conditional breakpoints available anytime soon? ->", "completion": " positive"}
+{"prompt": "I think that's the correct behavior, since we can import only a set of features, or even name them (giving alias etc). But you could probably write an extension for making this behavior available automatically. ->", "completion": " neutral"}
+{"prompt": "Please make it optional. Middle-click can happen by accident when scrolling. ->", "completion": " neutral"}
+{"prompt": "I am probably screwed, since I percieve the VS Code's font blurry even in the `default` state, aren't I? Will this be fixed? **The font is just not sharp enough.** :/ ->", "completion": " negative"}
+{"prompt": "@DerTolleEmil, thank you for older version. ->", "completion": " positive"}
+{"prompt": "Ok thanks for the update, will close for now. ->", "completion": " positive"}
+{"prompt": "@smuuf can you compare with 0.9.x release of VS code? I dont see blurriness on my Windows machine in code. Maybe you are still zoomed in? ->", "completion": " neutral"}
+{"prompt": "@hashhar we currently do not persist any UI state when you dont open a folder. So you should be able to easily reproduce this by opening Code empty, open a file in it, close and reopen and it will be empty again. ->", "completion": " neutral"}
+{"prompt": "I was able to reproduce it. And you are right, opening a workspace didn't face this issue. So, is there going to be a fix for this? Because I find this a normal scenario.  I would like to try to and work on it too (but don't expect my work to be merge worthy). So could you guide me about the related files? ->", "completion": " neutral"}
+{"prompt": "This repository is only for the _Visual Studio Code_ editor, which has not much in common with the _Visual Studio IDE_, but I've to admit that the name is quite confusing.  PS: If you're stuck with windows, give the [intel c-compiler](https://software.intel.com/en-us/c-compilers) a try. ->", "completion": " neutral"}
+{"prompt": "I see. Ok. (And if you've got any connection to the IDE people, feel free to pass the message along...)  On Thu, Nov 19, 2015 at 7:04 PM, Andreas Linz notifications@github.com wrote:  > This repository is only for the _Visual Studio Code_ editor, which has > not much in common with the _Visual Studio IDE_, but I've to admit that > the name is quite confusing. >  > — > Reply to this email directly or view it on GitHub > https://github.com/Microsoft/vscode/issues/246#issuecomment-158139340.  ##     אופק בירנהולץ   Ofek Birnholtz   Max Planck Institute for Gravitational Physics (AEI)   LIGO Scientific Collaboration   http://phys.huji.ac.il/~ofek/    התנועה הירוקה- מימד סניף ירושלים   חינוך. סביבה. עתיד   http://www.facebook.com/tymjlm   http://www.yeruka.org.il/ ->", "completion": " neutral"}
+{"prompt": "\"If you open a folder in VS Code, we associate all UI state with the folder you opened (you could call this a \"\"session\"\"). When you open no folder, but just files, we do not store any UI state at all.   Basically in the no-workspace case we need to come up with meaningful identifiers to associate the UI state to. You can have more than one window opened, each without workspace and each with different set of files opened, so it is not as trivial as just picking one random identifier :)\" ->", "completion": " positive"}
+{"prompt": "@kypmmhoff can you share the data you pasted to make this happen, e.g. in a Gist? If it does not contain sensitive data of course! ->", "completion": " neutral"}
+{"prompt": "I'm not associated with Microsoft whatsoever. Nevertheless, you can send the feature request to the mailadress of [Microsoft's github account](https://github.com/Microsoft). Try another compiler, because we have C11 and Visual Studio's compiler doesn't even support C99. ->", "completion": " neutral"}
+{"prompt": "I prefer a notification system that lets you know when updates are available (Atom has this).  So you'd have two options: 1. Automatically check for extension updates. (default: true?) 2. Automatically install extension updates. (default: false)  Plus maybe an option to specify the update check frequency.  You could also do per-extension override settings, but that would be extra work. =) ->", "completion": " positive"}
+{"prompt": "pls see this comment on hacker news: https://news.ycombinator.com/item?id=10589451 ->", "completion": " neutral"}
+{"prompt": "@tgienger    +1 also have this issue - nor auto indent neither bracket auto close - it is a real pity because when I switch language from `javascript react` to `typescript react` or just `javascript` it all works ->", "completion": " negative"}
+{"prompt": "Fantastic. Guess we can close this issue ->", "completion": " positive"}
+{"prompt": "I'm also seeing this. I believe it was working correctly in 0.9 but doesn't seem to be working correctly now. ->", "completion": " neutral"}
+{"prompt": "\"@aeschli thanks for the guidelines, I'll give it a try.  About \"\"we are currently moving away from Monarch\"\": are you doing that even with the core TypeScript/Javascript intellisense? It's so powerful (probably the main advantage that Code has against the other editors), why would one move away from that?\" ->", "completion": " positive"}
+{"prompt": "Same problem! It's pretty frustrating. ->", "completion": " negative"}
+{"prompt": "Monarch provides for colouring only and text mate bundles replace the colouring. The deeper language support we provide isn't affected by this change. ->", "completion": " neutral"}
+{"prompt": "The problem is that the powershell extension uses a different language identifier. I created a pull request: https://github.com/PowerShell/vscode-powershell/pull/17 ->", "completion": " neutral"}
+{"prompt": "@egamma sorry, I was confusing Monarch with Monaco. ->", "completion": " negative"}
+{"prompt": "Thanks a lot for sending that pull request Martin!  I didn't realize I had registered things wrong, glad it's something that can be fixed on my side. ->", "completion": " positive"}
+{"prompt": "Not is a complex code, after edit an existent file, freezes to write a function name. Note: Before a freezes don't display intellisense  ![error](https://cloud.githubusercontent.com/assets/495616/11281622/fb8113d4-8ec0-11e5-9719-8ce49509301e.jpg) ->", "completion": " negative"}
+{"prompt": "I think we are on the same boat! I've faced this problem hundred times today while coding in PHP. ->", "completion": " negative"}
+{"prompt": "But wouldn't it be cool to have the install script inside your own binary bundle which you send? I have both the .desktop file and the install script ready and it works fine. I'll send in a PR. yes creating a .desktop file is trivial, but it isn't that trivial. I know Linux users who don't know what a .desktop file is, of course they won't be using this tool, but as a provider of a tool aren't you placing yourself as a distributor of a full fledged application rather than give complete app for Mac and Windows and leave Linux to the mercy of the person who'll package the distribution? The basic premise that vscode is now open source states that it should be painless to use in platforms other than Windows, which isn't the case with Linux, you have to add things to the PATH variable and create the .desktop file just to get it running, it is rather annoying to do that, as an end user, _despite being a nerd who is still coding at 1am after working for 12hours_, I'd really love to have a packaged version of vsc ->", "completion": " negative"}
+{"prompt": "Syntax highlighting in template strings is not working at all. The template string functionality itself works so far.  Issue seems to be that its not that template strings are not highlighting but that syntax highlighter has no concept of tilda quoted strings(template strings).  Expecting everything except ${expression} to be comment colored.  ![tildaquotes](https://cloud.githubusercontent.com/assets/15118702/11282151/ce0eab68-8ecb-11e5-9d69-2cee67042129.png) ->", "completion": " neutral"}
+{"prompt": "Hi **@thewhitetulip**, I'm your friendly neighborhood Microsoft Pull Request Bot (You can call me MSBOT). Thanks for your contribution!     <span>         In order for us to evaluate and accept your PR, we ask that you sign a contribution license agreement. It's all electronic and will take just minutes. I promise there's no faxing. https://cla.microsoft.com.     </span>  TTYL, MSBOT; ->", "completion": " positive"}
+{"prompt": ":+1: ->", "completion": " positive"}
+{"prompt": "> doesn't have to be a .deb package  I definitely disagree. If they package the binary, they should use .deb over a shell script.  IMHO, your approach is wrong and you should ask your distro maintainer to provide a package for Visual Studio. ->", "completion": " negative"}
+{"prompt": "Moved to vscode-docs repo https://github.com/Microsoft/vscode-docs/issues/44 Thanks @cfjedimaster for calling out the confusing text. ->", "completion": " positive"}
+{"prompt": "Hi **@daviwil**, I'm your friendly neighborhood Microsoft Pull Request Bot (You can call me MSBOT). Thanks for your contribution!     <p>         It looks like you're a Microsoft contributor (David Wilson (WSSC)). If you're full-time, we DON'T require a Contribution License Agreement. If you are a vendor, please DO sign the electronic Contribution License Agreement. It will take 2 minutes and there's no faxing! https://cla.microsoft.com.     </p>  TTYL, MSBOT; ->", "completion": " positive"}
+{"prompt": "And what about .rpm packages for all Fedora, Centos, Red Hat and openSUSE users? It's already binary blob, I don't want it to try to write itself wherever it wants.  Also, to link PR and discussion, it's #274 ->", "completion": " negative"}
+{"prompt": "I looked at said shell script.  It's a disaster. It writes to .bashrc. It doesn't register it`s actions anywhere or provides any way to uninstall. It doesn't check if  there is something in paths already or if $PATH contains vscode path.  Why you want VS Code in your Path, anyway? ->", "completion": " negative"}
+{"prompt": "My laptop's specifications are: Intel Core i5 (model 460M, up to 2.53 GHz), 4 GB RAM, SSD, Intel i5's GPU (even though the laptop has a GeForce GT 325M discrete graphics card, it's not used under Ubuntu Linux).  The issue that I reported never occurred to me before, and I've been using Visual Studio Code since the very first public release. ->", "completion": " neutral"}
+{"prompt": "kc9eye, DerTolleEmil - Thank you very much, you cool. ->", "completion": " positive"}
+{"prompt": "PHP is also affected. See #161 ->", "completion": " neutral"}
+{"prompt": "+1 ->", "completion": " positive"}
+{"prompt": "This problem could manifest if the lines are being split before searching as opposed to doing a full text search.  Interesting side note; `\\n` seems to work in find in files (Ctrl+Shift+F), just not in the find dialog (Ctrl+F). ->", "completion": " neutral"}
+{"prompt": "Needs to be added to browserEntry too https://github.com/Microsoft/vscode/blob/497788c0bcd20859f736d585b49c208af8dd518f/src/vs/languages/css/common/services/languageFacts.ts#L329 ->", "completion": " neutral"}
+{"prompt": "+1 Having the same issue ->", "completion": " neutral"}
+{"prompt": "In my opinion, such installation scripts belong in a distro-dependent package (since not all Unix systems are the same). For instance, there's a [package for VSCode in the AUR](https://aur.archlinux.org/packages/visual-studio-code) that suitably installs the software on Arch Linux systems. ->", "completion": " neutral"}
+{"prompt": "same here. nothing worked until I installed the extension. Very confusing. ->", "completion": " negative"}
+{"prompt": "Hi **@mliese**, I'm your friendly neighborhood Microsoft Pull Request Bot (You can call me MSBOT). Thanks for your contribution!     <span>         In order for us to evaluate and accept your PR, we ask that you sign a contribution license agreement. It's all electronic and will take just minutes. I promise there's no faxing. https://cla.microsoft.com.     </span>  TTYL, MSBOT; ->", "completion": " positive"}
+{"prompt": "+1 ->", "completion": " positive"}
+{"prompt": "ah, I see. There are two places this is documented. I was reading https://code.visualstudio.com/updates/v0_8_0#_languages-javascript-linting-as-you-type and it has no mention of extensions. That is probably where the confusion comes from. Thanks for pointing that out. ->", "completion": " positive"}
+{"prompt": "Spot on. That page refers to version 0.8.0. ->", "completion": " neutral"}
+{"prompt": "\"What is wrong with you?   There is no need to list \"\"cups\"\" when they already listed Ubuntu Desktop 14.04 as a requirement. The cups package is included in the default Ubuntu manifest, so it should not be listed under requirements. If you install some type of minimal install, that is your own problem.  </ Sarcasm> I'd wager you love being snarky and passive aggressive in every comment that you make.\" ->", "completion": " negative"}
+{"prompt": "The javascript topic was updated today to call out the need to now install the extension. If you looked at the page yesterday or this morning, you wouldn't have seen the extensions mentioned.  Sorry for the confusion. ->", "completion": " neutral"}
+{"prompt": "Hi **@dstorey**, I'm your friendly neighborhood Microsoft Pull Request Bot (You can call me MSBOT). Thanks for your contribution!     <span>         This seems like a small (but important) contribution, so no Contribution License Agreement is required at this point. Real humans will now evaluate your PR.     </span>  TTYL, MSBOT; ->", "completion": " positive"}
+{"prompt": "Started to work on one tonight. I'm not at all happy with it yet, but maybe it's a start. https://github.com/FabianLauer/vs-code-xml-format ->", "completion": " neutral"}
+{"prompt": "There are also some other discrepancies with the current [W3C working draft](http://www.w3.org/TR/2012/WD-css3-values-20120308/), `Hz` and `kHz` frequency unit capitalization, the `dppx` resolution unit is missing and so is the `turn` angle unit. These are all present in the [latest spec](http://www.w3.org/TR/css3-values/). Should these be added/amended too? ->", "completion": " neutral"}
+{"prompt": "**@mliese**, Thanks for signing the contribution license agreement so quickly! Actual humans will now validate the agreement and then evaluate the PR. <br />Thanks, MSBOT; ->", "completion": " positive"}
+{"prompt": "@tyriar I was planning to look at the others as part of another PR ->", "completion": " neutral"}
+{"prompt": "@dstorey :+1: ->", "completion": " positive"}
+{"prompt": "I believe this is the same issue as #160. Check that post and downgrade will be the best choice so far. ->", "completion": " neutral"}
+{"prompt": "Unfortunately I can't compare it with any older version. I installed it today and fiddled a bit with for a bit, until the font's bluriness became too much of a displeasure. (on Win 7, 100 percent DPI)  The question that I really want to ask here is this:  ![f](https://cloud.githubusercontent.com/assets/4998498/11274683/3350697c-8eda-11e5-8797-806278ef6e93.png)  This picture _(the top one from the original post)_ - **is this how the font should look like?** Because it looks too blurry for me, too. Less than in the second one, but still. ->", "completion": " neutral"}
+{"prompt": "\"You joined GitHub only to say that? You literally joined less than two hours ago and first thing you said is this???  I want to point out: Ubuntu Desktop 14.04 isn't \"\"Requirement\"\". It's \"\"has been tested\"\" on it. Actual requirements for Linux-based OS distribution are noted as minimal versions of libc and libc++ . This is all.  Developers haven't pointed that Ubuntu 14.04 is only supported distribution. They said \"\"Generic Linux\"\". And provide 32 and 64 bit binaries. When Visual Studio Code doesn't work in other distros due to lack of CUPS or Wayland or some other library like nette or gconf, that's a bug. Of either documentation or Visual Studio Code. If I was a maniac who tried to use VS Code in beautifully hand-crafted LFS or in container to prevent telemetry, this information would have been useful to know and not to try to find it manually. As I ran headlong into one problem, I feel that it's my duty to report said problem.\" ->", "completion": " negative"}
+{"prompt": "\"I have a similar issue. Search is extremely slow and gets stuck at some point. I have around 33K files, mostly source code.   A few results are being shown after a while but this is clearly incomplete.   Sublime Text (or even the \"\"findstr\"\" command) have no trouble grepping though these files in a few seconds.   I am using a fast SSD as a disk-level storage (Samsung 840 PRO) so disk read performance should be very good both in terms of IOPS and bandwidth.\" ->", "completion": " negative"}
+{"prompt": "Hi **@dstorey**, I'm your friendly neighborhood Microsoft Pull Request Bot (You can call me MSBOT). Thanks for your contribution!     <span>         This seems like a small (but important) contribution, so no Contribution License Agreement is required at this point. Real humans will now evaluate your PR.     </span>  TTYL, MSBOT; ->", "completion": " positive"}
+{"prompt": "This may be related to issue #179 ->", "completion": " neutral"}
+{"prompt": "\"I got another freeze trying out a few things in a markdown file. I decided to try to reproduce the error and I did make a bit of progress but not much yet.  Here is what's working so far:  I created a new .php file with the following content:  ``` php <?php echo \"\"\"\"asd\"\"\"\";  echo \"\"\"\"asd\"\"\"\" echo \"\"\"\"asd\"\"\"\"; ?> ```  The empty line and the missing semicolon are on purpose. I open the file and then open the editor's development console and switch to the \"\"\"\"console\"\"\"\" tab. All I need to do now is go to the blank line and enter a function name, for example `fopen()`. As soon as I type the opening bracket you'll see the `[Plugin Host] provideSignatureHelp` console entry followed by the object containing the corresponding help text. So far so good, however, every now and then when I use an invalid function name I don't get the `[Plugin Host] no entry` console output but instead I don't get anything at all. What follows are those two warnings the next time I hover over a function or press ctrl+space to open the autocomplet\" ->", "completion": " neutral"}
+{"prompt": "I usually right click on the subfolder and use `Find in Folder` option. This will populate the `files to include` text box with the path prefix of the sub-folder. Search will then only return results for that subfolder. ->", "completion": " neutral"}
+{"prompt": "+1  Would it be possible to add tabs through a custom extension? I quickly looked at the docs but didn't seem possible to add that type of functionality with the current API ->", "completion": " neutral"}
+{"prompt": "There is a simple extension in the marketplace to help: https://marketplace.visualstudio.com/items/chrisdias.vscodeZoom  I'll close this for now - reopen if it does not meet your needs. ->", "completion": " neutral"}
+{"prompt": "@aeschli No worries, thanks for the update! ->", "completion": " positive"}
+{"prompt": "sorry this change just change docs. but seems this seems to be trigger of error  https://travis-ci.org/Microsoft/vscode/builds ->", "completion": " negative"}
+{"prompt": "Experiencing very crashy behavior together with PHP aswell ->", "completion": " negative"}
+{"prompt": "suggest to reference atom's implementation, by using **strict-ssl = false** https://atom.io/docs/v1.0.0/getting-started-installing-atom#setting-up-a-proxy ->", "completion": " neutral"}
+{"prompt": "Hi **@dstorey**, I'm your friendly neighborhood Microsoft Pull Request Bot (You can call me MSBOT). Thanks for your contribution!     <p>         It looks like you're a Microsoft contributor (David Storey). If you're full-time, we DON'T require a Contribution License Agreement. If you are a vendor, please DO sign the electronic Contribution License Agreement. It will take 2 minutes and there's no faxing! https://cla.microsoft.com.     </p>  TTYL, MSBOT; ->", "completion": " positive"}
+{"prompt": "Same here... ->", "completion": " neutral"}
+{"prompt": "Same here, it would be good to have jsx support on .js files ->", "completion": " positive"}
+{"prompt": "+1 - chiming in so I can follow this one. Drives me crazy no razor help for .cshtml files. This is core for mvc cross platform stuff. I would really like to have it! ->", "completion": " negative"}
+{"prompt": "\"How did u get code to run from terminal? I get \"\"command not found.\"\" Did you create some sort of alias?  I created an alias \"\"code\"\" that points to the Electron executable inside the .app. `alias code='/Applications/Visual\\ Studio\\ Code.app/Contents/MacOS/Electron'` When I run `code .` it runs just fine.\" ->", "completion": " neutral"}
+{"prompt": "I created https://github.com/Microsoft/vscode-docs/pull/46 in the docs to improve the script to allow you to continue using the terminal that spawned vscode. ->", "completion": " neutral"}
+{"prompt": "Hmm seems like the CI failed due an infrastructure issue, complains about API rate having been exceeded. ->", "completion": " neutral"}
+{"prompt": "I noticed this problem immediately after allowing the IDE to update itself tonight (to 0.10.1). I was not paying attention to the 'before the update' version myself, but have only had the product (on my mac) since Nov 1 if that helps. ->", "completion": " neutral"}
+{"prompt": "Hi **@Tyriar**, I'm your friendly neighborhood Microsoft Pull Request Bot (You can call me MSBOT). Thanks for your contribution!     <span>         This seems like a small (but important) contribution, so no Contribution License Agreement is required at this point. Real humans will now evaluate your PR.     </span>  TTYL, MSBOT; ->", "completion": " positive"}
+{"prompt": "![text_cursor](https://cloud.githubusercontent.com/assets/2193314/11292416/6df47e38-8f02-11e5-9bd9-6f3c396f1aa7.gif) ->", "completion": " neutral"}
+{"prompt": "@ojss where can I download the older version? ->", "completion": " negative"}
+{"prompt": "And why are the two BLAH have different color? ->", "completion": " neutral"}
+{"prompt": "Looked at the code, it does indeed look at each line individually. I'm created a new issue for multi-line matching https://github.com/Microsoft/vscode/issues/313 ->", "completion": " neutral"}
+{"prompt": "Hi **@Tyriar**, I'm your friendly neighborhood Microsoft Pull Request Bot (You can call me MSBOT). Thanks for your contribution!     <span>         In order for us to evaluate and accept your PR, we ask that you sign a contribution license agreement. It's all electronic and will take just minutes. I promise there's no faxing. https://cla.microsoft.com.     </span>  TTYL, MSBOT; ->", "completion": " positive"}
+{"prompt": "Find and replace /^/  ![caret_find_replace](https://cloud.githubusercontent.com/assets/2193314/11293429/e9fd2c1c-8f0e-11e5-877e-5c8e6256b098.gif)  Find and replace /$/  ![dollar_find_replace](https://cloud.githubusercontent.com/assets/2193314/11293431/ebf176a4-8f0e-11e5-9167-d1b3fd59120b.gif)  Find and replace /^$/  ![both_find_replace](https://cloud.githubusercontent.com/assets/2193314/11293432/f047a1c4-8f0e-11e5-9ecd-13aeed90b8b2.gif) ->", "completion": " neutral"}
+{"prompt": "**@Tyriar**, Thanks for signing the contribution license agreement so quickly! Actual humans will now validate the agreement and then evaluate the PR. <br />Thanks, MSBOT; ->", "completion": " positive"}
+{"prompt": "**@Tyriar**, Thanks for signing the contribution license agreement so quickly! Actual humans will now validate the agreement and then evaluate the PR. <br />Thanks, MSBOT; ->", "completion": " positive"}
+{"prompt": "Note that code highlighting already exists for shell scripts, the following extensions are supported: \"\".sh\"\", \"\".bash\"\", \"\".zsh\"\", \"\".bashrc\"\", \"\".bash_profile\"\", \"\".bash_login\"\", \"\".profile\"\", \"\".bash_logout\"\"\" ->", "completion": " neutral"}
+{"prompt": "Hi **@Tyriar**, I'm your friendly neighborhood Microsoft Pull Request Bot (You can call me MSBOT). Thanks for your contribution!     <span>You've already signed the contribution license agreement. Thanks!</span>         <span>We will now validate the agreement and then real humans will evaluate your PR.</span>  TTYL, MSBOT; ->", "completion": " positive"}
+{"prompt": "I'm not sure this matters. CSS isn’t case-senstivie, and keeping everything lower-case can reduce file size (a little) when gzipping. ->", "completion": " neutral"}
+{"prompt": "I just got the same issue. in the previous version (0.9.1), when I was writing Python scripts, the word completion works fine, though it is textual. But now the functionality is gone. I tried to reinstall it, but nothing changed. Hope can recover this function soon. Thanks:) ->", "completion": " neutral"}
+{"prompt": "Hi, I do not use Atom. I will test this morning. ->", "completion": " neutral"}
+{"prompt": "It work on Atom. ->", "completion": " neutral"}
+{"prompt": "Closing as duplicate of #160 ->", "completion": " neutral"}
+{"prompt": ":+1: ->", "completion": " positive"}
+{"prompt": "yes ->", "completion": " neutral"}
+{"prompt": "Perfect opportunity to shine as an extension author. :wink: ->", "completion": " positive"}
+{"prompt": "Looks awesome. ->", "completion": " neutral"}
+{"prompt": "Sorry cant help with that. I had the zip for the previous version lying around.   Sent from my iPad  On 20-Nov-2015, at 10:45 AM, tangshi notifications@github.com wrote:  > @ojss where can I download the older version? >  > — > Reply to this email directly or view it on GitHub. ->", "completion": " negative"}
+{"prompt": "@tangshi @ojss The old version (plus how to disable the auto update) can be found in issue #160, comment https://github.com/Microsoft/vscode/issues/160#issuecomment-158093149 ->", "completion": " neutral"}
+{"prompt": "I notice there's a TODO in htmlTags.ts for this. ->", "completion": " neutral"}
+{"prompt": "Duplicate of #69 ->", "completion": " negative"}
+{"prompt": "@mattn There's a bit of flakiness with our current builds, they seem to fail occasionally, unrelated to your changes. Will address it **fast**. ->", "completion": " positive"}
+{"prompt": "yes. this would be really important since we are already pushing updates to addins. ->", "completion": " neutral"}
+{"prompt": "Will probably not remove the icon. Pinging the repo every 5-10 seconds is wrong though. There might be something we're doing wrong. Just to confirm: you have the file explorer open and that blue thing keeps on coming and going? ->", "completion": " neutral"}
+{"prompt": "Hi **@Mr21**, I'm your friendly neighborhood Microsoft Pull Request Bot (You can call me MSBOT). Thanks for your contribution!     <span>         This seems like a small (but important) contribution, so no Contribution License Agreement is required at this point. Real humans will now evaluate your PR.     </span>  TTYL, MSBOT; ->", "completion": " positive"}
+{"prompt": "Yep that's right. ->", "completion": " positive"}
+{"prompt": "Wow thats great! Thank you.  > On 20-Nov-2015, at 1:43 PM, Klaus Brezina notifications@github.com wrote: >  > @tangshi https://github.com/tangshi @ojss https://github.com/ojss The old version (plus how to disable the auto update) can be found in issue #160 https://github.com/Microsoft/vscode/issues/160, comment #160 (comment) https://github.com/Microsoft/vscode/issues/160#issuecomment-158093149 > — > Reply to this email directly or view it on GitHub https://github.com/Microsoft/vscode/issues/179#issuecomment-158317879. ->", "completion": " positive"}
+{"prompt": "VSCode's lib dependencies are exactly the same as [Electron](https://github.com/atom/electron)'s. That would be the best project to report this to. ->", "completion": " neutral"}
+{"prompt": ":+1: :+1: :+1: ->", "completion": " positive"}
+{"prompt": "Yes I acknowledge the bug, happened because of a change in our task framework. ->", "completion": " neutral"}
+{"prompt": "This might not be a dupe after all, thanks @iamzhout! ->", "completion": " positive"}
+{"prompt": "So keep it as an open issue in case someone wants to code up a solution? Or is it something that we don't want to have at all because it would make the product worse? ->", "completion": " neutral"}
+{"prompt": ":+1: ->", "completion": " positive"}
+{"prompt": "Fixed the build. Rerunning... ->", "completion": " positive"}
+{"prompt": "@daviwil What is a `.psrc` file, anyway? ->", "completion": " neutral"}
+{"prompt": "@joaomoreno  Welcome, hope this issue could be fixed soon :-) otherwise many corporate users may not be able to install extensions and make full use of vscode. ->", "completion": " neutral"}
+{"prompt": "Let's keep it open for now then ->", "completion": " neutral"}
+{"prompt": "0.9.2  ![screenshot from 2015-11-20 10-10-40](https://cloud.githubusercontent.com/assets/6564217/11295913/0abd7262-8f6f-11e5-9508-870cf51ddce8.png)  0.10.1  ![screenshot from 2015-11-20 10-12-43](https://cloud.githubusercontent.com/assets/6564217/11295951/46abdc6e-8f6f-11e5-8c19-11f8b36e2f3c.png) ->", "completion": " neutral"}
+{"prompt": "@Mr21 Very sorry about not communicating this properly, loader.js is a generated file from a TypeScript file that is not yet made public (a different repo). I need to create the public repo that contains it.  Will ping you as soon as I get that done. ->", "completion": " negative"}
+{"prompt": "Indeed, I think the status bar should reflect the cursor state, regardless of the reason the cursor changed its state. So the fix should be made in editorStatus ->", "completion": " neutral"}
+{"prompt": "@punker76 I did some changes to load the settings and landed this again (https://github.com/Microsoft/vscode/commit/e57d6db414ee2f3f4e7da0535b39c6b4c1c02817). ->", "completion": " neutral"}
+{"prompt": ":fireworks: ->", "completion": " positive"}
+{"prompt": "same issue, ->", "completion": " negative"}
+{"prompt": ":+1: ->", "completion": " positive"}
+{"prompt": "who can help me .. ->", "completion": " negative"}
+{"prompt": "Hi **@jrieken**, I'm your friendly neighborhood Microsoft Pull Request Bot (You can call me MSBOT). Thanks for your contribution!     <p>         It looks like you're a Microsoft contributor (Johannes Rieken). If you're full-time, we DON'T require a Contribution License Agreement. If you are a vendor, please DO sign the electronic Contribution License Agreement. It will take 2 minutes and there's no faxing! https://cla.microsoft.com.     </p>  TTYL, MSBOT; ->", "completion": " positive"}
+{"prompt": "The mono is thing is ~~by design~~ a hack of OmniSharp (since coreclr cannot talk via sockets). Not much to do for us then waiting. ->", "completion": " neutral"}
+{"prompt": "From [docs](https://github.com/atom/electron/blob/29052b04986daf55ecda4163bb94adaf522d1a10/docs/tutorial/supported-platforms.md)  > The prebuilt ia32(i686) and x64(amd64) binaries of Electron are built on Ubuntu 12.04, the arm binary is built against ARM v7 with hard-float ABI and NEON for Debian Wheezy.   > Whether the prebuilt binary can run on a distribution depends on whether the distribution includes the libraries that Electron is linked to on the building platform, so only Ubuntu 12.04 is guaranteed to work, but following platforms are also verified to be able to run the prebuilt binaries of Electron: >  >    Ubuntu 12.04 and later  >    Fedora 21  >    Debian 8   Will return to this issue a bit later. ->", "completion": " neutral"}
