@@ -1,0 +1,15 @@
+testing result:
+- Precision: [0.80538922 0.81422925 0.88477366]
+- Recall:    [0.74722222 0.81102362 0.93886463]
+- F-measure: [0.77521614 0.81262327 0.91101695]
+- Accuracy:  0.8378582202111614
+- Classification Report:
+              precision    recall  f1-score   support
+
+    negative     0.8054    0.7472    0.7752       360
+     neutral     0.8142    0.8110    0.8126       508
+    positive     0.8848    0.9389    0.9110       458
+
+    accuracy                         0.8379      1326
+   macro avg     0.8348    0.8324    0.8330      1326
+weighted avg     0.8362    0.8379    0.8365      1326

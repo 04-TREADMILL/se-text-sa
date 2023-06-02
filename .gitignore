@@ -3,3 +3,7 @@ venv/
 *.pkl
 model/
 .gitignore
+
+!best/openai_embedding_plus_sklearn_classifier/SGD-text-embedding-ada-002-2023-05-21-19-54-23.pkl
+!best/tfidf_embedding_plus_sklearn_classifier/embedding-2023-05-21-19-41-39.pkl
+!best/tfidf_embedding_plus_sklearn_classifier/RF-local-2023-05-21-19-41-39.pkl

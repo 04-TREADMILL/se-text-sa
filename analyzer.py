@@ -285,6 +285,7 @@ class OpenAIEnd2EndAnalyzer(Analyzer):
         print('Usage: openai api fine_tunes.create -t <FILE_PATH> -m <MODEL_NAME>')
 
     def test(self, texts: List[str], y_true: List[str], special_prompt=' ->'):
+        texts = [self.preprocessor.preprocess_text_v2(text) for text in texts]
         y_pred = []
         for i in range(len(texts)):
             text = texts[i]

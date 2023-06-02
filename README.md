@@ -250,4 +250,42 @@ f.close()
 openai api fine_tunes.create -t ./dataset/fine_tune_set_augmented.jsonl -m ada
 ```
 
+- 实验数据：（详细数据见 `./results/2.txt`）
+
 使用 Ada 模型预测准确率为 **90.12%**，相比没有数据增强的预测结果有一定提升
+
+**实验八**
+
+与实验四操作方式基本相同，尝试使用数据预处理方法对训练集进行处理，这里选择使用最基本的与处理方式，即去除文本中的 URL / markdown 图片 / HTML tag
+
+```
+openai api fine_tunes.create -t ./dataset/fine_tune_set_prepreocessed.jsonl -m ada
+openai api fine_tunes.create -t ./dataset/fine_tune_set_prepreocessed.jsonl -m babbage
+openai api fine_tunes.create -t ./dataset/fine_tune_set_prepreocessed.jsonl -m curie
+openai api fine_tunes.create -t ./dataset/fine_tune_set_prepreocessed_augmented.jsonl -m ada
+```
+
+- 实验数据：（详细数据见 `./results/2.txt`）
+
+本次实验我们发现了许多难以解释的实验结果：
+
+不同的模型对预处理的反馈结果大相径庭，在 Ada 模型上，预测准确率得到明显提升，变为 **90.57%**，而在 Babbage 和 Curie 模型上的预测准确率均有所下降，变为 **89.29%** 和 **89.97%**，无法分析其原因
+
+除此之外，运用 sjy 设计的与处理方式，在 Ada 模型上，预测准确率有所下降，变为 **89.74%**
+
+对增强后的数据集进行预处理后进行模型微调，在 Ada 模型上得到的预测准确率高于预处理前，变为 **90.35%**，但没有达到没有进行数据增强只进行预处理的预测准确率
+
+**实验九**
+
+我们从 StackOverflow 和 Github 中爬取了 2000 条数据，通过使用 ChatGPT 预标注，人工审核并二次标注的方式进行数据标注
+
+为了保证数据集的均衡性和可靠性，我们对数据进行了筛选，最终保留了 643 条新数据，加入训练集一起参与模型微调
+
+```
+openai api fine_tunes.create -t ./dataset/fine_tune_set_new_data.jsonl -m ada
+openai api fine_tunes.create -t ./dataset/fine_tune_set_new_data_preprocessed.jsonl -m ada
+```
+
+- 实验数据：（详细数据见 `./results/2.txt`）
+
+很遗憾，新增的数据集对预测结果并没有产生影响 :(，对于未进行预处理和进行预处理两种情况，预测准确率分别为 **89.22%** 和 **90.57%**

@@ -174,7 +174,7 @@ class PreProcessor:
             new_txt.replace(ent.text, ent.label_)
         return new_txt
 
-    def add_prefix_to_domain_specific_words(self, text: str, prefix: str = "neutral_") -> str:
+    def add_prefix_to_domain_specific_words(self, text: str, prefix: str = "NEUTRAL_") -> str:
         """
         给所有软工领域特定词汇加上"neutral_"的前缀
         :param text: 需要进行处理的段落
@@ -191,7 +191,7 @@ class PreProcessor:
         modified_string = ' '.join(word_list)
         return modified_string
 
-    def add_prefix_to_italic_and_uppercase(self, text: str, prefix: str = "strong_"):
+    def add_prefix_to_italic_and_uppercase(self, text: str, prefix: str = "STRONG_"):
         """
         给大写和斜体的单词加上前缀"strong_"
         :param text: 需要进行处理的段落
@@ -228,10 +228,14 @@ class PreProcessor:
         return text
 
     def preprocess_text_v2(self, text: str) -> str:
-        text = text.strip('\n').strip(' ')
         text = self.__remove_url(text)
         text = self.__remove_md_pic(text)
         text = self.__remove_html_tag(text)
+        # text = self.add_prefix_to_domain_specific_words(text)
+        # text = self.add_prefix_to_italic_and_uppercase(text)
+        # text = self.replace_PROPN(text)
+        # text = self.replace_entity(text)
+        text = text.strip('\n').strip(' ')
         return text
 
 

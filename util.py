@@ -14,13 +14,31 @@ def gen_fine_tune_dataset(fine_tune_suffix: str = '', base_suffix: str = ''):
         if base_suffix != '' else 'dataset/train3098itemPOLARITY.csv'
     with open(fine_tune_set_name, encoding='utf-8', mode='w') as f1:
         with open(base_set_name, encoding='utf-8', mode='r') as f2:
-            file_reader = csv.reader(f2, delimiter=';')
-            dataset = [(line[2], line[1]) for line in file_reader]
-            for text, label in dataset:
+            for line in f2.readlines():
+                line = line.strip('\n').strip(' ')
+                temp = line.split(';')
+                label, text = temp[1], temp[2]
+                if len(temp) > 3:
+                    for i in range(3, len(temp)):
+                        text += ';' + temp[i]
                 text = text.replace('\\', '\\\\')
                 text = text.replace('"', '\\"')
                 line = f'{{"prompt": "{text} ->", "completion": " {label}"}}\n'
                 f1.write(line)
+            # dataset = []
+            # file_reader = csv.reader(f2, delimiter=';')
+            # for line in file_reader:
+            #     label = line[1]
+            #     text = line[2]
+            #     if len(line) > 3:
+            #         for i in range(3, len(line)):
+            #             text += ';' + line[i]
+            #     dataset.append((text, label))
+            # for text, label in dataset:
+            #     text = text.replace('\\', '\\\\')
+            #     text = text.replace('"', '\\"')
+            #     line = f'{{"prompt": "{text} ->", "completion": " {label}"}}\n'
+            #     f1.write(line)
         f2.close()
     f1.close()
 
@@ -29,10 +47,16 @@ def gen_preprocessed_dataset(origin_file_name: str):
     pp = PreProcessor()
     texts, labels = Analyzer.read_data(origin_file_name)
     texts = [pp.preprocess_text_v2(text) for text in texts]
-    with open('./dataset/train3098itemPOLARITY_preprocessed.csv', mode='w', encoding='utf-8') as file:
+    with open('./dataset/train3098itemPOLARITY_augmented_preprocessed.csv', mode='w', encoding='utf-8') as file:
+        index = 1
+        # contents = []
         for text, label in zip(texts, labels):
-            line = f'xx;{label};{text}\n'
+            line = f'{index};{label};{text}\n'
             file.write(line)
+            # contents.append(line)
+            # print(line, end='')
+            index += 1
+        # file.writelines(contents)
     file.close()
 
 
@@ -78,5 +102,6 @@ def augment_dataset():
 
 
 if __name__ == '__main__':
-    gen_preprocessed_dataset('dataset/train3098itemPOLARITY.csv')
-    gen_fine_tune_dataset(fine_tune_suffix='preprocessed', base_suffix='preprocessed')
+    # gen_preprocessed_dataset('dataset/train3098itemPOLARITY_augmented.csv')
+    gen_fine_tune_dataset(fine_tune_suffix='augmented_preprocessed', base_suffix='augmented_preprocessed')
+    # gen_fine_tune_dataset()
