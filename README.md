@@ -133,11 +133,28 @@ y_pred = json.loads(result)['label']
 ```json
 {"prompt": "<prompt text>", "completion": "<ideal generated text>"}
 ```
+```python
+def gen_fine_tune_dataset():
+    import csv
+    with open('dataset/fine_tune_set.jsonl', encoding='utf-8', mode='w') as f1:
+        with open('dataset/train3098itemPOLARITY.csv', encoding='utf-8', mode='r') as f2:
+            file_reader = csv.reader(f2, delimiter=';')
+            dataset = [(line[2], line[1]) for line in file_reader]
+            for text, label in dataset:
+                text = text.replace('\\', '\\\\')
+                text = text.replace('"', '\\"')
+                # line = f'{{"prompt": "{text}", "completion": "{label}"}}\n'
+                # line = f'{{"prompt": "{text} ->", "completion": "{label}"}}\n'
+                line = f'{{"prompt": "{text} ->", "completion": " {label}"}}\n'
+                f1.write(line)
+        f2.close()
+    f1.close()
+```
 
 使用 OpenAI CLI 微调基础模型，这里选用了参数量最少且响应速度最快的 Ada 模型：
 
 ```
-openai api fine_tunes.create -t <TRAIN_FILE_ID_OR_PATH> -m ada
+openai api fine_tunes.create -t ./dataset/fine_tune_set.jsonl -m ada
 ```
 
 通过以下命令检测微调任务进度
@@ -163,30 +180,74 @@ response = openai.Completion.create(
 y_pred = response['choices'][0]['text']
 ```
 
-- 实验数据：（详细数据见 `./results/1.txt`）
+- 实验数据：（详细数据见 `./results/2.txt`）
 
 初次尝试得到的预测准确率为 **86.35%**，与实验二中表现最好的方法效果相当，但观察测试结果发现，模型对某些文本给出的回答不在 `positive`、`negative` 和 `neutral` 这三个单词的范围内，若将不是 `positive` 或 `negative` 的回答全部算作 `neutral`，对实验结果没有产生实质影响
 
 为了进一步挖掘大模型的能力，选择对训练集和测试集进行特殊处理，在每一段文本的末尾添加字符串 `" ->"` （提示模型需要进行情感分类的软工文本到此已经结束，接下来需要回答分类结果了），再次进行模型微调得到新模型，预测准确率有了显著提升，达到 **90.05%**
 
-**实验五：**
+**实验五**：
 
-- 使用助教指定的训练集和测试集（由数据集 `sof4423` 预划分而来），TF-IDF进行文本向量化，GradientBoostingClassifier分类器，与不同的预处理算法进行组合进行实验
-- SentiCR中原有的预处理方法有：word stem，对表情符号，缩写，否定的处理，去除了url，md图片，html标签
-- 我们新加的预处理方法有：
-  - 将文本中的专有词和实体词用标签替代
-  - 处理斜体和大写单词
-  - 处理在软工领域有特别含义的单词，如：support, bug, error
-- 实验数据：（详细数据见./result/2.txt）
+与实验四操作方式基本相同，尝试将训练集切分出 20% 作为验证集
 
-| 预处理方法                               | 预测准确率    |
-| ---------------------------------------- | ------------- |
-| 原有方法                                 | 82.50%/82.88% |
-| 原有方法+替换专有词和实体词              | 81.90%        |
-| 原有方法+处理领域特定单词                | 82.65%        |
-| 原有方法+处理斜体                        | 82.43%        |
-| 原有方法+处理大写                        | 82.58%        |
-| 原有方法+处理斜体、大写                  | 82.80%/82.58% |
-| 原有方法+处理斜体、大写+处理领域特定单词 | 82.65%/82.58% |
+```
+openai api fine_tunes.create \
+    -t ./dataset/fine_tune_train_set.jsonl \
+    -v ./dataset/fine_tune_validate_set.jsonl \
+    -m ada \
+    --compute_classification_metrics \
+    --classification_n_classes 3
+```
 
-- 实验结论：在TF-IDF和GradientBoostingClassifier的条件下，与处理算法对于结果的影响不大。
+- 实验数据：（详细数据见 `./results/2.txt`）
+
+理论上来说能获得更好的泛化性能，但得到的预测准确率为 **89.74%**，比原先略有下降，推测与用于训练的数据量减少有关
+
+**实验六**：
+
+与实验四操作方式基本相同，尝试使用参数数量更多的 Babbage 和 Curie 模型
+
+```
+openai api fine_tunes.create -t ./dataset/fine_tune_set.jsonl -m babbage
+```
+
+```
+openai api fine_tunes.create -t ./dataset/fine_tune_set.jsonl -m curie
+```
+
+- 实验数据：（详细数据见 `./results/2.txt`）
+
+使用 Babbage 模型的预测准确率为 **90.35%**，使用 Curie 模型的预测准确率为 **90.80%**
+
+事实证明，参数量更大的模型对于提升预测准确率有一定的帮助
+
+**实验七**：
+
+与实验四操作方式基本相同，尝试使用数据增强手段对训练集进行扩增
+
+- 数据增强
+
+```python
+from textattack.augmentation import EmbeddingAugmenter
+
+texts_train_augmented = []
+labels_train_augmented = []
+augmenter = EmbeddingAugmenter(transformations_per_example=2)
+for text, label in zip(texts_train, labels_train):
+    text_aug_res = augmenter.augment(text)
+    label_aug_res = [label] * len(text_aug_res)
+    texts_train_augmented.extend(text_aug_res)
+    labels_train_augmented.extend(label_aug_res)
+
+with open('dataset/train3098itemPOLARITY_augmented.csv', mode='w', encoding='utf-8') as f:
+    for text, label in zip(texts_train_augmented, labels_train_augmented):
+        line = f'xx;{label};{text}\n'
+        f.write(line)
+f.close()
+```
+
+```
+openai api fine_tunes.create -t ./dataset/fine_tune_set_augmented.jsonl -m ada
+```
+
+使用 Ada 模型预测准确率为 **90.12%**，相比没有数据增强的预测结果有一定提升

@@ -1,305 +1,169 @@
-# 原来的分类结果
-第一次
+#######################
+training message:
+- dataset: `sof-4423`
+- split: pre-specified
+#######################
 
-- Model saved: GB-local-2023-05-31-18-19-56.pkl
+### Fine-tuned GPT3 models and ChatGPT ###
 
-- Model saved: embedding-2023-05-31-18-19-56.pkl
 
-- Model loaded: GB-local-2023-05-31-18-19-56.pkl
-
-- Model loaded: embedding-2023-05-31-18-19-56.pkl
-  testing result:
-
-- Precision: [0.81191223 0.76344086 0.91091314]
-
-- Recall:    [0.71944444 0.83858268 0.8930131 ]
-
-- F-measure: [0.7628866  0.79924953 0.90187431]
-
-- Accuracy:  0.8250377073906485
-
+01. curie:ft-personal-2023-05-30-03-33-28 [no-preprocess][special-prompt-v2]
+testing result:
+- Precision: [0.87165775 0.90368852 0.94181034]
+- Recall:    [0.90555556 0.86811024 0.95414847]
+- F-measure: [0.88828338 0.88554217 0.94793926]
+- Accuracy:  0.9079939668174962
 - Classification Report:
-      precision    recall  f1-score   support
+              precision    recall  f1-score   support
 
-  negative     0.8119    0.7194    0.7629       360
-   neutral     0.7634    0.8386    0.7992       508
-  positive     0.9109    0.8930    0.9019       458
+    negative     0.8717    0.9056    0.8883       360
+     neutral     0.9037    0.8681    0.8855       508
+    positive     0.9418    0.9541    0.9479       458
 
-  accuracy                         0.8250      1326
-  macro avg     0.8288    0.8170    0.8213      1326
-         weighted avg     0.8275    0.8250    0.8248      1326
+    accuracy                         0.9080      1326
+   macro avg     0.9057    0.9093    0.9073      1326
+weighted avg     0.9082    0.9080    0.9078      1326
 
-第二次
 
-- Model saved: GB-local-2023-05-31-18-52-01.pkl
-
-- Model saved: embedding-2023-05-31-18-52-01.pkl
-
-- Model loaded: GB-local-2023-05-31-18-52-01.pkl
-
-- Model loaded: embedding-2023-05-31-18-52-01.pkl
-  testing result:
-
-- Precision: [0.815625   0.76978417 0.91111111]
-
-- Recall:    [0.725      0.84251969 0.89519651]
-
-- F-measure: [0.76764706 0.80451128 0.9030837 ]
-
-- Accuracy:  0.8288084464555053
-
+02. babbage:ft-personal-2023-05-29-18-51-23 [no-preprocess][special-prompt]
+testing result:
+- Precision: [0.88010899 0.88554217 0.94143167]
+- Recall:    [0.89722222 0.86811024 0.94759825]
+- F-measure: [0.88858322 0.87673956 0.9445049 ]
+- Accuracy:  0.9034690799396682
 - Classification Report:
-      precision    recall  f1-score   support
+              precision    recall  f1-score   support
 
-  negative     0.8156    0.7250    0.7676       360
-   neutral     0.7698    0.8425    0.8045       508
-  positive     0.9111    0.8952    0.9031       458
+    negative     0.8801    0.8972    0.8886       360
+     neutral     0.8855    0.8681    0.8767       508
+    positive     0.9414    0.9476    0.9445       458
 
-  accuracy                         0.8288      1326
-  macro avg     0.8322    0.8209    0.8251      1326
-         weighted avg     0.8310    0.8288    0.8285      1326
+    accuracy                         0.9035      1326
+   macro avg     0.9024    0.9043    0.9033      1326
+weighted avg     0.9034    0.9035    0.9034      1326
 
 
-# 加上替换专有词和实体词
-
-- Model saved: GB-local-2023-05-31-18-28-25.pkl
-
-- Model saved: embedding-2023-05-31-18-28-25.pkl
-
-- Model loaded: GB-local-2023-05-31-18-28-25.pkl
-
-- Model loaded: embedding-2023-05-31-18-28-25.pkl
-  testing result:
-
-- Precision: [0.82142857 0.7486911  0.90786517]
-
-- Recall:    [0.70277778 0.84448819 0.88209607]
-
-- F-measure: [0.75748503 0.79370953 0.89479513]
-
-- Accuracy:  0.8190045248868778
-
+03. babbage:ft-personal-2023-05-29-18-11-55 [no-preprocess][special-prompt-v2]
+testing result:
+- Precision: [0.8746594  0.89409369 0.93589744]
+- Recall:    [0.89166667 0.86417323 0.95633188]
+- F-measure: [0.88308116 0.87887888 0.94600432]
+- Accuracy:  0.9034690799396682
 - Classification Report:
-      precision    recall  f1-score   support
+              precision    recall  f1-score   support
 
-  negative     0.8214    0.7028    0.7575       360
-   neutral     0.7487    0.8445    0.7937       508
-  positive     0.9079    0.8821    0.8948       458
+    negative     0.8747    0.8917    0.8831       360
+     neutral     0.8941    0.8642    0.8789       508
+    positive     0.9359    0.9563    0.9460       458
 
-  accuracy                         0.8190      1326
-  macro avg     0.8260    0.8098    0.8153      1326
-         weighted avg     0.8234    0.8190    0.8188      1326
+    accuracy                         0.9035      1326
+   macro avg     0.9016    0.9041    0.9027      1326
+weighted avg     0.9033    0.9035    0.9032      1326
 
-# 加上domain specific
 
-- Model saved: GB-local-2023-05-31-18-31-22.pkl
-
-- Model saved: embedding-2023-05-31-18-31-22.pkl
-
-- Model loaded: GB-local-2023-05-31-18-31-22.pkl
-
-- Model loaded: embedding-2023-05-31-18-31-22.pkl
-  testing result:
-
-- Precision: [0.82428115 0.76106195 0.91071429]
-
-- Recall:    [0.71666667 0.84645669 0.89082969]
-
-- F-measure: [0.7667162  0.80149115 0.90066225]
-
-- Accuracy:  0.8265460030165912
-
+04. ada:ft-personal-2023-05-30-05-21-25 [no-preprocess][special-prompt-v2][augmented]
+testing result:
+- Precision: [0.89337176 0.875      0.93576017]
+- Recall:    [0.86111111 0.88188976 0.95414847]
+- F-measure: [0.87694484 0.87843137 0.94486486]
+- Accuracy:  0.9012066365007542
 - Classification Report:
-      precision    recall  f1-score   support
+              precision    recall  f1-score   support
 
-  negative     0.8243    0.7167    0.7667       360
-   neutral     0.7611    0.8465    0.8015       508
-  positive     0.9107    0.8908    0.9007       458
+    negative     0.8934    0.8611    0.8769       360
+     neutral     0.8750    0.8819    0.8784       508
+    positive     0.9358    0.9541    0.9449       458
 
-  accuracy                         0.8265      1326
-  macro avg     0.8320    0.8180    0.8230      1326
-         weighted avg     0.8299    0.8265    0.8263      1326
+    accuracy                         0.9012      1326
+   macro avg     0.9014    0.8990    0.9001      1326
+weighted avg     0.9010    0.9012    0.9010      1326
 
-# 加上斜体 大写
 
-- Model saved: GB-local-2023-05-31-18-33-59.pkl
-
-- Model saved: embedding-2023-05-31-18-33-59.pkl
-
-- Model loaded: GB-local-2023-05-31-18-33-59.pkl
-
-- Model loaded: embedding-2023-05-31-18-33-59.pkl
-  testing result:
-
-- Precision: [0.81987578 0.76523297 0.91255605]
-
-- Recall:    [0.73333333 0.84055118 0.88864629]
-
-- F-measure: [0.77419355 0.8011257  0.90044248]
-
-- Accuracy:  0.8280542986425339
-
+05. ada:ft-personal-2023-05-24-16-11-39 [no-preprocess][special-prompt]
+testing result:
+- Precision: [0.87988827 0.87872763 0.93978495]
+- Recall:    [0.875      0.87007874 0.95414847]
+- F-measure: [0.87743733 0.8743818  0.94691224]
+- Accuracy:  0.9004524886877828
 - Classification Report:
-      precision    recall  f1-score   support
+              precision    recall  f1-score   support
 
-  negative     0.8199    0.7333    0.7742       360
-   neutral     0.7652    0.8406    0.8011       508
-  positive     0.9126    0.8886    0.9004       458
+    negative     0.8799    0.8750    0.8774       360
+     neutral     0.8787    0.8701    0.8744       508
+    positive     0.9398    0.9541    0.9469       458
 
-  accuracy                         0.8281      1326
-  macro avg     0.8326    0.8208    0.8253      1326
-         weighted avg     0.8310    0.8281    0.8281      1326
-
-
+    accuracy                         0.9005      1326
+   macro avg     0.8995    0.8997    0.8996      1326
+weighted avg     0.9001    0.9005    0.9003      1326
 
 
-- Model saved: GB-local-2023-05-31-18-45-57.pkl
-
-- Model saved: embedding-2023-05-31-18-45-57.pkl
-
-- Model loaded: GB-local-2023-05-31-18-45-57.pkl
-
-- Model loaded: embedding-2023-05-31-18-45-57.pkl
-  testing result:
-
-- Precision: [0.8136646  0.76523297 0.9103139 ]
-
-- Recall:    [0.72777778 0.84055118 0.88646288]
-
-- F-measure: [0.76832845 0.8011257  0.89823009]
-
-- Accuracy:  0.8257918552036199
-
+06. ada:ft-personal-2023-05-29-18-08-41 [no-preprocess][special-prompt-v2]
+testing result:
+- Precision: [0.86178862 0.87848606 0.94945055]
+- Recall:    [0.88333333 0.86811024 0.94323144]
+- F-measure: [0.87242798 0.87326733 0.94633078]
+- Accuracy:  0.8981900452488688
 - Classification Report:
-      precision    recall  f1-score   support
+              precision    recall  f1-score   support
 
-  negative     0.8137    0.7278    0.7683       360
-   neutral     0.7652    0.8406    0.8011       508
-  positive     0.9103    0.8865    0.8982       458
+    negative     0.8618    0.8833    0.8724       360
+     neutral     0.8785    0.8681    0.8733       508
+    positive     0.9495    0.9432    0.9463       458
 
-  accuracy                         0.8258      1326
-  macro avg     0.8297    0.8183    0.8226      1326
-  weighted avg     0.8285    0.8258    0.8258      1326
+    accuracy                         0.8982      1326
+   macro avg     0.8966    0.8982    0.8973      1326
+weighted avg     0.8985    0.8982    0.8983      1326
 
-# 加上处理领域特定单词，处理斜体、大写
 
-- Model saved: GB-local-2023-05-31-18-36-01.pkl
-
-- Model saved: embedding-2023-05-31-18-36-01.pkl
-
-- Model loaded: GB-local-2023-05-31-18-36-01.pkl
-
-- Model loaded: embedding-2023-05-31-18-36-01.pkl
-  testing result:
-
-- Precision: [0.81931464 0.76207513 0.91255605]
-
-- Recall:    [0.73055556 0.83858268 0.88864629]
-
-- F-measure: [0.77239354 0.79850047 0.90044248]
-
-- Accuracy:  0.8265460030165912
-
+07. ada:ft-personal-2023-05-29-12-45-33 [no-preprocess][special-prompt][validate]
+testing result:
+- Precision: [0.88418079 0.86381323 0.94541485]
+- Recall:    [0.86944444 0.87401575 0.94541485]
+- F-measure: [0.8767507  0.86888454 0.94541485]
+- Accuracy:  0.8974358974358975
 - Classification Report:
-      precision    recall  f1-score   support
+              precision    recall  f1-score   support
 
-  negative     0.8193    0.7306    0.7724       360
-   neutral     0.7621    0.8386    0.7985       508
-  positive     0.9126    0.8886    0.9004       458
+    negative     0.8842    0.8694    0.8768       360
+     neutral     0.8638    0.8740    0.8689       508
+    positive     0.9454    0.9454    0.9454       458
 
-  accuracy                         0.8265      1326
-  macro avg     0.8313    0.8193    0.8238      1326
-         weighted avg     0.8296    0.8265    0.8266      1326
-
-
+    accuracy                         0.8974      1326
+   macro avg     0.8978    0.8963    0.8970      1326
+weighted avg     0.8975    0.8974    0.8975      1326
 
 
-- Model saved: GB-local-2023-05-31-18-49-37.pkl
-
-- Model saved: embedding-2023-05-31-18-49-37.pkl
-
-- Model loaded: GB-local-2023-05-31-18-49-37.pkl
-
-- Model loaded: embedding-2023-05-31-18-49-37.pkl
-  testing result:
-
-- Precision: [0.82075472 0.7633452  0.90807175]
-
-- Recall:    [0.725      0.84448819 0.88427948]
-
-- F-measure: [0.7699115  0.80186916 0.8960177 ]
-
-- Accuracy:  0.8257918552036199
-
+08. ada:ft-personal-2023-05-24-14-29-32 [no-preprocess]
+testing result:
+- Precision: [0.8611898  0.80036298 0.9478673 ]
+- Recall:    [0.84444444 0.86811024 0.87336245]
+- F-measure: [0.85273492 0.83286119 0.90909091]
+- Accuracy:  0.8634992458521871
 - Classification Report:
-      precision    recall  f1-score   support
+              precision    recall  f1-score   support
 
-  negative     0.8208    0.7250    0.7699       360
-   neutral     0.7633    0.8445    0.8019       508
-  positive     0.9081    0.8843    0.8960       458
+    negative     0.8612    0.8444    0.8527       360
+     neutral     0.8004    0.8681    0.8329       508
+    positive     0.9479    0.8734    0.9091       458
 
-  accuracy                         0.8258      1326
-  macro avg     0.8307    0.8179    0.8226      1326
-         weighted avg     0.8289    0.8258    0.8257      1326
+    accuracy                         0.8635      1326
+   macro avg     0.8698    0.8620    0.8649      1326
+weighted avg     0.8678    0.8635    0.8646      1326
 
 
-
-# 只处理斜体
-
-- Model saved: GB-local-2023-05-31-18-41-42.pkl
-
-- Model saved: embedding-2023-05-31-18-41-42.pkl
-
-- Model loaded: GB-local-2023-05-31-18-41-42.pkl
-
-- Model loaded: embedding-2023-05-31-18-41-42.pkl
-  testing result:
-
-- Precision: [0.8125    0.7625    0.9103139]
-
-- Recall:    [0.72222222 0.84055118 0.88646288]
-
-- F-measure: [0.76470588 0.79962547 0.89823009]
-
-- Accuracy:  0.8242835595776772
-
+09. gpt3.5-turbo [no-preprocess]
+testing result:
+- Precision: [0.79069767 0.6404321  0.90718563]
+- Recall:    [0.75555556 0.81692913 0.66157205]
+- F-measure: [0.77272727 0.71799308 0.76515152]
+- Accuracy:  0.746606334841629
 - Classification Report:
-      precision    recall  f1-score   support
+              precision    recall  f1-score   support
 
-  negative     0.8125    0.7222    0.7647       360
-   neutral     0.7625    0.8406    0.7996       508
-  positive     0.9103    0.8865    0.8982       458
+    negative     0.7907    0.7556    0.7727       360
+     neutral     0.6404    0.8169    0.7180       508
+    positive     0.9072    0.6616    0.7652       458
 
-  accuracy                         0.8243      1326
-  macro avg     0.8284    0.8164    0.8209      1326
-         weighted avg     0.8271    0.8243    0.8242      1326
-
-# 只处理大写
-
-- Model saved: GB-local-2023-05-31-18-43-52.pkl
-
-- Model saved: embedding-2023-05-31-18-43-52.pkl
-
-- Model loaded: GB-local-2023-05-31-18-43-52.pkl
-
-- Model loaded: embedding-2023-05-31-18-43-52.pkl
-  testing result:
-
-- Precision: [0.82747604 0.75929204 0.90848214]
-
-- Recall:    [0.71944444 0.84448819 0.88864629]
-
-- F-measure: [0.76968796 0.79962721 0.89845475]
-
-- Accuracy:  0.8257918552036199
-
-- Classification Report:
-      precision    recall  f1-score   support
-
-  negative     0.8275    0.7194    0.7697       360
-   neutral     0.7593    0.8445    0.7996       508
-  positive     0.9085    0.8886    0.8985       458
-
-  accuracy                         0.8258      1326
-  macro avg     0.8318    0.8175    0.8226      1326
-         weighted avg     0.8293    0.8258    0.8256      1326
+    accuracy                         0.7466      1326
+   macro avg     0.7794    0.7447    0.7520      1326
+weighted avg     0.7734    0.7466    0.7491      1326

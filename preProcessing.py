@@ -5,7 +5,6 @@ import spacy
 import csv
 import re
 from typing import List
-import nltk
 
 
 class PreProcessor:
@@ -226,6 +225,13 @@ class PreProcessor:
         # mys
         # text = self.add_prefix_to_domain_specific_words(text)
         # text = self.add_prefix_to_italic_and_uppercase(text)
+        return text
+
+    def preprocess_text_v2(self, text: str) -> str:
+        text = text.strip('\n').strip(' ')
+        text = self.__remove_url(text)
+        text = self.__remove_md_pic(text)
+        text = self.__remove_html_tag(text)
         return text
 
 
